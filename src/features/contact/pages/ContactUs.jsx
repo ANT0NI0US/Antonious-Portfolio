@@ -1,0 +1,27 @@
+import TextHead from "../../../ui/TextHead";
+import contactImg from "../../../assets/Email Marketing.gif";
+import ContactForm from "../components/ContactForm";
+
+export default function ContactUs() {
+  return (
+    <section
+      id="contact"
+      className="min-h-screen w-full bg-secondary py-[100px]"
+    >
+      <div className="mx-auto w-[90%] md:w-5/6 ">
+        <TextHead text="Get In Touch" />
+        <div className="flexCenter mt-5 flex-col-reverse gap-0 lg:mt-0 lg:flex-row lg:gap-5">
+          {/* CONTACT IMAGE */}
+          <div className="lg:basis-[60%]">
+            <img src={contactImg} alt="Contact Us" />
+          </div>
+
+          {/* CONTACT FORM */}
+          <div className="w-full lg:basis-[40%]">
+            <ContactForm />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

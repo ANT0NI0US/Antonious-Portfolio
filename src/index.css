@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Merienda", cursive; */
+}
+html {
+  @apply text-light;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .input {
+    @apply w-full bg-main p-[10px] outline-none transition-all placeholder:text-sm focus:border-0;
+    &:-webkit-autofill {
+      -webkit-text-fill-color: #daf3ff;
+      box-shadow: 0 0 0px 1000px #151515 inset;
+      caret-color: #daf3ff;
+    }
+  }
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+  img {
+    @apply object-cover object-center;
+  }
+}
+
+@layer utilities {
+  .wave {
+    @apply absolute left-0 top-0 h-[100px] w-full bg-[url("./assets/waveDark.png")] bg-[length:1000px_100px];
+  }
+  .animate-wave-slow {
+    animation: animateWave 4s linear infinite;
+  }
+  .animate-wave-fast {
+    animation: animateWave 3s linear infinite;
+  }
+  .animate-wave02-slow {
+    animation: animateWave_02 4s linear infinite;
+  }
+  .animate-wave02-fast {
+    animation: animateWave_02 3s linear infinite;
+  }
+}
+
+.before-element::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 12px;
+  border-style: solid;
+  border-color: #4c565d #4c565d transparent transparent;
+  left: 0;
+  bottom: -24px;
+}
+
+.after-element::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 12px;
+  border-style: solid;
+  border-color: #4c565d transparent transparent #4c565d;
+  right: 0;
+  bottom: -24px;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+/* scrollbar Syles */
+*::-webkit-scrollbar {
+  @apply w-[5px];
+}
+*::-webkit-scrollbar-track {
+  @apply bg-light;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-secondary;
+}
+
+/* Vertical scrollbar */
+*::-webkit-scrollbar:vertical {
+  @apply w-[10px];
+}
+
+/* Horizontal scrollbar */
+*::-webkit-scrollbar:horizontal {
+  @apply h-[10px];
+}
