@@ -4,11 +4,14 @@ import Frontend from "./Frontend";
 
 export default function BannerDetails() {
   return (
-    <div className="flex w-full flex-col items-center justify-center space-y-3 text-center md:basis-[50%] md:items-start md:justify-start md:text-start">
-      <span className="text-xl font-semibold text-primary">
+    <div className="flexCenter h-full w-full flex-col space-y-5 text-center">
+      <span className="text-xl font-semibold text-primary sm:text-2xl">
         Welcome to my Portfolio
       </span>
-      <h1 className="font-merienda text-4xl font-black">
+      <h1
+        className="font-Monoton text-3xl font-black uppercase sm:text-4xl md:text-5xl"
+        style={{ wordSpacing: "15px" }}
+      >
         Hi I'm Antonious Nasr
       </h1>
 
@@ -22,11 +25,11 @@ export default function BannerDetails() {
         functionality, I bring websites to life through a combination of
         creativity and technical expertise.
       </p>
+      {/* LINKs */}
+      <Links />
 
       {/* MY CV */}
       <CV />
-      {/* LINKs */}
-      <Links />
     </div>
   );
 }

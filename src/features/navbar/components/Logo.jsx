@@ -2,9 +2,9 @@ import logo from "../../../assets/my-logo.png";
 
 export default function Logo() {
   return (
-    <a className="flexBetween xs:gap-1 gap-[3px]" href="#home">
+    <a className="flexBetween gap-[3px] xs:gap-1" href="#home">
       <img
-        className="xs:w-[45px] xs:max-w-[45px] max-h-full w-[30px] max-w-[30px]"
+        className="max-h-full w-[70px] max-w-[70px] sm:w-[85px] sm:max-w-[85px]"
         src={logo}
         alt="Antonious-logo"
       />

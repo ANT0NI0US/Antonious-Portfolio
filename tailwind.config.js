@@ -4,6 +4,7 @@ export default {
     extend: {
       fontFamily: {
         merienda: ["Merienda", "cursive"],
+        Monoton: ["Monoton"],
       },
       backgroundPosition: {
         "custom-pos": "0 0",
@@ -40,6 +41,9 @@ export default {
         orange: "#c18500",
         grident1: "#989898",
         grident2: "#686868",
+      },
+      screens: {
+        xs: "350px",
       },
     },
   },

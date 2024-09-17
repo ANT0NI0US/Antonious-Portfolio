@@ -17,10 +17,10 @@ export default function CV() {
     <div className="w-[130px]">
       <Button onClick={() => downloadFile()}>
         <div className="flexCenter gap-2">
-          <div>My CV</div>
           <div className="download-cv-cont">
             <FaDownload />
           </div>
+          <div>MY CV</div>
         </div>
       </Button>
     </div>
