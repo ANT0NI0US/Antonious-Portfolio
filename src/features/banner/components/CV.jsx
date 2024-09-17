@@ -14,8 +14,8 @@ const downloadFile = () => {
 
 export default function CV() {
   return (
-    <div className="w-[130px]">
-      <Button onClick={() => downloadFile()}>
+    <div className="sm:w-[300px]">
+      <Button variation="secondary" onClick={() => downloadFile()}>
         <div className="flexCenter gap-2">
           <div className="download-cv-cont">
             <FaDownload />
