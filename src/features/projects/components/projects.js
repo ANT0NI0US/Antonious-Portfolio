@@ -306,6 +306,41 @@ export const projects = [
       },
     ],
   },
+  {
+    type: "React",
+    title: "TOTOS",
+    imgUrl: "https://i.ibb.co/YQLS0Y5/TOTOS.webp",
+    url: "https://totos-movie.netlify.app/",
+    githubLink: "https://github.com/ANT0NI0US/Totos",
+    description:
+      "Movie-related project. offering a wide array of trending, top-rated, upcoming, and popular movies. Users can explore an extensive collection of both movies and TV shows, with the ability to search by genre for a more tailored experience. Whether you're looking for the latest hits or planning ahead for upcoming releases, TOTOS provides everything you need in one intuitive and sleek platform. The powerful search functionality ensures users can easily find titles based on their preferences, making it simple to explore the world of entertainment.",
+    toolkit: [
+      {
+        src: "https://i.ibb.co/SwYYVC8/react.webp",
+        alt: "React",
+      },
+      {
+        src: "https://i.ibb.co/yXxpkMk/CSS.webp",
+        alt: "CSS3",
+      },
+      {
+        src: "https://i.ibb.co/ckn2DN2/HTML5.webp",
+        alt: "HTML5",
+      },
+      {
+        src: "https://i.ibb.co/WyVJpw0/tailwind.png",
+        alt: "Tailwind CSS",
+      },
+      {
+        src: "https://i.ibb.co/VNpdqLX/javascript.webp",
+        alt: "Javascript",
+      },
+      {
+        src: "https://i.ibb.co/YjQBNWh/vite.webp",
+        alt: "vite",
+      },
+    ],
+  },
   // HTML CSS PROJECTS
   {
     type: "Html & CSS & JS",
@@ -432,6 +467,7 @@ export const projects = [
   //     },
   //   ],
   // },
+
   // GAMES
   {
     type: "Games",
