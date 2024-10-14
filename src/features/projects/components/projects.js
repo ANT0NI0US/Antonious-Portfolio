@@ -379,6 +379,33 @@ export const projects = [
       },
     ],
   },
+  {
+    type: "React",
+    title: "THE REACT QUIZ",
+    imgUrl: "https://i.ibb.co/x369M42/The-React-Quiz.webp",
+    url: "https://react-quiz-questions-answers.netlify.app/",
+    githubLink: "https://github.com/ANT0NI0US/react-quiz",
+    description:
+      "Test your React knowledge with this interactive quiz app! Challenge yourself with 15 carefully curated React questions, each with a 30-second timer, giving you a total of 7.5 minutes to complete the quiz. Once time's up or all questions are answered, you'll receive your final score instantly. Are you ready to prove your React skills?",
+    toolkit: [
+      {
+        src: "https://i.ibb.co/SwYYVC8/react.webp",
+        alt: "React",
+      },
+      {
+        src: "https://i.ibb.co/yXxpkMk/CSS.webp",
+        alt: "CSS3",
+      },
+      {
+        src: "https://i.ibb.co/ckn2DN2/HTML5.webp",
+        alt: "HTML5",
+      },
+      {
+        src: "https://i.ibb.co/VNpdqLX/javascript.webp",
+        alt: "Javascript",
+      },
+    ],
+  },
   // HTML CSS PROJECTS
   {
     type: "Html & CSS & JS",
