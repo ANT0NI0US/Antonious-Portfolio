@@ -341,6 +341,44 @@ export const projects = [
       },
     ],
   },
+  {
+    type: "React",
+    title: "TRAVEL THE WORLD",
+    imgUrl: "https://i.ibb.co/zP5JQ00/traveltheworld.webp",
+    url: "https://traveltheeworld.netlify.app/",
+    githubLink: "https://github.com/ANT0NI0US/travel-the-world",
+    accounts: [
+      {
+        title: "user",
+        username: "antoniousnasr3@gmail.com",
+        password: "totos",
+      },
+    ],
+    description:
+      "Travel the World helps you log every country and city you visit. Choose locations from a map or use your current location, then add personal notes for future reference. You can easily access Wikipedia information about any saved city. The app is divided into two main tabs: 'Cities,' where you track all the cities you've visited, and 'Countries,' where you view the countries you've been to, complete with their national flags.",
+    toolkit: [
+      {
+        src: "https://i.ibb.co/SwYYVC8/react.webp",
+        alt: "React",
+      },
+      {
+        src: "https://i.ibb.co/yXxpkMk/CSS.webp",
+        alt: "CSS3",
+      },
+      {
+        src: "https://i.ibb.co/ckn2DN2/HTML5.webp",
+        alt: "HTML5",
+      },
+      {
+        src: "https://i.ibb.co/VNpdqLX/javascript.webp",
+        alt: "Javascript",
+      },
+      {
+        src: "https://i.ibb.co/YjQBNWh/vite.webp",
+        alt: "vite",
+      },
+    ],
+  },
   // HTML CSS PROJECTS
   {
     type: "Html & CSS & JS",
