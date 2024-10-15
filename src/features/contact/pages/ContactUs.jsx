@@ -1,6 +1,6 @@
-import TextHead from "../../../ui/TextHead";
-import contactImg from "../../../assets/Email Marketing.gif";
 import ContactForm from "../components/ContactForm";
+import contactImg from "@/assets/Email Marketing.gif";
+import TextHead from "@/ui/TextHead";
 
 export default function ContactUs() {
   return (

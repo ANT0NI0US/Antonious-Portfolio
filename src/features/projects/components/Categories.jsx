@@ -9,6 +9,7 @@ export default function Categories({
       <div className="flexCenter flex-wrap gap-4">
         {categories.map((category) => (
           <button
+            aria-label="Selected-category"
             key={category}
             className={`rounded-md px-4 py-2 ${
               category === selectedCategory ? "bg-main" : "hover:bg-main/50"

@@ -1,10 +1,10 @@
 import { useState } from "react";
-import TextHead from "../../../ui/TextHead";
 import { projects } from "../components/projects";
 import Categories from "../components/Categories";
 import FilteredProjects from "../components/FilteredProjects";
 import ProjectDetails from "../components/ProjectDetails";
 import Pagination from "../components/Pagination";
+import TextHead from "@/ui/TextHead";
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -39,7 +39,7 @@ export default function Projects() {
   return (
     <section className="min-h-screen w-full bg-main py-[100px]" id="projects">
       <div className="mx-auto w-[90%] space-y-5 md:w-5/6">
-        {/* PROJECTS HEAD AND DEXCRIPTION */}
+        {/* PROJECTS HEAD AND DESCRIPTION */}
         <TextHead text="Projects" />
         <p className="text-center text-lg">
           Explore my website designs that are easy to use and look great , Enjoy
@@ -52,7 +52,7 @@ export default function Projects() {
           selectedCategory={selectedCategory}
         />
 
-        {/* Display filtered project depened on the Category */}
+        {/* DISPLAY FILTERED PROJECT DEPEND ON THE CATEGORY */}
         {!selectedProject && (
           <FilteredProjects
             filteredProjects={filteredProjects}

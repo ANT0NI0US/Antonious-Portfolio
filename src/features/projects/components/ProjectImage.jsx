@@ -6,7 +6,7 @@ export default function ProjectImage({
   url,
   githubLink,
   video,
-  documenation,
+  documentation,
   handleLinkClick,
 }) {
   return (
@@ -20,7 +20,7 @@ export default function ProjectImage({
         url={url}
         githubLink={githubLink}
         video={video}
-        documenation={documenation}
+        documentation={documentation}
         handleLinkClick={handleLinkClick}
       />
       <div className="duration-400 absolute inset-0 h-0 rounded-md bg-main/75 transition-all ease-in-out group-hover:h-full"></div>

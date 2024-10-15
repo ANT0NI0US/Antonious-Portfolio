@@ -100,7 +100,7 @@ html {
   }
 }
 
-/* scrollbar Syles */
+/* SCROLLBAR STYLES */
 *::-webkit-scrollbar {
   @apply w-[5px];
 }

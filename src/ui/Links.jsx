@@ -8,7 +8,7 @@ export default function Links() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn Profile"
-        className="flexCenter group relative h-[40px] w-[40px] rounded-full border-[0.5px] border-grident1 bg-secondary/60"
+        className="flexCenter border-gradient1 group relative h-[40px] w-[40px] rounded-full border-[0.5px] bg-secondary/60"
       >
         <span className="absolute inset-0 h-full w-full scale-0 rounded-full bg-light/10 transition-all duration-200 ease-in-out group-hover:scale-100"></span>
         <FaLinkedin className="z-50 text-xl text-white transition-all duration-200 group-hover:text-primary" />
@@ -18,7 +18,7 @@ export default function Links() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub Profile"
-        className="flexCenter group relative h-[40px] w-[40px] rounded-full border-[0.5px] border-grident1 bg-secondary/60"
+        className="flexCenter border-gradient1 group relative h-[40px] w-[40px] rounded-full border-[0.5px] bg-secondary/60"
       >
         <span className="absolute inset-0 h-full w-full scale-0 rounded-full bg-light/10  transition-all duration-200 ease-in-out group-hover:scale-100"></span>
         <FaGithub className="z-50 text-xl text-white transition-all duration-200 group-hover:text-primary" />

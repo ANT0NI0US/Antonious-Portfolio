@@ -1,7 +1,7 @@
-import GridContainer from "../../../ui/GridContainer";
-import TextHead from "../../../ui/TextHead";
 import { allSkills } from "../components/allSkills";
 import SkillDetails from "../components/SkillDetails";
+import GridContainer from "@/ui/GridContainer";
+import TextHead from "@/ui/TextHead";
 
 export default function Skills() {
   return (
@@ -11,7 +11,7 @@ export default function Skills() {
         {/* ALL SKILLS */}
         <GridContainer styles="md:grid mt-10 md:grid-cols-2 !gap-x-[80px] !gap-y-[20px] px-4">
           {allSkills?.map((skill, index) => (
-            <SkillDetails skill={skill} index={index} />
+            <SkillDetails skill={skill} key={index} />
           ))}
         </GridContainer>
       </div>

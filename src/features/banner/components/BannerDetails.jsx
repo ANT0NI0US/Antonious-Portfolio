@@ -1,6 +1,6 @@
 import CV from "./CV";
-import Links from "../../../ui/Links";
 import Frontend from "./Frontend";
+import Links from "@/ui/Links";
 
 export default function BannerDetails() {
   return (

@@ -7,7 +7,7 @@ export default function SkillDetails({ skill, index }) {
   return (
     <motion.div
       key={index}
-      className="flex min-h-[230px] flex-col space-y-4 rounded-md border-[10px] border-double border-grident2 bg-main p-[15px] shadow-md shadow-orange/50 drop-shadow-2xl"
+      className="border-gradient2 flex min-h-[230px] flex-col space-y-4 rounded-md border-[10px] border-double bg-main p-[15px] shadow-md shadow-orange/50 drop-shadow-2xl"
       variants={{
         hidden: { opacity: 0, x: -100 },
         visible: { opacity: 1, x: 0 },

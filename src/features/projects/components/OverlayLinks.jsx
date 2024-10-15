@@ -9,7 +9,7 @@ export default function OverlayLinks({
   url,
   githubLink,
   video,
-  documenation,
+  documentation,
   handleLinkClick,
 }) {
   return (
@@ -35,10 +35,10 @@ export default function OverlayLinks({
           title="Watch Video"
         />
       )}
-      {documenation && (
+      {documentation && (
         <IoDocumentSharp
           className={`${iconStyle}`}
-          onClick={() => handleLinkClick(documenation)}
+          onClick={() => handleLinkClick(documentation)}
           title="View Documentation"
         />
       )}

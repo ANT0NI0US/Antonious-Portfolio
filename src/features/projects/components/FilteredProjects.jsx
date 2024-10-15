@@ -1,5 +1,5 @@
-import GridContainer from "../../../ui/GridContainer";
 import { motion } from "framer-motion";
+import GridContainer from "@/ui/GridContainer";
 
 export default function FilteredProjects({
   handleSelectProjectDetails,

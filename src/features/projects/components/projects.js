@@ -102,7 +102,7 @@ export const projects = [
     imgUrl: `https://i.ibb.co/SxC6C4D/LMS-Ain-shams.webp`,
     video:
       "https://drive.google.com/file/d/1XKfzSKEvQWMN1oy2mxsOZXppuKHrVFe2/view?usp=sharing",
-    documenation:
+    documentation:
       "https://drive.google.com/file/d/1c7M50zK9NpQux9E7YgJXMUNvXMEgTPOn/view?usp=sharing",
     description:
       "This is my graduation project, a Learning Management System tailored for the entire Ain Shams University. This website allows professors to upload lecture materials, conduct online quizzes for all students or a specific group, and manage the courses they teach. For students, the system provides access to course materials uploaded by professors, along with online quizzes and assignments with specific deadlines. Please note that, unfortunately, I don't have access to the source code as the university has retained it But I keep the demo, as well as its documentation.",

@@ -1,4 +1,4 @@
-import GridContainer from "../../../ui/GridContainer";
+import GridContainer from "@/ui/GridContainer";
 
 const cardStyle = "flex flex-wrap gap-1 rounded-md bg-secondary p-[8px]";
 

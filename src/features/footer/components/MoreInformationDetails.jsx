@@ -1,5 +1,4 @@
 import { FaWhatsapp } from "react-icons/fa";
-
 import { IoLocationOutline } from "react-icons/io5";
 import { IoMailOutline } from "react-icons/io5";
 

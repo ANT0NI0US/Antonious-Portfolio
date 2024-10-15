@@ -16,16 +16,16 @@ export default function ProjectDetails({ selectedProject }) {
     url,
     githubLink,
     video,
-    documenation,
+    documentation,
   } = selectedProject;
 
   return (
     <>
       {/* PROJECT TITLe */}
       <CertainProjectTitle title={title} />
-      {/* DESCRIPTION & TOOLKITS AND IMAGE */}
+      {/* DESCRIPTION & TOOLKIT AND IMAGE */}
       <div className="flex flex-col-reverse items-center justify-evenly gap-5 lg:flex-row lg:items-start">
-        {/* DESCRIPTION AND TOOLKITS */}
+        {/* DESCRIPTION AND TOOLKIT */}
         <DescriptionAndToolkit
           description={description}
           accounts={accounts}
@@ -39,7 +39,7 @@ export default function ProjectDetails({ selectedProject }) {
           url={url}
           githubLink={githubLink}
           video={video}
-          documenation={documenation}
+          documentation={documentation}
           handleLinkClick={handleLinkClick}
         />
       </div>

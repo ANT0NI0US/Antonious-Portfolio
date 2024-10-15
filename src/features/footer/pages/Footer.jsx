@@ -1,8 +1,8 @@
-import Logo from "../../../assets/my-logo.png";
-import Links from "../../../ui/Links";
 import CreatedBy from "../components/CreatedBy";
 import Waves from "../components/Waves";
 import MoreInformationDetails from "../components/MoreInformationDetails";
+import Logo from "@/assets/my-logo.png";
+import Links from "@/ui/Links";
 
 export default function Footer() {
   return (

@@ -1,5 +1,5 @@
 import BannerDetails from "../components/BannerDetails";
-import gifBackground from "../../../assets/bannerBg.gif";
+import gifBackground from "@/assets/bannerBg.gif";
 
 export default function Banner() {
   return (

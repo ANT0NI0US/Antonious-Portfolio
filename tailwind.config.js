@@ -39,8 +39,8 @@ export default {
         secondary: "#292836",
         light: "#daf3ff",
         orange: "#c18500",
-        grident1: "#989898",
-        grident2: "#686868",
+        gradient1: "#989898",
+        gradient2: "#686868",
       },
       screens: {
         xs: "350px",

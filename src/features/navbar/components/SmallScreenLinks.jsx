@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { links } from "./links";
-import Button from "../../../ui/Button";
-import { useOutsideClick } from "../../../hooks/useOutsideClick";
+import Button from "@/ui/Button";
+import { useOutsideClick } from "@/hooks/useOutsideClick";
 
 export default function SmallScreenLinks({ showSidebar, closeSidebar }) {
   const ref = useOutsideClick(() => closeSidebar());
@@ -52,7 +52,7 @@ export default function SmallScreenLinks({ showSidebar, closeSidebar }) {
         {/* SIDEBAR */}
         <nav
           ref={ref}
-          className="xs:w-[300px] fixed bottom-0 right-0 z-[10000] h-full w-[180px] bg-main py-16 text-primary shadow-md drop-shadow-xl"
+          className="fixed bottom-0 right-0 z-[10000] h-full w-[180px] bg-main py-16 text-primary shadow-md drop-shadow-xl xs:w-[300px]"
         >
           {/* CLOSE SIDEBAR BUTTON*/}
           <div className="absolute right-2 top-3 w-[35px]">

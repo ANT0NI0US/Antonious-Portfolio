@@ -4,12 +4,12 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { AiOutlinePhone } from "react-icons/ai";
 import { MdDriveFileRenameOutline, MdOutlineEmail } from "react-icons/md";
-import GridContainer from "../../../ui/GridContainer";
 import Input from "./Input";
 import TextArea from "./TextArea";
-import Button from "../../../ui/Button";
+import GridContainer from "@/ui/GridContainer";
+import Button from "@/ui/Button";
 
-const intitalState = {
+const initialState = {
   user_name: "",
   user_last_name: "",
   user_email: "",
@@ -31,7 +31,7 @@ export default function ContactForm() {
     reset,
   } = useForm({
     mode: "onChange",
-    defaultValues: intitalState,
+    defaultValues: initialState,
   });
 
   const sendEmail = () => {
