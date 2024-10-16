@@ -12,6 +12,7 @@ export default function ProjectImage({
   return (
     <div className="group relative w-full rounded-md lg:basis-[40%]">
       <img
+        loading="lazy"
         src={imgUrl}
         alt={title}
         className="h-full w-full max-w-full rounded-md object-contain object-center"

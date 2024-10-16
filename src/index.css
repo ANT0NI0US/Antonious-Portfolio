@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -39,10 +37,9 @@ html {
     @apply object-cover object-center;
   }
 }
-
 @layer utilities {
   .wave {
-    @apply absolute left-0 top-0 h-[100px] w-full bg-[url("./assets/waveDark.png")] bg-[length:1000px_100px];
+    @apply absolute left-0 top-0 h-[100px] w-full bg-[url("https://i.ibb.co/Y2mRPfC/waveDark.webp")] bg-[length:1000px_100px];
   }
   .animate-wave-slow {
     animation: animateWave 4s linear infinite;

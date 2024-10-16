@@ -43,6 +43,7 @@ export default function DescriptionAndToolkit({
       <div className="flex w-full flex-wrap items-center justify-center gap-5 lg:justify-start">
         {toolkit?.map((el, index) => (
           <img
+            loading="lazy"
             title={el.alt}
             key={index}
             src={el.src}

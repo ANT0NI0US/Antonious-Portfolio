@@ -22,6 +22,7 @@ export default function FilteredProjects({
           onClick={() => handleSelectProjectDetails(project, index)}
         >
           <img
+            loading="lazy"
             src={project.imgUrl}
             alt={project.title}
             className="rounded-tl-md rounded-tr-md object-contain object-center"

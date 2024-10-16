@@ -1,5 +1,4 @@
 import ContactForm from "../components/ContactForm";
-import contactImg from "@/assets/Email Marketing.gif";
 import TextHead from "@/ui/TextHead";
 
 export default function ContactUs() {
@@ -13,7 +12,11 @@ export default function ContactUs() {
         <div className="flexCenter mt-5 flex-col-reverse gap-0 lg:mt-0 lg:flex-row lg:gap-5">
           {/* CONTACT IMAGE */}
           <div className="lg:basis-[60%]">
-            <img src={contactImg} alt="Contact Us" />
+            <img
+              loading="lazy"
+              src="https://i.ibb.co/yygczq7/Email-Marketing.webp"
+              alt="Contact Us"
+            />
           </div>
 
           {/* CONTACT FORM */}
