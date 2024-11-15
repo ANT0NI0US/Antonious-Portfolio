@@ -406,6 +406,33 @@ export const projects = [
       },
     ],
   },
+  {
+    type: "React",
+    title: "WORKOUT-TIMER",
+    imgUrl: "https://i.ibb.co/jDqsnfy/workout-timer.webp",
+    url: "https://wokout-timer.netlify.app/",
+    githubLink: "https://github.com/ANT0NI0US/workout-timer",
+    description:
+      "Your ultimate fitness companion! Choose from a variety of workout types, set the number of sets, customize your break times, and define the duration of each set. Stay focused and track your progress effortlessly with this intuitive app",
+    toolkit: [
+      {
+        src: "https://i.ibb.co/SwYYVC8/react.webp",
+        alt: "React",
+      },
+      {
+        src: "https://i.ibb.co/yXxpkMk/CSS.webp",
+        alt: "CSS3",
+      },
+      {
+        src: "https://i.ibb.co/ckn2DN2/HTML5.webp",
+        alt: "HTML5",
+      },
+      {
+        src: "https://i.ibb.co/VNpdqLX/javascript.webp",
+        alt: "Javascript",
+      },
+    ],
+  },
   // HTML CSS PROJECTS
   {
     type: "Html & CSS & JS",
