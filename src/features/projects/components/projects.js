@@ -433,6 +433,45 @@ export const projects = [
       },
     ],
   },
+  {
+    type: "React",
+    title: "FAST-PIZZA",
+    imgUrl: "https://i.ibb.co/s1PhdHw/pizza-Delivery-App.webp",
+    url: "https://delivery-pizza-app.netlify.app/",
+    githubLink: "https://github.com/ANT0NI0US/pizza-app",
+    description:
+      "My pizza app is a simple React app where users can enter their name, choose items from the menu, and place an order. They can fill out a form with their name, phone, and location (via geolocation or manual entry), set order priority, and see the total cost. In the final step, users can adjust the priority before confirming their order.",
+    toolkit: [
+      {
+        src: "https://i.ibb.co/SwYYVC8/react.webp",
+        alt: "React",
+      },
+      {
+        src: "https://i.ibb.co/yXxpkMk/CSS.webp",
+        alt: "CSS3",
+      },
+      {
+        src: "https://i.ibb.co/ckn2DN2/HTML5.webp",
+        alt: "HTML5",
+      },
+      {
+        src: "https://i.ibb.co/VNpdqLX/javascript.webp",
+        alt: "Javascript",
+      },
+      {
+        src: "https://i.ibb.co/phvgSzx/react-router-dom.webp",
+        alt: "react-router-dom",
+      },
+      {
+        src: "https://i.ibb.co/MVCh9Rx/Redux.webp",
+        alt: "Redux",
+      },
+      {
+        src: "https://i.ibb.co/WyVJpw0/tailwind.png",
+        alt: "Tailwind CSS",
+      },
+    ],
+  },
   // HTML CSS PROJECTS
   {
     type: "Html & CSS & JS",
