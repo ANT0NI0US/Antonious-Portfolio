@@ -7,8 +7,8 @@ export const allSkills = [
     title: "Frontend Libraries & Frameworks",
     description: [
       "React",
-      "Material UI",
-      "Chakra UI",
+      "Material Ui",
+      "Chakra Ui",
       "Tailwind CSS",
       "SASS",
       "PugJS",
@@ -18,11 +18,7 @@ export const allSkills = [
   },
   {
     title: "State Management & Data Fetching",
-    description: ["Redux", "TanStack Query"],
-  },
-  {
-    title: "Version Control & Collaboration",
-    description: ["GitHub", "Gitlab", "Code Review"],
+    description: ["Redux", "TanStack React Query"],
   },
   {
     title: "Optimization & Debugging",
@@ -41,14 +37,18 @@ export const allSkills = [
     description: ["Responsive Design"],
   },
   {
+    title: "Version Control & Collaboration",
+    description: ["Git", "GitHub", "Gitlab", "Code Review", "Postman", "NPM"],
+  },
+  {
     title: "Soft Skills",
     description: [
-      "Effective collaboration",
-      "Team Work",
-      "Time Management",
+      "Teamwork",
       "Communication",
+      "Time Management",
       "Presentation Skills",
       "Willingness to Learn",
+      "Effective collaboration",
       "Proficient in English",
       "Negotiation",
       "Active Listening",

@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { AiOutlinePhone } from "react-icons/ai";
@@ -26,11 +26,11 @@ export default function ContactForm() {
   const formRef = useRef();
   const {
     handleSubmit,
-    register,
     formState: { errors },
+    control,
     reset,
   } = useForm({
-    mode: "onChange",
+    mode: "onBlur",
     defaultValues: initialState,
   });
 
@@ -63,12 +63,10 @@ export default function ContactForm() {
       className="space-y-3"
     >
       <GridContainer styles="!grid !grid-cols-2">
-        <Input
-          placeholder="First Name"
-          Icon={<MdDriveFileRenameOutline />}
-          disabled={isLoading}
-          error={errors?.user_name?.message}
-          {...register("user_name", {
+        <Controller
+          name="user_name"
+          control={control}
+          rules={{
             required: "This Field is required",
             validate: {
               noOnlySpaces: (value) =>
@@ -82,15 +80,22 @@ export default function ContactForm() {
               value: 15,
               message: "You have exceeded the max length (15)",
             },
-          })}
+          }}
+          render={({ field }) => (
+            <Input
+              field={field}
+              placeholder="First Name"
+              Icon={<MdDriveFileRenameOutline />}
+              disabled={isLoading}
+              error={errors?.user_name?.message}
+            />
+          )}
         />
 
-        <Input
-          placeholder="Last Name"
-          Icon={<MdDriveFileRenameOutline />}
-          disabled={isLoading}
-          error={errors?.user_last_name?.message}
-          {...register("user_last_name", {
+        <Controller
+          name="user_last_name"
+          control={control}
+          rules={{
             required: "This Field is required",
             validate: {
               noOnlySpaces: (value) =>
@@ -104,15 +109,23 @@ export default function ContactForm() {
               value: 15,
               message: "You have exceeded the max length (15)",
             },
-          })}
+          }}
+          render={({ field }) => (
+            <Input
+              field={field}
+              placeholder="Last Name"
+              Icon={<MdDriveFileRenameOutline />}
+              disabled={isLoading}
+              error={errors?.user_last_name?.message}
+            />
+          )}
         />
       </GridContainer>
-      <Input
-        placeholder="Email"
-        Icon={<MdOutlineEmail />}
-        disabled={isLoading}
-        error={errors?.user_email?.message}
-        {...register("user_email", {
+
+      <Controller
+        name="user_email"
+        control={control}
+        rules={{
           required: "This Field is required",
           validate: {
             noOnlySpaces: (value) =>
@@ -122,34 +135,61 @@ export default function ContactForm() {
             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
             message: "Enter a valid email.",
           },
-        })}
+        }}
+        render={({ field }) => (
+          <Input
+            field={field}
+            placeholder="Email"
+            Icon={<MdOutlineEmail />}
+            disabled={isLoading}
+            error={errors?.user_email?.message}
+          />
+        )}
       />
 
-      <Input
-        placeholder="Phone"
-        disabled={isLoading}
-        Icon={<AiOutlinePhone />}
-        error={errors?.user_phone?.message}
-        {...register("user_phone", {
+      <Controller
+        name="user_phone"
+        control={control}
+        rules={{
           required: "This Field is required",
           validate: {
             noOnlySpaces: (value) =>
               !isOnlySpaces(value) || "It Mustn't contains only spaces",
           },
-        })}
+          pattern: {
+            value: /^(\+?\d{1,3})? ?\d{10,15}$/,
+            message: "Enter a valid mobile phone number.",
+          },
+        }}
+        render={({ field }) => (
+          <Input
+            field={field}
+            placeholder="Phone"
+            disabled={isLoading}
+            Icon={<AiOutlinePhone />}
+            error={errors?.user_phone?.message}
+          />
+        )}
       />
 
-      <TextArea
-        placeholder="Message"
-        disabled={isLoading}
-        error={errors?.message?.message}
-        {...register("message", {
+      <Controller
+        name="message"
+        control={control}
+        rules={{
           required: "This Field is required",
           validate: {
             noOnlySpaces: (value) =>
               !isOnlySpaces(value) || "It Mustn't contains only spaces",
           },
-        })}
+        }}
+        render={({ field }) => (
+          <TextArea
+            field={field}
+            placeholder="Message"
+            disabled={isLoading}
+            error={errors?.message?.message}
+          />
+        )}
       />
 
       <Button

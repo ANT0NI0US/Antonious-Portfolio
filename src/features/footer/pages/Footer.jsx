@@ -12,7 +12,12 @@ export default function Footer() {
       <div className="flexBetween mx-auto w-[90%] flex-col gap-4 pb-[15px] md:w-5/6 md:flex-row md:pb-[40px]">
         <div className="flex w-full flex-col items-center gap-4 md:basis-[60%] md:items-start">
           {/* MY LOGO */}
-          <img loading="lazy" src={Logo} alt="Logo" />
+          <img
+            loading="lazy"
+            src={Logo}
+            alt="Logo"
+            className="w-44 bg-contain bg-center"
+          />
 
           {/* LINKS */}
           <Links />
