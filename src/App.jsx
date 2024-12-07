@@ -1,7 +1,7 @@
 import { ToastContainer, Bounce } from "react-toastify";
 import Navbar from "./features/navbar/pages/Navbar";
 import Banner from "./features/banner/pages/Banner";
-import Skills from "./features/skills/pages/Skills";
+import About from "./features/about/pages/About";
 import Projects from "./features/projects/pages/Projects";
 import ContactUs from "./features/contact/pages/ContactUs";
 import Footer from "./features/footer/pages/Footer";
@@ -12,7 +12,7 @@ export default function App() {
     <>
       <Navbar />
       <Banner />
-      <Skills />
+      <About />
       <Projects />
       <ContactUs />
       <Footer />

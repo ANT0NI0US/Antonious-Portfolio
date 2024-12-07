@@ -4,8 +4,8 @@ export const links = [
     text: "Home",
   },
   {
-    path: "#skills",
-    text: "Skills",
+    path: "#about",
+    text: "About",
   },
   {
     path: "#projects",

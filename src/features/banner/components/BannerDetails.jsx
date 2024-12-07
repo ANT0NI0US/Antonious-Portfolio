@@ -18,13 +18,6 @@ export default function BannerDetails() {
       {/* MY JOB CAREER */}
       <Frontend />
 
-      {/* ABOUT ME */}
-      <p className="text-light">
-        I am dedicated to crafting immersive and user-centric digital
-        experiences. With a keen eye for design and a commitment to seamless
-        functionality, I bring websites to life through a combination of
-        creativity and technical expertise.
-      </p>
       {/* LINKs */}
       <Links />
 

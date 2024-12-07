@@ -14,6 +14,7 @@ export const allSkills = [
       "PugJS",
       "Bootstrap",
       "Framer Motion",
+      "Styled Components",
     ],
   },
   {
@@ -30,7 +31,7 @@ export const allSkills = [
   },
   {
     title: "Backend & Database",
-    description: ["Firebase"],
+    description: ["Firebase", "Supabase"],
   },
   {
     title: "Design & Responsive Development",
