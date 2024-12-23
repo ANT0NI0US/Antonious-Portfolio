@@ -45,17 +45,22 @@ export const projects = [
   {
     type: "React",
     title: "STOREIFY",
-    imgUrl: "https://i.ibb.co/yQh5VJ4/Storeify.webp",
+    imgUrl: "https://i.ibb.co/nQz14y2/Storeify.webp",
     url: "https://storeify-website.netlify.app/",
     githubLink: "https://github.com/ANT0NI0US/Ecommerce",
     description:
-      "Ecommerce-related project. That allow users browse and select multiple products, add items to their cart with custom quantities, mark favorites, and checkout by providing their shipping details. Admins can easily manage the platform by adding new products, viewing orders, and managing users.",
+      "Our E-commerce platform delivers an engaging and seamless shopping experience with a beautifully designed home page featuring motion animations, a shop page showcasing all products with advanced filters for easy browsing, and a user-friendly order management system to view all past purchases. The `About Us` page provides a compelling overview of our mission, vision, and services, including fast shipping, secure payments, exceptional customer support, and hassle-free returns. Additionally, the contact page offers detailed information and an integrated email feature, enabling users to reach out directly for inquiries or feedback, ensuring a comprehensive and satisfying shopping journey.",
     accounts: [
       {
         title: "user",
-        username: "Antoniousnasr3@gmail.com",
-        password: "totos9807",
+        email: "antoniousnasr3@gmail.com",
+        password: "Totos@123",
       },
+      // {
+      //   title: "admin",
+      //   email: "tonynasr3@gmail.com",
+      //   password: "Tony@123",
+      // },
     ],
     toolkit: [
       {
@@ -350,7 +355,7 @@ export const projects = [
     accounts: [
       {
         title: "user",
-        username: "antoniousnasr3@gmail.com",
+        email: "antoniousnasr3@gmail.com",
         password: "totos",
       },
     ],

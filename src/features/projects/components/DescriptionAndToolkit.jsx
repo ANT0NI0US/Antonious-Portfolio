@@ -1,6 +1,8 @@
+import { MdOutlineEmail, MdOutlineVpnKey } from "react-icons/md";
 import GridContainer from "@/ui/GridContainer";
 
-const cardStyle = "flex flex-wrap gap-1 rounded-md bg-secondary p-[8px]";
+const cardStyle = "flex items-center gap-2 rounded-md bg-secondary p-[8px]";
+const iconStyle = "text-3xl text-orange mb-auto";
 
 export default function DescriptionAndToolkit({
   description,
@@ -27,12 +29,18 @@ export default function DescriptionAndToolkit({
                 className="space-y-1 rounded-md bg-secondary/50 p-3"
               >
                 <div className={`${cardStyle}`}>
-                  <p className="font-black">User Name: </p>
-                  <span className="break-all">{account.username}</span>
+                  <MdOutlineEmail className={`${iconStyle}`} />
+                  <div className="flex gap-1">
+                    <p className="font-black">Email: </p>
+                    <span className="break-all">{account.email}</span>
+                  </div>
                 </div>
                 <div key={index} className={`${cardStyle}`}>
-                  <p className="font-black">Password: </p>
-                  <span className="break-all">{account.password}</span>
+                  <MdOutlineVpnKey className={`${iconStyle}`} />
+                  <div className="flex gap-1">
+                    <p className="font-black">Password: </p>
+                    <span className="break-all">{account.password}</span>
+                  </div>
                 </div>
               </div>
             ))}
