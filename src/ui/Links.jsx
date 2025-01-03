@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const links = [
   {
-    href: "https://www.linkedin.com/in/antonious-nasr-a20887196",
+    href: "https://www.linkedin.com/in/antonious-nasr/",
     label: "LinkedIn Profile",
     icon: <FaLinkedin />,
     hoverColor: "group-hover:text-[#0077B5]",
