@@ -37,8 +37,11 @@ export default function Projects() {
   };
 
   return (
-    <section className="min-h-screen w-full bg-main py-[100px]" id="projects">
-      <div className="mx-auto w-[90%] space-y-5 md:w-5/6">
+    <section
+      className="min-h-screen bg-main py-[40px] md:py-[100px]"
+      id="projects"
+    >
+      <div className="container space-y-5">
         {/* PROJECTS HEAD AND DESCRIPTION */}
         <TextHead text="Projects" />
         <p className="text-center text-lg">

@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="relative bg-main pb-[15px]">
       {/* Waves */}
       <Waves />
-      <div className="flexBetween mx-auto w-[90%] flex-col gap-4 pb-[15px] md:w-5/6 md:flex-row md:pb-[40px]">
+      <div className="flexBetween container flex-col gap-4 py-[15px] md:flex-row md:py-[40px]">
         <div className="flex w-full flex-col items-center gap-4 md:basis-[60%] md:items-start">
           {/* MY LOGO */}
           <img

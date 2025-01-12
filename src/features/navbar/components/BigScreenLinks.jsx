@@ -12,7 +12,7 @@ export default function BigScreenLinks({ activeLink, setActiveLink }) {
           key={item.text}
           className={`${
             index === 0 ? "border-l-2" : ""
-          } flexCenter h-full w-full min-w-[125px] border-r-2 border-secondary text-center text-lg font-semibold transition-all hover:bg-secondary/40 hover:font-extrabold`}
+          } flexCenter h-full w-full min-w-[135px] border-r-2 border-secondary text-center text-lg font-semibold transition-all hover:bg-secondary/40 hover:font-extrabold`}
         >
           <a
             href={item.path}

@@ -6,8 +6,11 @@ import TextHead from "@/ui/TextHead";
 
 export default function About() {
   return (
-    <section className="min-h-screen bg-secondary py-[100px]" id="about">
-      <div className="mx-auto w-[90%] space-y-5 md:w-5/6">
+    <section
+      className="min-h-screen bg-secondary py-[40px] md:py-[100px]"
+      id="about"
+    >
+      <div className="container space-y-5">
         <TextHead text="About" />
 
         {/* PERSONAL INFORMATION */}

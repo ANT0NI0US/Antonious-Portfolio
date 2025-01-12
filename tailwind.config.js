@@ -1,7 +1,19 @@
+// eslint-disable-next-line
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          xs: "1.5rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
+        },
+      },
       fontFamily: {
         merienda: ["Merienda", "cursive"],
         Monoton: ["Monoton"],

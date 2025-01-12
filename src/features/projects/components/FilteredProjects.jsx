@@ -18,14 +18,14 @@ export default function FilteredProjects({
           viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.5 }}
           key={project.title}
-          className="cursor-pointer rounded-md shadow-md shadow-secondary drop-shadow-lg transition-all duration-200 hover:shadow-lg hover:shadow-orange hover:drop-shadow-lg"
+          className="flex cursor-pointer flex-col rounded-md shadow-md shadow-secondary drop-shadow-lg transition-all duration-200 hover:shadow-lg hover:shadow-orange hover:drop-shadow-lg"
           onClick={() => handleSelectProjectDetails(project, index)}
         >
           <img
             loading="lazy"
             src={project.imgUrl}
             alt={project.title}
-            className="rounded-tl-md rounded-tr-md object-contain object-center"
+            className="flex-grow rounded-tl-md rounded-tr-md object-cover object-center"
           />
           <p className="my-3 text-center text-lg font-bold">{project.title}</p>
         </motion.div>

@@ -13,8 +13,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="fixed top-0 z-30 h-[80px] w-full bg-main text-primary shadow-md drop-shadow-sm">
-        <div className="flexBetween mx-auto h-full w-5/6 gap-1">
+      <div className="fixed top-0 z-30 h-[80px] w-full bg-main text-primary shadow-lg shadow-black drop-shadow-2xl">
+        <div className="flexBetween container h-full gap-1">
           {/* LOGO */}
           <Logo />
 
