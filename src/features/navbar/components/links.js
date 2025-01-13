@@ -8,11 +8,15 @@ export const links = [
     text: "About",
   },
   {
-    path: "#projects",
-    text: "Projects",
+    path: "#skills",
+    text: "Skills",
   },
   {
-    path: "#contact",
-    text: "Contact",
+    path: "#services",
+    text: "Services",
+  },
+  {
+    path: "#projects",
+    text: "Projects",
   },
 ];

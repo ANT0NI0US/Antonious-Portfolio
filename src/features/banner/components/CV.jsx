@@ -14,19 +14,13 @@ const downloadFile = () => {
 
 export default function CV() {
   return (
-    <div className="w-[150px]">
-      <Button
-        ArialLabel="Cv"
-        variation="secondary"
-        onClick={() => downloadFile()}
-      >
-        <div className="flexCenter gap-2">
-          <div className="download-cv-cont">
-            <FaDownload />
-          </div>
-          <div>MY CV</div>
+    <Button AriaLabel="Cv" onClick={() => downloadFile()}>
+      <div className="flexCenter gap-2">
+        <div className="download-cv-cont">
+          <FaDownload />
         </div>
-      </Button>
-    </div>
+        <div>MY CV</div>
+      </div>
+    </Button>
   );
 }

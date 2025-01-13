@@ -195,7 +195,7 @@ export default function ContactForm() {
       <Button
         variation="secondary"
         type="submit"
-        ArialLabel="Submit Form"
+        AriaLabel="Submit Form"
         loading={isLoading}
       >
         <span>Submit</span>

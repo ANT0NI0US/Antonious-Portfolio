@@ -41,10 +41,10 @@ export default function Projects() {
       className="min-h-screen bg-main py-[40px] md:py-[100px]"
       id="projects"
     >
-      <div className="container space-y-5">
+      <div className="container space-y-5 xl:space-y-8">
         {/* PROJECTS HEAD AND DESCRIPTION */}
         <TextHead text="Projects" />
-        <p className="text-center text-lg">
+        <p className="text-center text-lg xl:text-xl">
           Explore my website designs that are easy to use and look great , Enjoy
           a better online experience with simple and user-friendly interfaces.
         </p>

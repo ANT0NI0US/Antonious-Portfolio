@@ -9,7 +9,7 @@ export default function Pagination({
     <div className="!mt-5 flex items-center justify-evenly gap-5 md:!mt-10">
       <div className="w-[150px]">
         <Button
-          ArialLabel="Previous Project"
+          AriaLabel="Previous Project"
           onClick={() => handleClick("previous")}
           disabled={currentIndex === 0}
         >
@@ -18,7 +18,7 @@ export default function Pagination({
       </div>
       <div className="w-[150px]">
         <Button
-          ArialLabel="Next Project"
+          AriaLabel="Next Project"
           onClick={() => handleClick("next")}
           disabled={currentIndex === filteredProjects.length - 1}
         >

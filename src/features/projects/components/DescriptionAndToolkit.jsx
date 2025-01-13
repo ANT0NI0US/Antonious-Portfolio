@@ -12,12 +12,14 @@ export default function DescriptionAndToolkit({
   return (
     <div className="space-y-5 lg:basis-[60%]">
       {/* DESCRIPTION */}
-      <p className="text-center text-lg lg:text-start">{description}</p>
+      <p className="text-center text-lg lg:text-start xl:text-xl xl:leading-9">
+        {description}
+      </p>
       {/* ACCOUNTS */}
 
       {accounts && (
         <div>
-          <h2 className="mb-2 text-center font-merienda text-lg font-black text-primary underline">
+          <h2 className="mb-2 text-center font-merienda text-lg font-black text-primary underline xl:text-2xl">
             Accounts
           </h2>
           <GridContainer
@@ -30,16 +32,20 @@ export default function DescriptionAndToolkit({
               >
                 <div className={`${cardStyle}`}>
                   <MdOutlineEmail className={`${iconStyle}`} />
-                  <div className="flex gap-1">
-                    <p className="font-black">Email: </p>
-                    <span className="break-all">{account.email}</span>
+                  <div className="flex items-center gap-1">
+                    <p className="font-black xl:text-lg">Email: </p>
+                    <span className="break-all xl:text-lg">
+                      {account.email}
+                    </span>
                   </div>
                 </div>
                 <div key={index} className={`${cardStyle}`}>
                   <MdOutlineVpnKey className={`${iconStyle}`} />
-                  <div className="flex gap-1">
-                    <p className="font-black">Password: </p>
-                    <span className="break-all">{account.password}</span>
+                  <div className="flex items-center gap-1">
+                    <p className="font-black xl:text-lg">Password: </p>
+                    <span className="break-all xl:text-lg">
+                      {account.password}
+                    </span>
                   </div>
                 </div>
               </div>

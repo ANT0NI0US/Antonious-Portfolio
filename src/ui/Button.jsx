@@ -6,9 +6,10 @@ export default function Button({
   Font,
   disabled,
   loading,
-  ArialLabel,
+  AriaLabel,
+  href,
 }) {
-  const base = `focus:outline-none w-full rounded-md border relative 
+  const base = `focus:outline-none w-full flexCenter gap-1 rounded-md border relative 
    transition-all duration-[800ms] h-[45px] font-bold
   ${(disabled || loading) && "cursor-not-allowed !border-main !bg-light/35 !text-main"}`;
 
@@ -21,13 +22,27 @@ export default function Button({
       ${!disabled && !loading && "hover:bg-[#1b5e20]"}`,
   };
 
+  if (href)
+    return (
+      <a
+        href={href}
+        className={`${base} ${styles[variation]} ${Font}`}
+        title={AriaLabel}
+        aria-label={AriaLabel}
+        disabled={disabled || loading}
+      >
+        {children}
+      </a>
+    );
+
   return (
     <button
       onClick={onClick}
       type={type}
       disabled={disabled || loading}
       className={`${base} ${styles[variation]} ${Font}`}
-      aria-label={ArialLabel}
+      aria-label={AriaLabel}
+      title={AriaLabel}
     >
       {loading ? (
         <div className="flexCenter gap-1">

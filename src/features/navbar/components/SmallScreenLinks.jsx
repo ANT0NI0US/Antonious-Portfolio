@@ -29,7 +29,7 @@ export default function SmallScreenLinks({
           <div className="absolute right-2 top-3 w-[35px]">
             <Button
               variation="delete"
-              ArialLabel="Close-icon"
+              AriaLabel="Close-icon"
               onClick={closeSidebar}
               Font="!rounded-full !h-[35px]"
             >
@@ -46,12 +46,12 @@ export default function SmallScreenLinks({
                 key={item.text}
                 className={`${
                   index === 0 ? "border-t-2" : ""
-                } flexCenter h-full w-full border-b-2 border-secondary text-center text-lg font-semibold transition-all hover:bg-secondary/40 hover:font-extrabold`}
+                } flexCenter h-full w-full border-b-2 border-secondary text-center text-lg font-semibold transition-all hover:font-extrabold`}
               >
                 <a
                   className={`${
                     activeLink === item.path
-                      ? "border-r-8 border-orange bg-secondary/50 text-xl font-extrabold text-orange"
+                      ? "text-lg font-extrabold text-white"
                       : ""
                   } flexCenter h-full w-full px-7 py-3`}
                   onClick={() => handleLinkClick(item.path)}

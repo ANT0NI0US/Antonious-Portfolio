@@ -1,7 +1,6 @@
+import Logo from "/logo.png";
 import CreatedBy from "../components/CreatedBy";
 import Waves from "../components/Waves";
-import MoreInformationDetails from "../components/MoreInformationDetails";
-import Logo from "/logo.png";
 import Links from "@/ui/Links";
 
 export default function Footer() {
@@ -18,12 +17,10 @@ export default function Footer() {
             alt="Logo"
             className="w-44 bg-contain bg-center"
           />
-
-          {/* LINKS */}
-          <Links />
         </div>
-        {/* MORE INFORMATION DETAILS */}
-        <MoreInformationDetails />
+
+        {/* LINKS */}
+        <Links />
       </div>
       {/* CREATED BY */}
       <CreatedBy />

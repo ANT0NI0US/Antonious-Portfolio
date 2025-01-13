@@ -6,22 +6,20 @@ export default function BigScreenLinks({ activeLink, setActiveLink }) {
   };
 
   return (
-    <div className="hidden h-full md:flex md:items-center md:justify-center">
-      {links?.map((item, index) => (
+    <div className="hidden h-full gap-1 md:flex md:items-center md:justify-center">
+      {links?.map((item) => (
         <div
           key={item.text}
-          className={`${
-            index === 0 ? "border-l-2" : ""
-          } flexCenter h-full w-full min-w-[135px] border-r-2 border-secondary text-center text-lg font-semibold transition-all hover:bg-secondary/40 hover:font-extrabold`}
+          className={`flexCenter h-full w-full min-w-[100px] text-center font-semibold transition-all hover:font-extrabold xl:min-w-[120px] xl:text-xl`}
         >
           <a
             href={item.path}
             onClick={() => handleLinkClick(item.path)}
             className={`${
               activeLink === item.path
-                ? "border-b-8 border-orange bg-secondary/50 text-xl font-extrabold text-orange"
+                ? "text-lg font-extrabold text-white xl:text-2xl"
                 : ""
-            } flexCenter h-full w-full px-7 py-3`}
+            } flexCenter h-full w-full`}
           >
             {item?.text}
           </a>
