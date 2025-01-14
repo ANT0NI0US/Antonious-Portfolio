@@ -6,7 +6,7 @@ import Links from "@/ui/Links";
 
 export default function BannerDetails() {
   return (
-    <div className="h-full w-full flex-col space-y-5 text-center lg:basis-2/5 lg:text-start">
+    <div className="h-full w-full flex-col space-y-5 text-center lg:basis-3/5 lg:text-start">
       <p className="text-xl font-semibold text-primary sm:text-2xl xl:text-3xl">
         Welcome to my Portfolio
       </p>

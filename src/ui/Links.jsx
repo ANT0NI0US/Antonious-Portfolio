@@ -54,7 +54,7 @@ const links = [
 
 export default function Links() {
   return (
-    <div className="flex items-center justify-center gap-1 lg:justify-start">
+    <div className="flex items-center justify-center gap-2 lg:justify-start">
       {links.map(({ href, label, animationData, title }) => (
         <a
           key={href}
