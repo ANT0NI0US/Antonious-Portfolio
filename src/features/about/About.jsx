@@ -1,4 +1,3 @@
-import about from "@/assets/about.gif";
 import TextHead from "@/ui/TextHead";
 
 export default function About() {
@@ -12,7 +11,11 @@ export default function About() {
 
         <div className="flex flex-col items-center justify-between gap-2 lg:flex-row">
           <div className="flexCenter w-full lg:basis-2/5">
-            <img className="lg:max-w-[400px]" src={about} alt="about" />
+            <img
+              className="lg:max-w-[400px]"
+              src="https://i.ibb.co/cc52RJs/about.gif"
+              alt="about"
+            />
           </div>
 
           {/* PERSONAL INFORMATION */}

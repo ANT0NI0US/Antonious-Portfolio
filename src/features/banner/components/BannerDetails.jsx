@@ -20,7 +20,7 @@ export default function BannerDetails() {
       {/* LINKs */}
       <Links />
 
-      <div className="mx-auto flex w-full flex-col gap-2 xs:w-[300px] xs:flex-row lg:mx-0 xl:w-[400px] xl:gap-4">
+      <div className="mx-auto flex w-full flex-col gap-3 xs:w-[300px] xs:flex-row lg:mx-0 xl:w-[400px] xl:gap-4">
         {/* MY CV */}
         <CV />
 
