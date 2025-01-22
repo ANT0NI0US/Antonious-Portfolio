@@ -2,7 +2,7 @@ import { FaDownload } from "react-icons/fa";
 import Button from "@/ui/Button";
 
 const downloadFile = () => {
-  const fileId = "1oTJLSzfaCaRXd2pNsjAs7Q_c1UtWEQ5x";
+  const fileId = "1942jPOVYBrYM437m_ehJwFYVUnascxjj";
   const downloadUrl = `https://drive.google.com/uc?id=${fileId}`;
   const link = document.createElement("a");
   link.href = downloadUrl;
