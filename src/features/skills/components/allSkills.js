@@ -7,26 +7,34 @@ export const allSkills = [
     title: "Frontend Libraries & Frameworks",
     description: [
       "React",
+      "Tailwind CSS",
       "Material Ui",
       "Chakra Ui",
-      "Tailwind CSS",
+      "Bootstrap",
+      "Styled Components",
+      "Framer Motion",
+      "i18n",
       "SASS",
       "PugJS",
-      "Bootstrap",
-      "Framer Motion",
-      "Styled Components",
     ],
   },
   {
     title: "State Management & Data Fetching",
-    description: ["Redux", "TanStack React Query"],
+    description: [
+      "TanStack React Query",
+      "Redux",
+      "Context API",
+      "Axios",
+      "REST APIs",
+    ],
   },
   {
     title: "Optimization & Debugging",
     description: [
-      "Search Engine Optimization (SEO)",
+      "Performance Optimization",
       "Problem Solving",
-      "Debugging",
+      "SEO (Search Engine Optimization)",
+      "Debugging (Chrome DevTools, React DevTools)",
     ],
   },
   {
@@ -35,7 +43,12 @@ export const allSkills = [
   },
   {
     title: "Design & Responsive Development",
-    description: ["Responsive Design"],
+    description: [
+      "Responsive Design",
+      "Cross-Browser Compatibility",
+      "UI/UX Principles",
+      "Understanding of layout aesthetics",
+    ],
   },
   {
     title: "Version Control & Collaboration",
@@ -56,6 +69,8 @@ export const allSkills = [
       "Attention to Detail",
       "Accountability",
       "Emotional Intelligence",
+      "Excellent Analytical Skills",
+      "Multitasking Skills",
     ],
   },
 ];
