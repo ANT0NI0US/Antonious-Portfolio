@@ -477,6 +477,76 @@ export const projects = [
       },
     ],
   },
+  {
+    type: "React",
+    title: "Notes",
+    imgUrl: "https://i.ibb.co/Nnf7pQX2/Notes.webp",
+    url: "https://all-notes-site.netlify.app/",
+    githubLink: "https://github.com/ANT0NI0US/Notes",
+    description:
+      "Notes App is a simple and efficient note-taking application. It features a rich-text editor powered by React Quill, allowing users to create, edit, and manage their notes effortlessly. Users can add formatted content, save it to a list, and update existing notes whenever needed. The app ensures a smooth and dynamic experience, making note-taking more interactive and user-friendly.",
+    toolkit: [
+      {
+        src: "https://i.ibb.co/SwYYVC8/react.webp",
+        alt: "React",
+      },
+      {
+        src: "https://i.ibb.co/yXxpkMk/CSS.webp",
+        alt: "CSS3",
+      },
+      {
+        src: "https://i.ibb.co/ckn2DN2/HTML5.webp",
+        alt: "HTML5",
+      },
+      {
+        src: "https://i.ibb.co/PD2LvB8/Typescript.webp",
+        alt: "Typescript",
+      },
+      {
+        src: "https://i.ibb.co/WyVJpw0/tailwind.png",
+        alt: "Tailwind CSS",
+      },
+      {
+        src: "https://i.ibb.co/3mK0SsjP/zustand.webp",
+        alt: "Zustand",
+      },
+    ],
+  },
+  {
+    type: "React",
+    title: "Todo-List",
+    imgUrl: "https://i.ibb.co/w2rt3Ch/Todo-list.webp",
+    url: "https://lists-site.netlify.app/",
+    githubLink: "https://github.com/ANT0NI0US/todo-list",
+    description:
+      "Todo List is a simple and interactive task management app. It allows users to add tasks to their list, mark them as done, and delete them when no longer needed. With a clean and user-friendly interface, the app helps users stay organized and keep track of their daily tasks efficiently.",
+    toolkit: [
+      {
+        src: "https://i.ibb.co/SwYYVC8/react.webp",
+        alt: "React",
+      },
+      {
+        src: "https://i.ibb.co/yXxpkMk/CSS.webp",
+        alt: "CSS3",
+      },
+      {
+        src: "https://i.ibb.co/ckn2DN2/HTML5.webp",
+        alt: "HTML5",
+      },
+      {
+        src: "https://i.ibb.co/VNpdqLX/javascript.webp",
+        alt: "Javascript",
+      },
+      {
+        src: "https://i.ibb.co/WyVJpw0/tailwind.png",
+        alt: "Tailwind CSS",
+      },
+      {
+        src: "https://i.ibb.co/3mK0SsjP/zustand.webp",
+        alt: "Zustand",
+      },
+    ],
+  },
   // HTML CSS PROJECTS
   {
     type: "Html & CSS & JS",
