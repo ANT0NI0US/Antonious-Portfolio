@@ -24,6 +24,7 @@ export const allSkills = [
       "TanStack React Query",
       "Redux",
       "Context API",
+      "Zustand",
       "Axios",
       "REST APIs",
     ],
