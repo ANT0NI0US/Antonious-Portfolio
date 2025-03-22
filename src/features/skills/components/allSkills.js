@@ -7,9 +7,10 @@ export const allSkills = [
     title: "Frontend Libraries & Frameworks",
     description: [
       "React",
+      "Next",
       "Tailwind CSS",
-      "Material Ui",
-      "Chakra Ui",
+      "Material UI",
+      "Chakra UI",
       "Bootstrap",
       "Styled Components",
       "Framer Motion",
