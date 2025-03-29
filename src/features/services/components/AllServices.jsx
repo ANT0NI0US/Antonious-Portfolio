@@ -8,7 +8,7 @@ export const AllServices = [
     icon: <FaCode />,
     title: "Web Application Development",
     description:
-      "Build dynamic and responsive web applications with React.js and modern UI frameworks. Deliver scalable solutions tailored to your business needs.",
+      "Build dynamic and responsive web applications with React.js, Next.js, and modern UI frameworks, ensuring scalability and maintainability.",
   },
   {
     icon: <AiOutlineShoppingCart />,
@@ -20,19 +20,19 @@ export const AllServices = [
     icon: <AiFillLayout />,
     title: "UI/UX Implementation",
     description:
-      "Transform designs into pixel-perfect interfaces, ensuring an intuitive and responsive user experience across all devices.",
+      "Transform Figma and Adobe XD designs into pixel-perfect, fully responsive interfaces for seamless user experiences.",
   },
   {
     icon: <SiRedux />,
     title: "State Management Solutions",
     description:
-      "Efficiently manage application state using Redux and React Query for smooth performance and scalable solutions.",
+      "Implement efficient state management using Redux, React Query, and Zustand to ensure smooth performance and scalability.",
   },
   {
     icon: <MdDashboardCustomize />,
     title: "Custom Component Development",
     description:
-      "Create reusable, efficient, and scalable components tailored to your application’s unique requirements.",
+      "Develop reusable, high-performance UI components tailored to your application’s needs with modern best practices.",
   },
   {
     icon: <MdSpeed />,
@@ -44,7 +44,7 @@ export const AllServices = [
     icon: <FaLaptopCode />,
     title: "Cross-Platform Responsive Design",
     description:
-      "Deliver responsive designs that work flawlessly on desktops, tablets, and mobile devices.",
+      "Ensure flawless experiences across desktops, tablets, and mobile devices with fully responsive and adaptive designs.",
   },
   {
     icon: <FaDatabase />,
