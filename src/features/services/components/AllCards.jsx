@@ -26,7 +26,7 @@ export default function AllCards() {
     <Carousel
       responsive={responsive}
       infinite
-      autoPlay
+      // autoPlay
       autoPlaySpeed={3000}
       arrows
       draggable
@@ -41,15 +41,18 @@ export default function AllCards() {
       {AllServices?.map((item) => (
         <div
           key={item?.title}
-          className="flex min-h-[280px] flex-col gap-2 rounded-md bg-main px-3 py-4 text-center text-white shadow-md hover:shadow-white  xl:min-h-[300px]"
+          className="relative flex min-h-[280px] items-center justify-center gap-2 overflow-hidden rounded-md bg-main shadow-md xl:min-h-[300px]"
         >
-          <div className="mx-auto text-6xl text-orange xl:text-7xl">
-            {item?.icon}
+          <div className="animate-rotateCard absolute h-[200%] w-[100px] bg-primary"></div>
+          <div className="absolute inset-1 z-10 flex flex-col rounded-md bg-main px-3 py-4 text-center text-white">
+            <div className="mx-auto text-6xl text-orange xl:text-7xl">
+              {item?.icon}
+            </div>
+
+            <h2 className="text-lg font-bold xl:text-xl">{item?.title}</h2>
+
+            <p className="xl:text-lg">{item?.description}</p>
           </div>
-
-          <h2 className="text-lg font-bold xl:text-xl">{item?.title}</h2>
-
-          <p className="xl:text-lg">{item?.description}</p>
         </div>
       ))}
     </Carousel>

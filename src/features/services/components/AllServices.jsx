@@ -1,7 +1,9 @@
-import { AiFillLayout, AiOutlineShoppingCart } from "react-icons/ai";
 import { FaCode, FaDatabase, FaLaptopCode, FaLightbulb } from "react-icons/fa";
-import { MdDashboardCustomize, MdSpeed } from "react-icons/md";
+import { MdDashboardCustomize, MdSpeed, MdSupportAgent } from "react-icons/md";
+import { AiFillLayout, AiOutlineShoppingCart } from "react-icons/ai";
+import { FaUsersRays } from "react-icons/fa6";
 import { SiRedux } from "react-icons/si";
+import { GoCodeReview } from "react-icons/go";
 
 export const AllServices = [
   {
@@ -57,5 +59,23 @@ export const AllServices = [
     title: "Technical Consulting",
     description:
       "Get expert guidance on adopting modern frontend technologies and best practices for your projects.",
+  },
+  {
+    icon: <GoCodeReview />,
+    title: "Clean Code Architecture",
+    description:
+      "Deliver well-structured, maintainable, and scalable codebases following industry standards and clean code principles.",
+  },
+  {
+    icon: <FaUsersRays />,
+    title: "User Experience Enhancements",
+    description:
+      "Focus on intuitive, user-centered design to ensure smooth interactions and high user satisfaction across all platforms.",
+  },
+  {
+    icon: <MdSupportAgent />,
+    title: "Fast & Reliable Support",
+    description:
+      "Provide quick response times, continuous assistance, and dedicated support to keep your project running smoothly.",
   },
 ];
