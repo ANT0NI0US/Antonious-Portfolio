@@ -1,27 +1,11 @@
 export const blogs = [
   {
-    img: "https://i.ibb.co/qLVSQY89/Notes.webp",
-    title: "Fixing Autofill Styles for a Better Dark Mode UX",
+    img: "https://i.ibb.co/WNX7PwpC/Image-Optimization.webp",
+    title: "Optimize Images for Better Web Performance",
     description:
-      "A quick CSS tweak that improved the look of auto filled inputs in dark mode — small change, big difference in user experience.",
-    post: "https://www.linkedin.com/posts/antonious-nasr_reactjs-frontenddevelopment-cssdesign-activity-7281608518556676096-CW1l?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-    date: "Feb 4, 2025",
-  },
-  {
-    img: "https://i.ibb.co/ZRqRmXn8/alias.webp",
-    title: "Simplifying React Path Imports with Alias",
-    description:
-      "Tired of writing long import paths in React/TypeScript projects? Discover how using aliases can clean up your code, speed up development, and make your life easier.",
-    post: "https://www.linkedin.com/posts/antonious-nasr_react-reactjs-reactts-activity-7283791971314245632-NH-H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-    date: "Feb 11, 2025",
-  },
-  {
-    img: "https://i.ibb.co/hJSmFnqd/i18n.webp",
-    title: "Multi-language Support in React with i18n",
-    description:
-      "Need multilingual support in your React app? This guide breaks down how to implement i18n for seamless language switching, direction handling, and persistent user preference.",
-    post: "https://www.linkedin.com/posts/antonious-nasr_i18n-activity-7286789524444078080-R5gF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-    date: "Feb 18, 2025",
+      "Learn how to boost your website speed by using optimized images with WebP format, lazy loading, compression, and external hosting.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_webperformance-frontendtips-reactjs-activity-7321296432718598145-YuHG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Apr 25, 2025",
   },
   {
     img: "https://i.ibb.co/d4y7qH81/metaTags.webp",
@@ -64,5 +48,29 @@ export const blogs = [
       "Error Boundaries in React help prevent app crashes by catching errors in components and displaying user-friendly messages instead, ensuring a smoother user experience.",
     post: "https://www.linkedin.com/posts/antonious-nasr_error-boundries-activity-7302734580275384321-ybhI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
     date: "Mar 11, 2025",
+  },
+  {
+    img: "https://i.ibb.co/hJSmFnqd/i18n.webp",
+    title: "Multi-language Support in React with i18n",
+    description:
+      "Need multilingual support in your React app? This guide breaks down how to implement i18n for seamless language switching, direction handling, and persistent user preference.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_i18n-activity-7286789524444078080-R5gF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Feb 18, 2025",
+  },
+  {
+    img: "https://i.ibb.co/ZRqRmXn8/alias.webp",
+    title: "Simplifying React Path Imports with Alias",
+    description:
+      "Tired of writing long import paths in React/TypeScript projects? Discover how using aliases can clean up your code, speed up development, and make your life easier.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_react-reactjs-reactts-activity-7283791971314245632-NH-H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Feb 11, 2025",
+  },
+  {
+    img: "https://i.ibb.co/qLVSQY89/Notes.webp",
+    title: "Fixing Autofill Styles for a Better Dark Mode UX",
+    description:
+      "A quick CSS tweak that improved the look of auto filled inputs in dark mode — small change, big difference in user experience.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_reactjs-frontenddevelopment-cssdesign-activity-7281608518556676096-CW1l?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Feb 4, 2025",
   },
 ];
