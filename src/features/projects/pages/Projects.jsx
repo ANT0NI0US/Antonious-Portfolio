@@ -37,10 +37,7 @@ export default function Projects() {
   };
 
   return (
-    <section
-      className="min-h-screen bg-main py-[40px] md:py-[100px]"
-      id="projects"
-    >
+    <section className="min-h-screen" id="projects">
       <div className="container space-y-5 xl:space-y-8">
         {/* PROJECTS HEAD AND DESCRIPTION */}
         <TextHead text="Projects" />

@@ -7,16 +7,18 @@ import location from "@/assets/location.json";
 
 // Reusable Lottie icon component
 const LottieIcon = ({ animationData }) => (
-  <Lottie
-    options={{
-      loop: true,
-      autoplay: true,
-      animationData,
-    }}
-    height={50}
-    width={50}
-    isClickToPauseDisabled={true}
-  />
+  <div className="size-8 sm:size-10 md:size-12">
+    <Lottie
+      options={{
+        loop: true,
+        autoplay: true,
+        animationData,
+      }}
+      height={"100%"}
+      width={"100%"}
+      isClickToPauseDisabled={true}
+    />
+  </div>
 );
 
 const links = [

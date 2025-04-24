@@ -6,7 +6,7 @@ export default function Pagination({
   filteredProjects,
 }) {
   return (
-    <div className="!mt-5 flex items-center justify-evenly gap-5 md:!mt-10">
+    <div className="mt-5! flex items-center justify-evenly gap-5 md:mt-10!">
       <div className="w-[150px]">
         <Button
           AriaLabel="Previous Project"

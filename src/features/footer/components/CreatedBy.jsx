@@ -1,9 +1,9 @@
 const year = new Date().getFullYear();
 export default function CreatedBy() {
   return (
-    <div className="border-t-[0.5px] border-secondary pt-[15px] text-center">
+    <div className="border-secondary border-t py-4 text-center">
       <div className="container">
-        <p className="xl:text-lg">
+        <p className="text-xs xl:text-sm">
           © {year} Antonious Nasr, All rights reserved.
         </p>
       </div>

@@ -3,10 +3,10 @@ import TextHead from "@/ui/TextHead";
 
 export default function ContactUs() {
   return (
-    <section id="contact" className="min-h-screen bg-secondary py-[100px]">
-      <div className="container space-y-5">
+    <section id="contact" className="bg-secondary min-h-screen py-[100px]">
+      <div className="container">
         <TextHead text="Get In Touch" />
-        <div className="flexCenter mt-5 flex-col-reverse gap-0 lg:flex-row lg:gap-5">
+        <div className="flexCenter flex-col-reverse gap-0 lg:flex-row lg:gap-5">
           {/* CONTACT IMAGE */}
           <div className="lg:basis-[60%]">
             <img

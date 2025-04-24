@@ -30,7 +30,7 @@ export default function ContactForm() {
     control,
     reset,
   } = useForm({
-    mode: "onBlur",
+    mode: "onSubmit",
     defaultValues: initialState,
   });
 
@@ -60,9 +60,9 @@ export default function ContactForm() {
     <form
       ref={formRef}
       onSubmit={handleSubmit(sendEmail)}
-      className="space-y-3"
+      className="flex flex-col gap-6"
     >
-      <GridContainer styles="!grid !grid-cols-2">
+      <GridContainer styles="sm:grid! sm:grid-cols-2!">
         <Controller
           name="user_name"
           control={control}

@@ -19,4 +19,8 @@ export const links = [
     path: "#projects",
     text: "Projects",
   },
+  {
+    path: "#blogs",
+    text: "Blogs",
+  },
 ];

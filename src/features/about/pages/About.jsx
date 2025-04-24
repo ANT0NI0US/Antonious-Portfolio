@@ -1,20 +1,19 @@
 import TextHead from "@/ui/TextHead";
+import ExperiencesProjects from "../components/ExperiencesProjects";
 
 export default function About() {
   return (
-    <section
-      className="lg-h-screen bg-secondary py-[40px] lg:py-[100px]"
-      id="about"
-    >
-      <div className="container space-y-5 xl:space-y-8">
+    <section className="lg-h-screen" id="about">
+      <div className="container">
         <TextHead text="About" />
 
-        <div className="flex flex-col items-center justify-between gap-2 lg:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 lg:flex-row">
           <div className="flexCenter w-full lg:basis-2/5">
             <img
               className="lg:max-w-[400px]"
               src="https://i.ibb.co/cc52RJs/about.gif"
               alt="about"
+              loading="lazy"
             />
           </div>
 
@@ -30,6 +29,7 @@ export default function About() {
             user-friendly solutions.
           </p>
         </div>
+        <ExperiencesProjects />
       </div>
     </section>
   );

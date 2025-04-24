@@ -5,15 +5,12 @@ import TextHead from "@/ui/TextHead";
 
 export default function Skills() {
   return (
-    <section
-      className="min-h-screen bg-main py-[40px] md:py-[100px]"
-      id="skills"
-    >
-      <div className="container space-y-5 xl:space-y-8">
+    <section className="min-h-screen" id="skills">
+      <div className="container">
         <TextHead text="Skills" />
 
         {/* ALL SKILLS */}
-        <GridContainer styles="md:grid  md:grid-cols-2 !gap-x-[80px] !gap-y-[20px] px-4">
+        <GridContainer styles="md:grid md:grid-cols-2 gap-x-[80px]! gap-y-[20px]! px-4">
           {allSkills?.map((skill, index) => (
             <SkillDetails skill={skill} key={index} />
           ))}

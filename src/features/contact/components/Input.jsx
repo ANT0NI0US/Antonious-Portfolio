@@ -1,31 +1,47 @@
-import React from "react";
+import { VARIATION_STYLES } from "./variationStyles";
 
 export default function Input({ placeholder, error, disabled, Icon, field }) {
+  const errorStyles = error ? VARIATION_STYLES.error : VARIATION_STYLES.default;
   return (
     <div className="w-full">
-      <label htmlFor={placeholder} className="block p-[3px] text-sm text-light">
-        {placeholder}
-      </label>
-
       <div
-        className={`z-10 flex w-full items-center rounded-md border-[1px] border-orange bg-main transition-all ${Icon ? "relative" : ""}`}
+        className={`bg-main relative z-10 flex items-center rounded-md transition-all duration-300 ${errorStyles}`}
       >
         <input
-          disabled={disabled}
-          type="text"
-          placeholder={placeholder}
-          className={`input rounded-bl-md rounded-tl-md`}
           id={placeholder}
+          type="text"
+          placeholder=" "
+          className={`input ${disabled ? "placeholder:text-light border-none" : ""} ${
+            VARIATION_STYLES.input
+          }`}
+          disabled={disabled}
           {...(field ? field : {})}
         />
 
         {Icon && (
-          <div className="flexCenter h-[44px] w-[40px] text-orange">{Icon}</div>
+          <div
+            className={`flexCenter text-primary h-[44px] w-[40px] rounded-tr-[4px] rounded-br-[4px] ${
+              disabled ? "cursor-not-allowed" : ""
+            }`}
+          >
+            {Icon}
+          </div>
         )}
+
+        <label
+          htmlFor={placeholder}
+          className={`${
+            disabled
+              ? "peer-placeholder-shown:text-light/70 cursor-not-allowed"
+              : "peer-placeholder-shown:text-light"
+          } ${VARIATION_STYLES.label}`}
+        >
+          {placeholder} {error && <span className="text-error"> *</span>}
+        </label>
       </div>
 
       {error && (
-        <div className="mt-[3px] pl-[5px] text-sm text-red-400">{error}</div>
+        <div className="text-error mt-[3px] pl-[5px] text-sm">{error}</div>
       )}
     </div>
   );

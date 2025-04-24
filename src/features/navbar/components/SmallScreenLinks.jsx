@@ -1,5 +1,5 @@
 import { IoCloseSharp } from "react-icons/io5";
-import { links } from "./links";
+import { links } from "@/data/links";
 import Button from "@/ui/Button";
 import { useOutsideClick } from "@/hooks/useOutsideClick";
 
@@ -11,6 +11,7 @@ export default function SmallScreenLinks({
 }) {
   const handleLinkClick = (path) => {
     setActiveLink(path);
+    closeSidebar();
   };
   const ref = useOutsideClick(() => closeSidebar());
 
@@ -18,20 +19,20 @@ export default function SmallScreenLinks({
     showSidebar && (
       <div className="md:hidden">
         {/* OVERLAY */}
-        <div className="fixed inset-0 z-[100] h-full w-full bg-black/60"></div>
+        <div className="fixed inset-0 z-100 h-full w-full bg-black/60" />
 
         {/* SIDEBAR */}
         <nav
           ref={ref}
-          className="fixed bottom-0 right-0 z-[10000] h-full w-[180px] bg-main py-16 text-primary shadow-md drop-shadow-xl xs:w-[300px]"
+          className="bg-main text-primary xs:w-[300px] fixed right-0 bottom-0 z-10000 h-full w-[180px] py-16 shadow-md drop-shadow-xl"
         >
           {/* CLOSE SIDEBAR BUTTON*/}
-          <div className="absolute right-2 top-3 w-[35px]">
+          <div className="absolute top-3 right-2 w-[35px]">
             <Button
               variation="delete"
               AriaLabel="Close-icon"
               onClick={closeSidebar}
-              Font="!rounded-full !h-[35px]"
+              Font="rounded-full! h-[35px]!"
             >
               <div className="flexCenter">
                 <IoCloseSharp className="text-light-color" size={20} />
@@ -46,12 +47,12 @@ export default function SmallScreenLinks({
                 key={item.text}
                 className={`${
                   index === 0 ? "border-t-2" : ""
-                } flexCenter h-full w-full border-b-2 border-secondary text-center text-lg font-semibold transition-all hover:font-extrabold`}
+                } flexCenter border-secondary h-full w-full border-b-2 text-center text-lg font-semibold transition-all hover:font-extrabold`}
               >
                 <a
                   className={`${
                     activeLink === item.path
-                      ? "text-lg font-extrabold text-white"
+                      ? "bg-secondary text-lg font-extrabold text-white"
                       : ""
                   } flexCenter h-full w-full px-7 py-3`}
                   onClick={() => handleLinkClick(item.path)}

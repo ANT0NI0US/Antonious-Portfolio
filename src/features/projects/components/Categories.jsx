@@ -5,13 +5,13 @@ export default function Categories({
   selectedCategory,
 }) {
   return (
-    <div className="mx-auto w-fit rounded-md bg-secondary p-2">
+    <div className="bg-secondary relative mx-auto my-5 w-fit rounded-md p-2">
       <div className="flexCenter flex-wrap gap-4">
         {categories.map((category) => (
           <button
-            aria-label="Selected-category"
             key={category}
-            className={`rounded-md px-4 py-2 xl:text-lg ${
+            aria-label="Selected-category"
+            className={`cursor-pointer rounded-md px-4 py-2 xl:text-lg ${
               category === selectedCategory ? "bg-main" : "hover:bg-main/50"
             }`}
             onClick={() => handleSelectNewCategory(category)}

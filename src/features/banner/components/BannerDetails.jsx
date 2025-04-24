@@ -1,35 +1,30 @@
-import { SiMinutemailer } from "react-icons/si";
-import CV from "./CV";
 import Frontend from "./Frontend";
-import Button from "@/ui/Button";
 import Links from "@/ui/Links";
+import MainLinks from "./MainLinks";
 
 export default function BannerDetails() {
   return (
-    <div className="h-full w-full flex-col space-y-5 text-center lg:basis-3/5 lg:text-start">
-      <p className="text-xl font-semibold text-primary sm:text-2xl xl:text-3xl">
-        Welcome to my Portfolio
-      </p>
-      <h1 className="font-Monoton text-xl font-black uppercase tracking-widest xl:text-2xl">
-        Hi I'm Antonious Nasr
+    <div className="flex h-full w-full flex-col gap-5 text-center lg:basis-3/5 lg:text-start">
+      <div className="flex items-center justify-center gap-1.5 lg:mb-10! lg:items-start lg:justify-start">
+        <span className="animate-glowing-text">🔴</span>
+
+        <span className="text-light/70">Currently Working</span>
+      </div>
+      <h1 className="text-2xl font-semibold sm:text-3xl xl:text-4xl">
+        Hello 👋,
       </h1>
+      <h2 className="font-Monoton text-primary text-xl font-black tracking-widest uppercase sm:text-3xl xl:text-4xl">
+        I'm Antonious Nasr
+      </h2>
 
       {/* MY JOB CAREER */}
       <Frontend />
 
-      {/* LINKs */}
+      {/* LINKS */}
       <Links />
 
-      <div className="mx-auto flex w-full flex-col gap-3 xs:w-[300px] xs:flex-row lg:mx-0 xl:w-[400px] xl:gap-4">
-        {/* MY CV */}
-        <CV />
-
-        {/* CONTACT */}
-        <Button href="#contact" variation="secondary" AriaLabel="Contact me">
-          <SiMinutemailer />
-          <p>Contact Me</p>
-        </Button>
-      </div>
+      {/* MAIN LINKS */}
+      <MainLinks />
     </div>
   );
 }

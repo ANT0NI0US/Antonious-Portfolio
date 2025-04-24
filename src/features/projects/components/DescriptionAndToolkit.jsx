@@ -2,7 +2,7 @@ import { MdOutlineEmail, MdOutlineVpnKey } from "react-icons/md";
 import GridContainer from "@/ui/GridContainer";
 
 const cardStyle = "flex items-center gap-2 rounded-md bg-secondary p-[8px]";
-const iconStyle = "text-3xl text-orange mb-auto";
+const iconStyle = "text-3xl text-primary mb-auto";
 
 export default function DescriptionAndToolkit({
   description,
@@ -10,7 +10,7 @@ export default function DescriptionAndToolkit({
   toolkit,
 }) {
   return (
-    <div className="space-y-5 lg:basis-[60%]">
+    <div className="relative flex flex-col gap-5 lg:basis-[60%]">
       {/* DESCRIPTION */}
       <p className="text-center text-lg lg:text-start xl:text-xl xl:leading-9">
         {description}
@@ -19,33 +19,29 @@ export default function DescriptionAndToolkit({
 
       {accounts && (
         <div>
-          <h2 className="mb-2 text-center font-merienda text-lg font-black text-primary underline xl:text-2xl">
+          <h2 className="font-merienda text-primary mb-2 text-center text-lg font-black underline xl:text-2xl">
             Accounts
           </h2>
           <GridContainer
             styles={`${accounts.length > 1 ? "lg:grid-cols-2 lg:grid" : ""}`}
           >
-            {accounts.map((account, index) => (
+            {accounts.map(({ email, password }) => (
               <div
-                key={index}
-                className="space-y-1 rounded-md bg-secondary/50 p-3"
+                key={email}
+                className="bg-secondary/50 space-y-1 rounded-md p-3"
               >
                 <div className={`${cardStyle}`}>
                   <MdOutlineEmail className={`${iconStyle}`} />
                   <div className="flex items-center gap-1">
                     <p className="font-black xl:text-lg">Email: </p>
-                    <span className="break-all xl:text-lg">
-                      {account.email}
-                    </span>
+                    <span className="break-all xl:text-lg">{email}</span>
                   </div>
                 </div>
-                <div key={index} className={`${cardStyle}`}>
+                <div className={`${cardStyle}`}>
                   <MdOutlineVpnKey className={`${iconStyle}`} />
                   <div className="flex items-center gap-1">
                     <p className="font-black xl:text-lg">Password: </p>
-                    <span className="break-all xl:text-lg">
-                      {account.password}
-                    </span>
+                    <span className="break-all xl:text-lg">{password}</span>
                   </div>
                 </div>
               </div>
