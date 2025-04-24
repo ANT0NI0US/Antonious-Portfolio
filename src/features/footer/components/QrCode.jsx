@@ -7,7 +7,7 @@ export default function QrCode() {
       <div className="relative flex flex-col items-center justify-center gap-4">
         <HiArrowDown className="animate-bounce-arrow text-2xl text-white" />
         <img
-          src="https://i.ibb.co/G3vFJKk4/Antonious-Nasr.webp"
+          src="https://i.ibb.co/HLYkb7L1/Antonious-Nasr.png"
           loading="lazy"
           alt="Antonious Nasr Bio"
           className="size-16 sm:size-24"
