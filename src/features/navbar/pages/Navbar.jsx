@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../components/Logo";
+import Logo from "@/ui/Logo";
 import BigScreenLinks from "../components/BigScreenLinks";
 import ToggleSidebar from "../components/ToggleSidebar";
 import SmallScreenLinks from "../components/SmallScreenLinks";

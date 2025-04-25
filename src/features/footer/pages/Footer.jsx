@@ -1,5 +1,5 @@
-import Logo from "/logo.png";
 import Waves from "../components/Waves";
+import Logo from "@/ui/Logo";
 import Links from "@/ui/Links";
 import QuickLinks from "../components/QuickLinks";
 import QrCode from "../components/QrCode";
@@ -13,12 +13,7 @@ export default function Footer() {
       <div className="container flex flex-col justify-between gap-4 py-4 sm:grid sm:grid-cols-[repeat(auto-fill,minmax(250px,1fr))] sm:py-10">
         <div className="col-span-2 flex w-full flex-col items-center gap-4 sm:items-start">
           {/* MY LOGO */}
-          <img
-            loading="lazy"
-            src={Logo}
-            alt="Logo"
-            className="w-32 bg-contain bg-center"
-          />
+          <Logo />
 
           {/* CAPTION */}
           <p className="text-light/70 text-center text-sm sm:text-left">

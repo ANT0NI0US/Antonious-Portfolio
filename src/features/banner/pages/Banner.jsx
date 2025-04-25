@@ -14,7 +14,6 @@ export default function Banner() {
               className="w-full max-w-[200px] rounded-full transition duration-500 hover:grayscale hover:filter sm:max-w-[300px] lg:max-w-full"
               src="https://i.ibb.co/N2s9BNq/antonious-Nasr-Kamel.webp"
               alt="profile"
-              loading="lazy"
             />
           </div>
         </div>
