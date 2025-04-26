@@ -2,6 +2,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import { links } from "@/data/links";
 import Button from "@/ui/Button";
 import { useOutsideClick } from "@/hooks/useOutsideClick";
+import DropdownMenuSmallScreen from "./DropdownMenuSmallScreen";
 
 export default function SmallScreenLinks({
   showSidebar,
@@ -42,26 +43,31 @@ export default function SmallScreenLinks({
 
           {/* LINKS */}
           <div className="flex w-full flex-col">
-            {links?.map((item, index) => (
+            {links?.map(({ text, path, icon: Icon }, index) => (
               <div
-                key={item.text}
+                key={text}
                 className={`${
                   index === 0 ? "border-t-2" : ""
                 } flexCenter border-secondary h-full w-full border-b-2 text-center text-lg font-semibold transition-all hover:font-extrabold`}
               >
                 <a
                   className={`${
-                    activeLink === item.path
-                      ? "bg-secondary text-lg font-extrabold text-white"
-                      : ""
-                  } flexCenter h-full w-full px-7 py-3`}
-                  onClick={() => handleLinkClick(item.path)}
-                  href={item.path}
+                    activeLink === path
+                      ? "text-primary font-bold"
+                      : "hover:text-primary/70 hover:font-bold"
+                  } text-light flex h-full w-full items-center gap-1.5 px-4 py-3 font-semibold transition-all`}
+                  onClick={() => handleLinkClick(path)}
+                  href={path}
                 >
-                  {item?.text}
+                  <Icon />
+                  <span>{text}</span>
                 </a>
               </div>
             ))}
+            <DropdownMenuSmallScreen
+              handleLinkClick={handleLinkClick}
+              activeLink={activeLink}
+            />
           </div>
         </nav>
       </div>

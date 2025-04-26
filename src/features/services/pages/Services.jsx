@@ -5,7 +5,7 @@ import { allServices } from "../components/allServices";
 
 export default function Services() {
   return (
-    <section className="lg-h-screen" id="services">
+    <section className="py-5 sm:py-10" id="services">
       <div className="container">
         <TextHead text="Services" />
 

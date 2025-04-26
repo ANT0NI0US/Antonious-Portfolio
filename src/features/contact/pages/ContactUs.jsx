@@ -3,7 +3,7 @@ import TextHead from "@/ui/TextHead";
 
 export default function ContactUs() {
   return (
-    <section id="contact" className="bg-secondary min-h-screen py-[100px]">
+    <section id="contact" className="bg-secondary min-h-screen pt-20 pb-24">
       <div className="container">
         <TextHead text="Get In Touch" />
         <div className="flexCenter flex-col-reverse gap-0 lg:flex-row lg:gap-5">

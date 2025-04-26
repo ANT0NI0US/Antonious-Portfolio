@@ -5,7 +5,7 @@ import TextHead from "@/ui/TextHead";
 
 export default function Skills() {
   return (
-    <section className="min-h-screen" id="skills">
+    <section className="py-5 sm:py-10" id="skills">
       <div className="container">
         <TextHead text="Skills" />
 

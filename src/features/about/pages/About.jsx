@@ -3,7 +3,7 @@ import ExperiencesProjects from "../components/ExperiencesProjects";
 
 export default function About() {
   return (
-    <section className="lg-h-screen" id="about">
+    <section id="about" className="py-5 sm:py-10">
       <div className="container">
         <TextHead text="About" />
 

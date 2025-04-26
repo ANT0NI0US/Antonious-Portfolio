@@ -1,4 +1,5 @@
 import { links } from "@/data/links";
+import DropdownMenu from "./DropdownMenu";
 
 export default function BigScreenLinks({ activeLink, setActiveLink }) {
   const handleLinkClick = (path) => {
@@ -6,21 +7,23 @@ export default function BigScreenLinks({ activeLink, setActiveLink }) {
   };
 
   return (
-    <div className="hidden h-full gap-1.5 md:flex md:items-center md:justify-center">
-      {links?.map((item) => (
+    <div className="hidden h-full gap-4 md:flex md:items-center md:justify-center">
+      {links?.map(({ text, path, icon: Icon }) => (
         <a
-          key={item.text}
-          href={item.path}
-          onClick={() => handleLinkClick(item.path)}
+          key={text}
+          href={path}
+          onClick={() => handleLinkClick(path)}
           className={`${
-            activeLink === item.path
-              ? "bg-secondary font-bold text-white xl:text-xl"
-              : "hover:bg-secondary/70 hover:font-bold"
-          } flexCenter w-full rounded-full p-4 text-sm font-semibold transition-all xl:text-xl`}
+            activeLink === path
+              ? "text-primary font-bold"
+              : "hover:text-primary/70 hover:font-bold"
+          } flexCenter text-light w-full gap-1.5 rounded-full p-4 font-semibold transition-all xl:text-lg`}
         >
-          {item?.text}
+          <Icon />
+          <span>{text}</span>
         </a>
       ))}
+      <DropdownMenu handleLinkClick={handleLinkClick} activeLink={activeLink} />
     </div>
   );
 }

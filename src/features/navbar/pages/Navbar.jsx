@@ -5,7 +5,7 @@ import ToggleSidebar from "../components/ToggleSidebar";
 import SmallScreenLinks from "../components/SmallScreenLinks";
 
 export default function Navbar() {
-  const [activeLink, setActiveLink] = useState("#home");
+  const [activeLink, setActiveLink] = useState("#overview");
 
   const [showSidebar, setShowSidebar] = useState(false);
   const toggleSidebar = () => setShowSidebar((prev) => !prev);

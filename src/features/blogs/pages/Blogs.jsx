@@ -3,7 +3,7 @@ import AllBlogs from "../components/AllBlogs";
 
 export default function Blogs() {
   return (
-    <section className="lg-h-screen" id="blogs">
+    <section className="py-5 sm:py-10" id="blogs">
       <div className="container">
         <TextHead text="Blogs" />
 

@@ -51,11 +51,9 @@ layer(base);
 
   --color-main: #151515;
   --color-primary: #ffc83d; /*#dbf227 */
-  --color-secondary: #292836;
+  --color-secondary: #001639; /* #292836 #001535*/
   --color-light: #daf3ff;
-  --color-error: #ff4f58;
-  --color-gradient1: #989898;
-  --color-gradient2: #686868;
+  --color-error: #ff333d;
 
   --breakpoint-xs: 350px;
 
@@ -207,7 +205,7 @@ layer(base);
   height: 0;
   border-width: 12px;
   border-style: solid;
-  border-color: #292836 #292836 transparent transparent;
+  border-color: #001639 #001639 transparent transparent;
   left: 0;
   bottom: -24px;
 }
@@ -219,7 +217,7 @@ layer(base);
   height: 0;
   border-width: 12px;
   border-style: solid;
-  border-color: #292836 transparent transparent #292836;
+  border-color: #001639 transparent transparent #001639;
   right: 0;
   bottom: -24px;
 }
@@ -250,7 +248,7 @@ layer(base);
   @apply bg-light;
 }
 *::-webkit-scrollbar-thumb {
-  @apply bg-main;
+  @apply bg-secondary;
 }
 /* Vertical scrollbar */
 *::-webkit-scrollbar:vertical {

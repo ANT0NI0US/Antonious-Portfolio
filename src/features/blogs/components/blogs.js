@@ -27,8 +27,6 @@ export const blogs = [
     img: "https://i.ibb.co/Hpk7V2Pc/vs-Code-Extension.webp",
     title: "Must-Have VS Code Extensions I Use Daily",
     description:
-      "Here’s a curated list of powerful VS Code extensions that have truly boosted my productivity as a frontend developer. From auto-tagging to color highlighting and even class diagrams with Draw.io — these tools are game-changers.",
-    description:
       "Boost your frontend workflow with these powerful VS Code extensions — these tools are game-changers.",
     post: "https://www.linkedin.com/posts/antonious-nasr_vscode-extensions-frontend-activity-7310698460175884288-ka96?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
     date: "Apr 1, 2025",

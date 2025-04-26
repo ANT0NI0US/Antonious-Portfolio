@@ -7,7 +7,7 @@ import location from "@/assets/location.json";
 
 // Reusable Lottie icon component
 const LottieIcon = ({ animationData }) => (
-  <div className="size-8 sm:size-10 md:size-12">
+  <div className="size-8 sm:size-9 md:size-12">
     <Lottie
       options={{
         loop: true,

@@ -7,6 +7,7 @@ import Skills from "./features/skills/page/Skills";
 import Services from "./features/services/pages/Services";
 import Projects from "./features/projects/pages/Projects";
 import ContactUs from "./features/contact/pages/ContactUs";
+import Qualifications from "./features/qualifications/pages/Qualifications";
 import Blogs from "./features/blogs/pages/Blogs";
 import Footer from "./features/footer/pages/Footer";
 import "react-toastify/dist/ReactToastify.css";
@@ -16,12 +17,13 @@ export default function App() {
     <>
       <ParticlesComponent />
       <Navbar />
-      <main className="bg-main flex flex-col gap-10 sm:gap-20">
+      <main>
         <Banner />
         <About />
         <Skills />
         <Services />
         <Projects />
+        <Qualifications />
         <Blogs />
         <ContactUs />
       </main>
