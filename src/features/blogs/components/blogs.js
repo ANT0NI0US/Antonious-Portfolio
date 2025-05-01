@@ -1,5 +1,13 @@
 export const blogs = [
   {
+    img: "https://i.ibb.co/XrJb6LKT/hot-toast.webp",
+    title: "Why I Prefer react-hot-toast Over react-toastify for Themed UIs",
+    description:
+      "Discover how react-hot-toast makes toast theming and dark mode integration easier, cleaner, and more customizable for modern React apps.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_react-hot-toast-activity-7323659350575628288-ToE0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "May 1, 2025",
+  },
+  {
     img: "https://i.ibb.co/WNX7PwpC/Image-Optimization.webp",
     title: "Optimize Images for Better Web Performance",
     description:

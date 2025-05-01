@@ -11,6 +11,7 @@ import Qualifications from "./features/qualifications/pages/Qualifications";
 import Blogs from "./features/blogs/pages/Blogs";
 import Footer from "./features/footer/pages/Footer";
 import "react-toastify/dist/ReactToastify.css";
+import Experiences from "./features/experiences/pages/Experiences";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Skills />
         <Services />
         <Projects />
+        <Experiences />
         <Qualifications />
         <Blogs />
         <ContactUs />
