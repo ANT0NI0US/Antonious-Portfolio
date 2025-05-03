@@ -1,5 +1,5 @@
 import { FaRegComments, FaRegLightbulb } from "react-icons/fa";
-import { TbFolderCode } from "react-icons/tb";
+import { TbFolderCode, TbUserStar } from "react-icons/tb";
 import { LuFileBadge } from "react-icons/lu";
 import { GoPerson } from "react-icons/go";
 import { PiSealCheck } from "react-icons/pi";
@@ -31,14 +31,19 @@ export const aboutLinks = [
     text: "Skills",
   },
   {
+    icon: TbFolderCode,
+    path: "#projects",
+    text: "Projects",
+  },
+  {
     icon: PiSealCheck,
     path: "#services",
     text: "Services",
   },
   {
-    icon: TbFolderCode,
-    path: "#projects",
-    text: "Projects",
+    icon: TbUserStar,
+    path: "#experiences",
+    text: "Experiences",
   },
   {
     icon: LuFileBadge,

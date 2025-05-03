@@ -160,7 +160,7 @@ layer(base);
   @apply flex items-center justify-between;
 }
 @utility wave {
-  @apply absolute top-0 left-0 h-[100px] w-full bg-[url("https://i.ibb.co/Y2mRPfC/waveDark.webp")] bg-[length:1000px_100px];
+  @apply absolute top-0 left-0 h-[100px] w-full bg-[url("https://i.ibb.co/n8mWC0HN/secondary-Wave-Color.webp")] bg-[length:1000px_100px];
 }
 @utility animate-wave-slow {
   animation: animateWave 4s linear infinite;

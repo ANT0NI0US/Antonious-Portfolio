@@ -1,4 +1,11 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
+const motionProps = {
+  whileHover: { scale: 1.05 },
+  whileTap: { scale: 0.95 },
+  transition: { duration: 0.125, ease: "easeInOut" },
+};
 
 export default function Button({
   children,
@@ -10,6 +17,7 @@ export default function Button({
   loading,
   AriaLabel,
   target = "",
+  replace = false,
   href,
 }) {
   const base = `focus:outline-hidden w-full flexCenter gap-1 rounded-md py-3 px-2 relative
@@ -27,19 +35,19 @@ export default function Button({
 
   if (href)
     return (
-      <motion.a
-        href={href}
-        className={`${base} ${styles[variation]} ${Font}`}
-        title={AriaLabel}
-        aria-label={AriaLabel}
-        target={target}
-        disabled={disabled || loading}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        transition={{ duration: 0.125, ease: "easeInOut" }}
-      >
-        {children}
-      </motion.a>
+      <motion.div className="w-full" {...motionProps}>
+        <Link
+          to={href}
+          className={`${base} ${styles[variation]} ${Font}`}
+          title={AriaLabel}
+          aria-label={AriaLabel}
+          target={target}
+          disabled={disabled || loading}
+          replace={replace}
+        >
+          {children}
+        </Link>
+      </motion.div>
     );
 
   return (
@@ -50,9 +58,7 @@ export default function Button({
       className={`${base} ${styles[variation]} ${Font}`}
       aria-label={AriaLabel}
       title={AriaLabel}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      transition={{ duration: 0.125, ease: "easeInOut" }}
+      {...motionProps}
     >
       {loading ? (
         <div className="flexCenter gap-1">
