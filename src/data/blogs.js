@@ -1,12 +1,20 @@
 export const blogs = [
   // {
-  //   img: "https://i.ibb.co/4ZNNtzRM/prettier-Tailwindcss.webp",
-  //   title: "Write Cleaner Tailwind Code with clsx and Prettier Plugin",
+  //   img: "https://i.ibb.co/ycHhxTzR/react-hook-form.webp",
+  //   title: "Secure & Scalable Password Forms with React Hook Form",
   //   description:
-  //     "Learn how to simplify conditional class names using clsx and keep your Tailwind CSS code consistently organized with prettier-plugin-tailwindcss.",
-  //   post: "https://www.linkedin.com/posts/antonious-nasr_react-hot-toast-activity-7323659350575628288-ToE0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-  //   date: "May 6, 2025",
+  //     "Build a reusable, real-time validated password flow with React Hook Form — including strength checks, matching validation, show/hide toggles, and custom input styling.",
+  //   post: "https://www.linkedin.com/posts/antonious-nasr_enhance-tailwindcss-readability-activity-7325519720160350209-EUXH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+  //   date: "May 13, 2025",
   // },
+  {
+    img: "https://i.ibb.co/4ZNNtzRM/prettier-Tailwindcss.webp",
+    title: "Write Cleaner Tailwind Code with clsx and Prettier Plugin",
+    description:
+      "Learn how to simplify conditional class names using clsx and keep your Tailwind CSS code consistently organized with prettier-plugin-tailwindcss.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_enhance-tailwindcss-readability-activity-7325519720160350209-EUXH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "May 6, 2025",
+  },
   {
     img: "https://i.ibb.co/XrJb6LKT/hot-toast.webp",
     title: "Why I Prefer react-hot-toast Over react-toastify for Themed UIs",
