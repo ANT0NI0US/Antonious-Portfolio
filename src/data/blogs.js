@@ -1,12 +1,20 @@
 export const blogs = [
   // {
-  //   img: "https://i.ibb.co/ycHhxTzR/react-hook-form.webp",
-  //   title: "Secure & Scalable Password Forms with React Hook Form",
+  //   img: "https://i.ibb.co/qFMLsdQ3/create-portal.webp",
+  //   title: "Why You Should Use createPortal in React",
   //   description:
-  //     "Build a reusable, real-time validated password flow with React Hook Form — including strength checks, matching validation, show/hide toggles, and custom input styling.",
-  //   post: "https://www.linkedin.com/posts/antonious-nasr_enhance-tailwindcss-readability-activity-7325519720160350209-EUXH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-  //   date: "May 13, 2025",
+  //     "React Portals let you render components like modals and tooltips outside the main DOM tree — perfect for avoiding layout issues and styling conflicts.",
+  //   post: "https://www.linkedin.com/posts/antonious-nasr_react-hook-form-activity-7328041387566776321-3goh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+  //   date: "May 20, 2025",
   // },
+  {
+    img: "https://i.ibb.co/ycHhxTzR/react-hook-form.webp",
+    title: "Secure & Scalable Password Forms with React Hook Form",
+    description:
+      "Build a reusable, real-time validated password flow with React Hook Form — including strength checks, matching validation, show/hide toggles, and custom input styling.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_react-hook-form-activity-7328041387566776321-3goh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "May 13, 2025",
+  },
   {
     img: "https://i.ibb.co/4ZNNtzRM/prettier-Tailwindcss.webp",
     title: "Write Cleaner Tailwind Code with clsx and Prettier Plugin",
