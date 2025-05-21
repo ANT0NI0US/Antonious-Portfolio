@@ -10,8 +10,8 @@ export default function Banner() {
         {/* IMAGE SECTION */}
         <div className="flex w-full items-center justify-center lg:basis-2/5 lg:justify-end">
           <img
-            className="w-full max-w-[200px] rounded-full sm:max-w-[300px] lg:max-w-full"
-            src="https://i.ibb.co/N2s9BNq/antonious-Nasr-Kamel.webp"
+            className="w-full max-w-[200px] sm:max-w-[300px] lg:max-w-full"
+            src="https://res.cloudinary.com/dnekgcumk/image/upload/v1747722633/Group_1_bfqujm.png"
             alt="profile"
           />
         </div>
