@@ -26,7 +26,7 @@ export default function AllBlogs() {
           key={title}
           className="bg-main shadow-secondary relative flex min-h-[500px] flex-col overflow-hidden rounded-md text-white shadow sm:min-h-[480px] xl:min-h-[540px]"
         >
-          <span className="bg-secondary absolute top-1.5 right-1.5 ms-auto rounded-md p-2 text-sm text-white">
+          <span className="bg-secondary absolute top-1.5 right-1.5 ms-auto rounded-md p-2 text-sm text-white shadow">
             {date}
           </span>
           <img

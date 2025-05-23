@@ -1,12 +1,28 @@
 export const blogs = [
   // {
-  //   img: "https://i.ibb.co/qFMLsdQ3/create-portal.webp",
-  //   title: "Why You Should Use createPortal in React",
+  //   img: "https://i.ibb.co/jv6NdDQB/VS-Code-home-page.webp",
+  //   title: "My Custom VS Code Setup for Frontend Developers",
   //   description:
-  //     "React Portals let you render components like modals and tooltips outside the main DOM tree — perfect for avoiding layout issues and styling conflicts.",
+  //     "Take your coding environment to the next level with my VS Code setup — custom UI tweaks, productivity extensions, formatter configs, and a full open-source repo to get started.",
   //   post: "https://www.linkedin.com/posts/antonious-nasr_react-hook-form-activity-7328041387566776321-3goh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-  //   date: "May 20, 2025",
+  //   date: "Jun 3, 2025",
   // },
+  // {
+  //   img: "https://i.ibb.co/q3B2Txyc/Tech-stack.webp",
+  //   title: "How I Choose My Tech Stack Before Starting a Project",
+  //   description:
+  //     "Before writing any code, I define the full stack — from framework and styling to state management and backend — to ensure scalability, performance, and smooth development.",
+  //   post: "https://www.linkedin.com/posts/antonious-nasr_react-hook-form-activity-7328041387566776321-3goh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+  //   date: "May 27, 2025",
+  // },
+  {
+    img: "https://i.ibb.co/qFMLsdQ3/create-portal.webp",
+    title: "Why You Should Use createPortal in React",
+    description:
+      "React Portals let you render components like modals and tooltips outside the main DOM tree — perfect for avoiding layout issues and styling conflicts.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_create-portal-activity-7330578062222295040-N4Fz?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "May 20, 2025",
+  },
   {
     img: "https://i.ibb.co/ycHhxTzR/react-hook-form.webp",
     title: "Secure & Scalable Password Forms with React Hook Form",
