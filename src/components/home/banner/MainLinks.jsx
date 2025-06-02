@@ -12,7 +12,7 @@ const mainLinks = [
     isInternal: true,
   },
   {
-    to: "https://drive.google.com/file/d/1DP_0LX4_9VBgV5IE-mKRGZPTVQWQnNyr/view",
+    to: "https://drive.google.com/file/d/1K8MJFUEMe0jHu7x1k0PanwNiqBF9mR-h/view",
     icon: <PiReadCvLogo />,
     text: "View CV",
     target: "_blank",

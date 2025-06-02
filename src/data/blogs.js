@@ -1,5 +1,13 @@
 export const blogs = [
   // {
+  //   img: "https://i.ibb.co/p68j17yd/i18nV3.webp",
+  //   title: "Mastering Pluralization in i18n for Multilingual Apps",
+  //   description:
+  //     "Plural rules vary across languages — with some needing up to 6 forms. Learn how tools like i18next handle this and why accurate pluralization is essential for localization.",
+  //   post: "https://www.linkedin.com/posts/antonious-nasr_react-hook-form-activity-7328041387566776321-3goh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+  //   date: "Jun 10, 2025",
+  // },
+  // {
   //   img: "https://i.ibb.co/jv6NdDQB/VS-Code-home-page.webp",
   //   title: "My Custom VS Code Setup for Frontend Developers",
   //   description:
@@ -7,14 +15,14 @@ export const blogs = [
   //   post: "https://www.linkedin.com/posts/antonious-nasr_react-hook-form-activity-7328041387566776321-3goh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
   //   date: "Jun 3, 2025",
   // },
-  // {
-  //   img: "https://i.ibb.co/q3B2Txyc/Tech-stack.webp",
-  //   title: "How I Choose My Tech Stack Before Starting a Project",
-  //   description:
-  //     "Before writing any code, I define the full stack — from framework and styling to state management and backend — to ensure scalability, performance, and smooth development.",
-  //   post: "https://www.linkedin.com/posts/antonious-nasr_react-hook-form-activity-7328041387566776321-3goh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-  //   date: "May 27, 2025",
-  // },
+  {
+    img: "https://i.ibb.co/q3B2Txyc/Tech-stack.webp",
+    title: "How I Choose My Tech Stack Before Starting a Project",
+    description:
+      "Before writing any code, I define the full stack — from framework and styling to state management and backend — to ensure scalability, performance, and smooth development.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_reactjs-nextjs-webdevelopment-activity-7333114806700347394-BFh3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "May 27, 2025",
+  },
   {
     img: "https://i.ibb.co/qFMLsdQ3/create-portal.webp",
     title: "Why You Should Use createPortal in React",
@@ -64,12 +72,20 @@ export const blogs = [
     date: "Apr 15, 2025",
   },
   {
+    img: "https://i.ibb.co/Z1kks7pd/i18nV2.webp",
+    title: "Dynamic Translations with react-i18next Using <Trans />",
+    description:
+      "Learn how to handle dynamic values and styled elements inside translations using react-i18next — from simple variables to fully styled components.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_how-to-use-trans-in-i18next-activity-7315372898028785666-4r-A?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Apr 8, 2025",
+  },
+  {
     img: "https://i.ibb.co/Nd1gzC9t/env-Variables.webp",
     title: "How to Manage Environment Variables in Vite with React & Next.js",
     description:
       "Learn how to manage .env variables in React (Vite) and Next.js, the difference between VITE_ and NEXT_PUBLIC_, and best practices to keep your data safe in all environments.",
     post: "https://www.linkedin.com/posts/antonious-nasr_%D9%85%D8%AA%D8%BA%D9%8A%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9-%D9%81%D9%8A-react-%D9%88-nextjs-activity-7313576274365505537-nDWj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-    date: "Apr 8, 2025",
+    date: "Apr 1, 2025",
   },
   {
     img: "https://i.ibb.co/Hpk7V2Pc/vs-Code-Extension.webp",
@@ -77,7 +93,7 @@ export const blogs = [
     description:
       "Boost your frontend workflow with these powerful VS Code extensions — these tools are game-changers.",
     post: "https://www.linkedin.com/posts/antonious-nasr_vscode-extensions-frontend-activity-7310698460175884288-ka96?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-    date: "Apr 1, 2025",
+    date: "Mar 25, 2025",
   },
   {
     img: "https://i.ibb.co/3y7zMTry/tailwind-Css-V4.webp",
@@ -85,7 +101,15 @@ export const blogs = [
     description:
       "Upgrading from Tailwind v3 to v4 in a React project using Vite? Here’s a clear step-by-step guide to help you do it smoothly — from uninstalling the old setup to configuring the new plugin built specifically for Vite.",
     post: "https://www.linkedin.com/posts/antonious-nasr_tailwindcss-webdevelopment-frontend-activity-7307720876219637760-ZjBu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-    date: "Mar 25, 2025",
+    date: "Mar 18, 2025",
+  },
+  {
+    img: "https://i.ibb.co/mCvLPQc9/HTML.webp",
+    title: "How to Safely Render HTML in React Components",
+    description:
+      "Learn the right way to display HTML in React — from dangerouslySetInnerHTML to safer options like DOMPurify and html-react-parser.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_%D8%B9%D8%B1%D8%B6-html-%D8%AF%D8%A7%D8%AE%D9%84-%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%84-react-activity-7305259996152299521-rzY_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Mar 11, 2025",
   },
   {
     img: "https://i.ibb.co/1JYhfJWb/error-Boundary.webp",
@@ -93,7 +117,15 @@ export const blogs = [
     description:
       "Error Boundaries in React help prevent app crashes by catching errors in components and displaying user-friendly messages instead, ensuring a smoother user experience.",
     post: "https://www.linkedin.com/posts/antonious-nasr_error-boundries-activity-7302734580275384321-ybhI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-    date: "Mar 11, 2025",
+    date: "Mar 4, 2025",
+  },
+  {
+    img: "https://i.ibb.co/236jJvHk/dark-mode.webp",
+    title: "How to Implement Dark Mode in React Using Tailwind CSS",
+    description:
+      "Set up a fully functional dark mode in your React app using Tailwind’s darkMode: 'class' config, custom context, and utility-first styling — all with a clean and scalable approach.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_react-tailwindcss-darkmode-activity-7290051055625658368-ppFm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Feb 25, 2025",
   },
   {
     img: "https://i.ibb.co/hJSmFnqd/i18n.webp",
@@ -101,7 +133,7 @@ export const blogs = [
     description:
       "Need multilingual support in your React app? This guide breaks down how to implement i18n for seamless language switching, direction handling, and persistent user preference.",
     post: "https://www.linkedin.com/posts/antonious-nasr_i18n-activity-7286789524444078080-R5gF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-    date: "Feb 18, 2025",
+    date: "Jan 28, 2025",
   },
   {
     img: "https://i.ibb.co/ZRqRmXn8/alias.webp",
@@ -109,7 +141,7 @@ export const blogs = [
     description:
       "Tired of writing long import paths in React/TypeScript projects? Discover how using aliases can clean up your code, speed up development, and make your life easier.",
     post: "https://www.linkedin.com/posts/antonious-nasr_react-reactjs-reactts-activity-7283791971314245632-NH-H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-    date: "Feb 11, 2025",
+    date: "Jan 21, 2025",
   },
   {
     img: "https://i.ibb.co/qLVSQY89/Notes.webp",
@@ -117,6 +149,6 @@ export const blogs = [
     description:
       "A quick CSS tweak that improved the look of auto filled inputs in dark mode — small change, big difference in user experience.",
     post: "https://www.linkedin.com/posts/antonious-nasr_reactjs-frontenddevelopment-cssdesign-activity-7281608518556676096-CW1l?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-    date: "Feb 4, 2025",
+    date: "Jan 14, 2025",
   },
 ];
