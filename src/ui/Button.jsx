@@ -62,9 +62,9 @@ export default function Button({
     >
       {loading ? (
         <div className="flexCenter gap-1">
-          <div className="bg-secondary h-3 w-3 animate-bounce rounded-full [animation-delay:-0.3s]"></div>
-          <div className="bg-secondary h-3 w-3 animate-bounce rounded-full [animation-delay:-0.15s]"></div>
-          <div className="bg-secondary h-3 w-3 animate-bounce rounded-full"></div>
+          <div className="bg-secondary h-3 w-3 animate-bounce rounded-full [animation-delay:-0.3s]" />
+          <div className="bg-secondary h-3 w-3 animate-bounce rounded-full [animation-delay:-0.15s]" />
+          <div className="bg-secondary h-3 w-3 animate-bounce rounded-full" />
         </div>
       ) : (
         children

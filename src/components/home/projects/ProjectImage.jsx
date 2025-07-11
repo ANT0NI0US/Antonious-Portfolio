@@ -10,7 +10,7 @@ export default function ProjectImage({
   handleLinkClick,
 }) {
   return (
-    <div className="group relative w-full rounded-md lg:basis-[40%]">
+    <div className="group relative w-full rounded-md shadow-md lg:basis-[40%]">
       <img
         loading="lazy"
         src={imgUrl}
@@ -24,7 +24,7 @@ export default function ProjectImage({
         documentation={documentation}
         handleLinkClick={handleLinkClick}
       />
-      <div className="bg-main/75 absolute inset-0 h-0 rounded-md transition-all duration-400 ease-in-out group-hover:h-full"></div>
+      <div className="bg-main/75 absolute inset-0 h-0 rounded-md transition-all duration-400 ease-in-out group-hover:h-full" />
     </div>
   );
 }

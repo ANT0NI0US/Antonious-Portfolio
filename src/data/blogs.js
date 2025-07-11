@@ -1,20 +1,44 @@
 export const blogs = [
-  // {
-  //   img: "https://i.ibb.co/p68j17yd/i18nV3.webp",
-  //   title: "Mastering Pluralization in i18n for Multilingual Apps",
-  //   description:
-  //     "Plural rules vary across languages — with some needing up to 6 forms. Learn how tools like i18next handle this and why accurate pluralization is essential for localization.",
-  //   post: "https://www.linkedin.com/posts/antonious-nasr_react-hook-form-activity-7328041387566776321-3goh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-  //   date: "Jun 10, 2025",
-  // },
-  // {
-  //   img: "https://i.ibb.co/jv6NdDQB/VS-Code-home-page.webp",
-  //   title: "My Custom VS Code Setup for Frontend Developers",
-  //   description:
-  //     "Take your coding environment to the next level with my VS Code setup — custom UI tweaks, productivity extensions, formatter configs, and a full open-source repo to get started.",
-  //   post: "https://www.linkedin.com/posts/antonious-nasr_react-hook-form-activity-7328041387566776321-3goh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-  //   date: "Jun 3, 2025",
-  // },
+  {
+    img: "https://i.ibb.co/JTRQFJM/22-title-Aria-Label.webp",
+    title: "Improve Accessibility with title vs aria-label on Buttons",
+    description:
+      "When building accessible UIs, buttons with just an icon (like 🗑️ or ✏️) might look great, but they’re not enough for everyone.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_accessibility-a11y-frontendtips-activity-7348335088650051585-f6rZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Jul 8, 2025",
+  },
+  {
+    img: "https://i.ibb.co/5hHtMgbG/21-Scrollbar.webp",
+    title: "Custom Scrollbars with Tailwind CSS and Pure CSS",
+    description:
+      "Style scrollbars to match your theme using a few CSS tweaks — with support for light/dark modes, consistent design, and smooth UI polish.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_scrollbar-activity-7343624058954993664-aAPr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Jun 25, 2025",
+  },
+  {
+    img: "https://i.ibb.co/MkV8WRSr/20-auto-Complete-inputs.webp",
+    title: "Boost UX with Smart autoComplete in Forms",
+    description:
+      "Improve form speed, accessibility, and user satisfaction using proper autoComplete values — from login fields to payment and address inputs.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_autocomplete-inputs-activity-7341449718784319489-fL0b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Jun 19, 2025",
+  },
+  {
+    img: "https://i.ibb.co/p68j17yd/i18nV3.webp",
+    title: "Mastering Pluralization in i18n for Multilingual Apps",
+    description:
+      "Plural rules vary across languages — with some needing up to 6 forms. Learn how tools like i18next handle this and why accurate pluralization is essential for localization.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_pluralization-activity-7338188215016681472-ja7g?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Jun 10, 2025",
+  },
+  {
+    img: "https://i.ibb.co/jv6NdDQB/VS-Code-home-page.webp",
+    title: "My Custom VS Code Setup for Frontend Developers",
+    description:
+      "Take your coding environment to the next level with my VS Code setup — custom UI tweaks, productivity extensions, formatter configs, and a full open-source repo to get started.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_vs-code-settings-activity-7335651524578009088-RGQD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Jun 3, 2025",
+  },
   {
     img: "https://i.ibb.co/q3B2Txyc/Tech-stack.webp",
     title: "How I Choose My Tech Stack Before Starting a Project",

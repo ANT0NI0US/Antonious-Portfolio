@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import { carouselResponsive } from "@/data/carouselResponsive";
+import Button from "@/ui/Button";
 
 export default function ProjectsCarousel({ projects }) {
   return (
@@ -20,23 +21,35 @@ export default function ProjectsCarousel({ projects }) {
         transitionDuration={1000}
         itemClass="p-2"
       >
-        {projects.map(({ title, img, description }) => (
+        {projects.map(({ id, title, imgUrl, description }) => (
           <div
             key={title}
-            className="bg-main shadow-secondary relative flex min-h-[500px] flex-col overflow-hidden rounded-md text-white shadow sm:min-h-[440px] xl:min-h-[540px]"
+            className="bg-secondary relative flex min-h-[500px] flex-col gap-3 overflow-hidden rounded-md p-4 text-white sm:min-h-[440px] xl:min-h-[540px]"
           >
             <img
-              src={img}
+              src={imgUrl}
               loading="lazy"
               alt={title}
-              className="h-48 w-full object-cover"
+              className="h-48 w-full rounded-md object-cover"
             />
-            <div className="flex flex-1 flex-col gap-2 p-4">
+            <div className="flex flex-1 flex-col gap-2">
               <h2 className="text-primary font-Monoton font-bold xl:text-xl">
                 {title}
               </h2>
-              <p className="text-sm xl:text-lg">{description}</p>
+              <p className="text-sm xl:text-lg">
+                {description.length > 200
+                  ? description.slice(0, 197) + "..."
+                  : description}
+              </p>
             </div>
+
+            <Button
+              href={`/projects/${id}`}
+              variation="secondary"
+              AriaLabel={`More details about ${title}`}
+            >
+              View Details
+            </Button>
           </div>
         ))}
       </Carousel>

@@ -8,6 +8,7 @@ export default function DescriptionAndToolkit({
   description,
   accounts,
   toolkit,
+  certificate,
 }) {
   return (
     <div className="relative flex flex-col gap-5 lg:basis-[60%]">
@@ -15,8 +16,8 @@ export default function DescriptionAndToolkit({
       <p className="text-center text-lg lg:text-start xl:text-xl xl:leading-9">
         {description}
       </p>
-      {/* ACCOUNTS */}
 
+      {/* ACCOUNTS */}
       {accounts && (
         <div>
           <h2 className="font-merienda text-primary mb-2 text-center text-lg font-black underline xl:text-2xl">
@@ -49,6 +50,21 @@ export default function DescriptionAndToolkit({
           </GridContainer>
         </div>
       )}
+
+      {/* CERTIFICATE */}
+      {certificate && (
+        <div className="flex flex-col items-center justify-center gap-2">
+          <h2 className="font-merienda text-primary text-center text-lg font-black underline xl:text-2xl">
+            Certificate
+          </h2>
+          <img
+            src={certificate}
+            alt="certificate"
+            className="max-h-[400px] rounded-md object-fill"
+          />
+        </div>
+      )}
+
       {/* TOOLKIT */}
       <div className="flex w-full flex-wrap items-center justify-center gap-5 lg:justify-start">
         {toolkit?.map((el, index) => (

@@ -17,6 +17,7 @@ export default function ProjectDetails({ selectedProject }) {
     githubLink,
     video,
     documentation,
+    certificate,
   } = selectedProject;
 
   return (
@@ -30,6 +31,7 @@ export default function ProjectDetails({ selectedProject }) {
           description={description}
           accounts={accounts}
           toolkit={toolkit}
+          certificate={certificate}
         />
 
         {/* IMAGE */}

@@ -27,7 +27,7 @@ export default function FilteredProjects({
             alt={project.title}
             className="grow rounded-tl-md rounded-tr-md object-cover object-center"
           />
-          <p className="my-3 text-center text-lg font-bold xl:text-xl">
+          <p className="my-3 text-center text-lg font-bold uppercase xl:text-xl">
             {project.title}
           </p>
         </motion.div>

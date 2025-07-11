@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import ExperiencesDetails from "./pages/experiencesDetails";
 import Spinner from "./ui/spinner";
 import PageNotFound from "./layout/PageNotFound";
+import Projects from "./pages/projects";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/experiences/:id" element={<ExperiencesDetails />} />
+            <Route path="/projects/:id" element={<Projects />} />
           </Route>
 
           <Route path="*" element={<PageNotFound />} />

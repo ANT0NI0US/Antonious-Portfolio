@@ -1,3 +1,5 @@
+import { smartGateProjects } from "./smartGateProjects";
+
 export const experiences = [
   {
     id: 1,
@@ -53,56 +55,7 @@ export const experiences = [
       "Code Review",
       "Problem Solving",
     ],
-    projects: [
-      {
-        img: "https://i.ibb.co/QFfkQ4y7/LMS.webp",
-        title: "Learning Management System (LMS)",
-        description:
-          "Engineered a multi-admin educational platform connecting students and administrators for efficient management of course materials, books, announcements, and schedules.",
-      },
-      {
-        img: "https://i.ibb.co/gthm3Hb/ChatBot.webp",
-        title: "Chatbot Platform",
-        description:
-          "Created a dynamic chatbot platform enabling businesses and organizations to define customized workflows, working hours, and forms for data collection. Integrated features such as image uploads, data downloads, and multi-pathway navigation for a tailored user experience.",
-      },
-      {
-        img: "https://i.ibb.co/4PpHkc7/Restico.webp",
-        title: "Restico – Restaurant Management System",
-        description:
-          "Developed a comprehensive restaurant management system, encompassing accounts, employee management, transactions, orders, and inventory. Delivered an intuitive user interface for seamless operations.",
-      },
-      {
-        img: "https://i.ibb.co/99hd7339/invoice.webp",
-        title: "Invoice Management System",
-        description:
-          "Built a hierarchical platform for managing products, customers, and invoices, complete with user roles, branch management, and secure permissions. Streamlined invoice handling across multi-branch operations.",
-      },
-      {
-        img: "https://i.ibb.co/r8s5YCj/b2c.webp",
-        title: "Playgrounds (B2C)",
-        description:
-          "Designed a dual-version system (B2C) for playground reservations. The platform included admin management for owners and clients, real-time conversations, and reservation oversight.",
-      },
-      {
-        img: "https://i.ibb.co/0pzQjTCB/b2b.webp",
-        title: "Playgrounds (B2B)",
-        description:
-          "Booking system for field owners to list and manage availability and reservations.",
-      },
-      {
-        img: "https://i.ibb.co/mXb7bSP/Clinc.webp",
-        title: "Clinic Marketer",
-        description:
-          "This project targets the number of visits to a specific website, along with the percentage you will receive based on the number of entries resulting from your access to this site.",
-      },
-      {
-        img: "https://i.ibb.co/B5Wzsgmc/niyats-website.webp",
-        title: "Niyat’s Website",
-        description:
-          "Niyat's website landing page is a sleek and modern platform designed to showcase its purpose and services effectively. With a clean layout, intuitive navigation, and engaging visuals, it provides visitors with a seamless experience to explore and interact with the brand.",
-      },
-    ],
+    projects: smartGateProjects,
   },
   {
     id: 2,
@@ -149,7 +102,7 @@ export const experiences = [
     ],
     projects: [
       {
-        img: "https://i.ibb.co/Zp9CrcTM/Darf.webp",
+        imgUrl: "https://i.ibb.co/Zp9CrcTM/Darf.webp",
         title: "Darf (Invitation Management System)",
         description:
           "Darf allows users to create and share personalized online invitations in just a few clicks. It's fast, convenient, and helps save time and effort.",

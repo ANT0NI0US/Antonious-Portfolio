@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap")
-layer(base);
-
 @import "tailwindcss";
 
 @theme {
@@ -50,8 +47,8 @@ layer(base);
   --height-screen: 100dvh;
 
   --color-main: #151515;
-  --color-primary: #ffc83d; /*#dbf227 */
-  --color-secondary: #001639; /* #292836 #001535*/
+  --color-primary: #ffc83d;
+  --color-secondary: #001639;
   --color-light: #daf3ff;
   --color-error: #ff333d;
 
@@ -195,6 +192,9 @@ layer(base);
 @layer components {
   img {
     @apply object-cover object-center;
+  }
+  button {
+    @apply cursor-pointer;
   }
 }
 
