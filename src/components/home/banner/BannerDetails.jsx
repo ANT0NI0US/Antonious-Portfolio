@@ -7,8 +7,7 @@ export default function BannerDetails() {
     <div className="flex h-full w-full flex-col gap-5 text-center lg:basis-3/5 lg:text-start">
       <div className="flex items-center justify-center gap-1.5 lg:mb-10! lg:items-start lg:justify-start">
         <span className="animate-glowing-text">🔴</span>
-
-        <span className="text-light/70">Currently Working</span>
+        <span>Currently Working</span>
       </div>
       <h1 className="text-2xl font-semibold sm:text-3xl xl:text-4xl">
         Hello 👋,

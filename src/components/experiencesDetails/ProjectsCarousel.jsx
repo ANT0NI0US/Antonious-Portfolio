@@ -45,7 +45,6 @@ export default function ProjectsCarousel({ projects }) {
 
             <Button
               href={`/projects/${id}`}
-              variation="secondary"
               AriaLabel={`More details about ${title}`}
             >
               View Details

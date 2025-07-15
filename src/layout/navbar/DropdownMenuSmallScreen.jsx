@@ -27,7 +27,7 @@ export default function DropdownMenuSmallScreen({ handleLinkClick }) {
                 handleLinkClick(path);
                 setOpenMenu(false);
               }}
-              className="hover:text-primary/70 text-light border-main flex w-full items-center gap-1.5 border-b px-4 py-3 font-semibold transition-all hover:font-bold"
+              className="hover:text-primary text-light border-main flex w-full items-center gap-1.5 border-b px-4 py-3 font-semibold transition-all hover:font-bold"
             >
               <Icon />
               <span>{text}</span>

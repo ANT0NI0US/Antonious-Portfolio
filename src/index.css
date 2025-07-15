@@ -138,6 +138,12 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
   }
+
+  body {
+    @apply text-light bg-main;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+  }
 }
 
 @utility input {
@@ -170,23 +176,6 @@
 }
 @utility animate-wave02-fast {
   animation: animateWave_02 3s linear infinite;
-}
-
-@layer utilities {
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #151515;
-  }
-  html {
-    @apply text-light;
-    scroll-behavior: smooth;
-  }
 }
 
 @layer components {

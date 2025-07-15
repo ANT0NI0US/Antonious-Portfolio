@@ -8,7 +8,7 @@ export default function BigScreenLinks({ handleNavClick }) {
         <button
           key={text}
           onClick={() => handleNavClick(path)}
-          className="hover:text-primary/70 flexCenter text-light w-full cursor-pointer gap-1.5 rounded-full p-4 font-semibold transition-all hover:font-bold xl:text-lg"
+          className="hover:text-primary flexCenter text-light w-full cursor-pointer gap-1.5 rounded-full p-4 font-semibold transition-all hover:font-bold xl:text-lg"
         >
           <Icon />
           <span>{text}</span>

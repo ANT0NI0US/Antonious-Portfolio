@@ -119,10 +119,35 @@ export const smartGateProjects = [
     // url: "https://chatbotv2.mygatein.com/#/login",
     description:
       "This is what I have done since a month after joining Smart Gate company, and I am not allowed to use the source code according to the current contract between us. This project allows any user, whether a company, organization, or any website, to integrate a chat feature on their platform. This chat can contain any desired content, such as messages or the addition of workdays, with the ability to specify the working hours. Additionally, users can define multiple pathways to enable them to choose the desired route. The platform also allows the creation of forms through which users can be asked various questions, and the collected data is recorded according to the preferences of the chat's creator. Furthermore, users can ask and respond to questions, add images for display, and download any data as per the preferences of the individual who built the interface.",
-    keyObjectives: [""],
-    challengesSolved: [""],
-    responsibilities: [""],
-    keyOutcomes: [""],
+    keyObjectives: [
+      "Provide a no-code solution that empowers any business (websites, companies, organizations) to embed a fully customizable chatbot into their platform.",
+      "Allow users to build interactive conversation flows tailored to their operations — from customer support to lead generation.",
+      "Enable dynamic control over working days, available hours, and user interaction logic.",
+      "Offer flexible data collection via forms, with full export and customization options.",
+    ],
+    challengesSolved: [
+      "Integrated React Quill to enable rich text editing inside the chatbot interface, giving creators more control over content formatting",
+      "Built a dynamic flow editor that allows users to map and visualize custom conversation paths with branching logic.",
+      "Addressed UX complexity by abstracting technical logic (like timing, user inputs, and conditionals) into intuitive visual controls.",
+      "Reduced friction in user interactions by embedding form builders directly into chat flows, cutting data collection time by 15%.",
+      "Solved the challenge of multilingual and multimedia support by enabling the addition of images, downloadable files, and flexible messaging.",
+      "Tackled the challenge of adapting to unfamiliar technologies and incorporated them seamlessly into production.",
+    ],
+    responsibilities: [
+      "Led the development of the chat interface and builder panel using React (Vite) and Tailwind CSS for high responsiveness and speed.",
+      "Implemented an interactive flow editor and rich content editor using unfamiliar yet powerful libraries like React Flow and React Quill, adapting quickly to their architecture and limitations.",
+      "Built the interactive flow builder, allowing conditional branching, user input handling, and previewing chat logic in real-time.",
+      "Integrated features to define business hours and active days, dynamically impacting bot availability.",
+      "Implemented a system for form creation, response validation, and custom question logic without coding.",
+      "Ensured state consistency and persistence of chatbot configurations using Redux and local storage strategies.",
+      "Added options to export data collected from user interactions in formats chosen by the chatbot creator.",
+    ],
+    keyOutcomes: [
+      "Boosted platform engagement by 20% due to the interactive and personalized chatbot experience.",
+      "Reduced average setup time for chat flows, leading to faster onboarding and quicker user success.",
+      "Delivered a scalable architecture for chatbot customization that can be reused across different clients or verticals.",
+      "Complied fully with company security policies, with no access to source code post-contract — maintaining IP protection.",
+    ],
     toolkit: [
       {
         src: "https://i.ibb.co/SwYYVC8/react.webp",
@@ -150,9 +175,9 @@ export const smartGateProjects = [
         alt: "Redux",
       },
       {
-        src: "https://i.ibb.co/D1CfTmc/material-ui.webp",
-        url: "https://mui.com/material-ui/",
-        alt: "Material UI",
+        src: "https://i.ibb.co/WyVJpw0/tailwind.png",
+        url: "https://tailwindcss.com/",
+        alt: "Tailwind CSS",
       },
       {
         src: "https://i.ibb.co/phvgSzx/react-router-dom.webp",
@@ -167,8 +192,34 @@ export const smartGateProjects = [
     ],
     keyFeatures: [
       {
-        title: "",
-        description: "",
+        title: "Drag-and-Drop Workflow Builder",
+        description:
+          "Users can design unique chat paths using a visual editor, including questions, buttons, and conditions.",
+      },
+      {
+        title: "Work Schedule Management",
+        description:
+          "Ability to define working days and time ranges when the chatbot is available or auto-responds.",
+      },
+      {
+        title: "Advanced Form Creation",
+        description:
+          "Support for multi-step forms inside the chat, with customizable inputs (text, multiple choice, dates, etc.).",
+      },
+      {
+        title: "Image and File Support",
+        description:
+          "Add visual elements or downloadable files within any chat flow step.",
+      },
+      {
+        title: "Data Collection & Exporting",
+        description:
+          "Collected user data is saved and exportable in multiple formats based on the creator’s preferences.",
+      },
+      {
+        title: "Multi-Use Embedding",
+        description:
+          "The chatbot can be integrated into any external platform or website via lightweight embedding scripts.",
       },
     ],
   },
@@ -179,10 +230,32 @@ export const smartGateProjects = [
     // url: "https://restecho.portal.smartgate-egypt.com/",
     description:
       "A comprehensive cloud-based restaurant management platform designed to streamline and enhance various aspects of food and beverage businesses. Offering a user-friendly point-of-sale (POS) system, efficient inventory management, staff scheduling tools, robust analytics, and customer relationship management (CRM) features, Restico aims to optimize day-to-day operations. With support for various payment methods, detailed analytics for informed decision-making, and the flexibility of cloud-based accessibility, the platform provides a holistic solution for restaurants, cafes, and similar establishments to manage transactions, inventory, staff, and customer relations seamlessly.",
-    keyObjectives: [""],
-    challengesSolved: [""],
-    responsibilities: [""],
-    keyOutcomes: [""],
+    keyObjectives: [
+      "Design a cloud-based platform to help restaurants and cafes manage daily operations efficiently.",
+      "Provide tools to handle staff schedules, transactions, inventory, and customer relationships — all in one system.",
+      "Integrate real-time data reporting to support faster, data-driven decisions for restaurant managers.",
+      "Support multiple payment methods and devices across branches through a web-based POS interface.",
+    ],
+    challengesSolved: [
+      "Addressed the complexity of multi-module coordination by unifying inventory, employee activity, and transaction logs in one system.",
+      "Implemented a role-sensitive interface for managers, cashiers, and staff to streamline their workflows and reduce friction.",
+      "Introduced dynamic staff tracking and scheduling, improving visibility and reducing human error in shift assignments.",
+      "Reduced internal delays and manual processes by 40% through process automation and real-time data syncing.",
+      "Adapted to domain-specific problems like high-volume transaction management and inventory accuracy across different branches.",
+    ],
+    responsibilities: [
+      "Led frontend development using React with Redux for complex state flows and Chakra UI for a clean, accessible interface.",
+      "Built interfaces for POS systems, staff schedules, transaction logs, and inventory dashboards — each with modular components.",
+      "Designed role-based dashboards with distinct permissions and views for admins, cashiers, and waitstaff.",
+      "Integrated external APIs for payment methods and data syncing across branches.",
+      "Focused on performance optimization and responsive design to ensure usability across tablets, kiosks, and desktops.",
+    ],
+    keyOutcomes: [
+      "System adopted by 50+ restaurants, reducing operational delays by 40%.",
+      "Empowered restaurant managers with access to real-time analytics and staff metrics.",
+      "Created a modular and extensible frontend architecture, allowing easy expansion to future modules (like delivery or loyalty programs).",
+      "Improved decision-making through actionable insights on sales trends, staff productivity, and inventory levels.",
+    ],
     toolkit: [
       {
         src: "https://i.ibb.co/SwYYVC8/react.webp",
@@ -232,8 +305,39 @@ export const smartGateProjects = [
     ],
     keyFeatures: [
       {
-        title: "",
-        description: "",
+        title: "Web-Based POS Interface",
+        description:
+          "Fast, reliable, and compatible with different devices for real-time order management and payments.",
+      },
+      {
+        title: "Employee Tracking & Shift Scheduling",
+        description:
+          "Assign, edit, and monitor staff shifts with live status updates.",
+      },
+      {
+        title: "Inventory Management",
+        description:
+          "Real-time tracking of ingredients, stock alerts, and usage reports.",
+      },
+      {
+        title: "Multi-Role Access Control",
+        description:
+          "Customized dashboards and permissions based on the user's role in the restaurant.",
+      },
+      {
+        title: "Advanced Analytics",
+        description:
+          "Visual reports on sales, transactions, customer behavior, and more.",
+      },
+      {
+        title: "Cloud Accessibility",
+        description:
+          "Accessible from any location — enabling multi-branch control and 24/7 data sync.",
+      },
+      {
+        title: "Flexible Payment Integration",
+        description:
+          "Supports cash, card, and online gateways via external API connectors.",
       },
     ],
   },

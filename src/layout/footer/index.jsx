@@ -17,7 +17,7 @@ export default function Footer() {
           <Logo />
 
           {/* CAPTION */}
-          <p className="text-light/70 text-center text-sm sm:text-left">
+          <p className="text-center text-sm sm:text-left">
             Crafted with passion, powered by code.
           </p>
 

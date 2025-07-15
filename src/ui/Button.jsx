@@ -25,11 +25,11 @@ export default function Button({
   ${(disabled || loading) && "cursor-not-allowed! border-main! bg-light/35! text-main!"}`;
 
   const styles = {
-    primary: `bg-secondary text-white border-primary
-      ${!disabled && !loading && "hover:bg-secondary/60 active:bg-secondary/60 hover:border"}`,
-    secondary: `bg-main text-primary border border-secondary
-    ${!disabled && !loading && "hover:bg-secondary hover:text-white hover:border-primary"}`,
-    delete: `bg-error text-light-color border-darkB
+    primary: `bg-light text-secondary border-light border
+      ${!disabled && !loading && "hover:bg-light/90 active:bg-light/90"}`,
+    secondary: `bg-secondary text-light border-light border
+    ${!disabled && !loading && "hover:bg-light hover:text-secondary hover:border-light"}`,
+    delete: `bg-error text-light
       ${!disabled && !loading && "hover:bg-error/90"}`,
   };
 
@@ -62,9 +62,9 @@ export default function Button({
     >
       {loading ? (
         <div className="flexCenter gap-1">
-          <div className="bg-secondary h-3 w-3 animate-bounce rounded-full [animation-delay:-0.3s]" />
-          <div className="bg-secondary h-3 w-3 animate-bounce rounded-full [animation-delay:-0.15s]" />
-          <div className="bg-secondary h-3 w-3 animate-bounce rounded-full" />
+          <div className="bg-secondary size-3 animate-bounce rounded-full [animation-delay:-0.3s]" />
+          <div className="bg-secondary size-3 animate-bounce rounded-full [animation-delay:-0.15s]" />
+          <div className="bg-secondary size-3 animate-bounce rounded-full" />
         </div>
       ) : (
         children

@@ -12,14 +12,10 @@ export default function DropdownMenu({ handleLinkClick }) {
     <div className="relative" ref={ref}>
       <button
         onClick={toggleMenu}
-        className="border-secondary hover:bg-secondary text-light flex cursor-pointer items-center justify-between gap-1 rounded-md border px-4 py-3 font-bold whitespace-nowrap transition hover:font-bold xl:text-lg"
+        className="bg-light text-secondary border-light hover:bg-light/90 active:bg-light/90 flex cursor-pointer items-center justify-between gap-1 rounded-md border px-4 py-3 font-bold whitespace-nowrap transition"
       >
         <span>Get to Know Me</span>
-        {openMenu ? (
-          <FiChevronDown className="text-light" />
-        ) : (
-          <FiChevronRight className="text-light" />
-        )}
+        {openMenu ? <FiChevronDown /> : <FiChevronRight />}
       </button>
 
       {openMenu && (
@@ -31,7 +27,7 @@ export default function DropdownMenu({ handleLinkClick }) {
                 handleLinkClick(path);
                 setOpenMenu(false);
               }}
-              className="hover:text-primary/70 text-light flex w-full cursor-pointer items-center gap-1.5 p-3 font-semibold transition-all hover:font-bold xl:text-lg"
+              className="hover:text-primary text-light flex w-full cursor-pointer items-center gap-1.5 p-3 font-semibold transition-all hover:font-bold xl:text-lg"
             >
               <Icon />
               <span>{text}</span>

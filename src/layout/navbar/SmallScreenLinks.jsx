@@ -51,7 +51,7 @@ export default function SmallScreenLinks({
                 } flexCenter border-secondary h-full w-full border-b-2 text-center text-lg font-semibold transition-all hover:font-extrabold`}
               >
                 <a
-                  className="hover:text-primary/70 text-light flex h-full w-full items-center gap-1.5 px-4 py-3 font-semibold transition-all hover:font-bold"
+                  className="hover:text-primary text-light flex h-full w-full items-center gap-1.5 px-4 py-3 font-semibold transition-all hover:font-bold"
                   onClick={() => handleLinkClick(path)}
                   href={path}
                 >

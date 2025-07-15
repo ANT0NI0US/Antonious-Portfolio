@@ -38,7 +38,7 @@ export const projects = [
   {
     type: "React",
     title: "STOREIFY - User",
-    imgUrl: "https://i.ibb.co/nQz14y2/Storeify.webp",
+    imgUrl: "https://i.ibb.co/chwmP805/2-1-STOREIFY.webp",
     url: "https://storeify-website.netlify.app/",
     githubLink: "https://github.com/ANT0NI0US/Ecommerce",
     description:

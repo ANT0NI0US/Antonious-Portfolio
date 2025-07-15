@@ -22,7 +22,7 @@ export default function CertainExperienceCard({ experience }) {
           {employmentType}, {locationType}
         </span>
       </div>
-      <p className="text-light/70">{summary}</p>
+      <p className="leading-7">{summary}</p>
       <Button
         href={`experiences/${id}`}
         AriaLabel="View Full Experience"
