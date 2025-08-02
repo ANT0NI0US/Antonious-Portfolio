@@ -1,11 +1,14 @@
 import Carousel from "react-multi-carousel";
-import { carouselResponsive } from "@/data/carouselResponsive";
 import Button from "@/ui/Button";
+import TitleSectionHead from "@/ui/TitleSectionHead";
+import { carouselResponsive } from "@/data/carouselResponsive";
 
-export default function ProjectsCarousel({ projects }) {
+export default function ProjectsCarousel({ projects, titleHead = "Projects" }) {
+  if (!projects || projects.length === 0) return null;
   return (
     <div className="flex flex-col gap-3">
-      <h3 className="text-primary text-lg font-bold">Projects</h3>
+      <TitleSectionHead text={titleHead} />
+
       <Carousel
         responsive={carouselResponsive}
         infinite
@@ -24,7 +27,7 @@ export default function ProjectsCarousel({ projects }) {
         {projects.map(({ id, title, imgUrl, description }) => (
           <div
             key={title}
-            className="bg-secondary relative flex min-h-[500px] flex-col gap-3 overflow-hidden rounded-md p-4 text-white sm:min-h-[440px] xl:min-h-[540px]"
+            className="bg-secondary relative flex min-h-[500px] flex-col gap-3 overflow-hidden rounded-md p-4 sm:min-h-[440px] xl:min-h-[540px]"
           >
             <img
               src={imgUrl}

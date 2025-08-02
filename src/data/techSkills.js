@@ -1,8 +1,4 @@
-export const allSkills = [
-  {
-    title: "Core Languages",
-    description: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript"],
-  },
+export const techSkills = [
   {
     title: "Frontend Libraries & Frameworks",
     description: [
@@ -20,7 +16,21 @@ export const allSkills = [
       "Framer Motion",
       "SASS",
       "PugJS",
+      "Fabric.js",
+      "react-apexcharts",
+      "react-icons",
+      "react-multi-carousel",
+      "react-select",
+      "react-toastify",
+      "reactflow",
+      "react-quill",
+      "react-datepicker",
+      "react-copy-to-clipboard",
     ],
+  },
+  {
+    title: "Core Languages",
+    description: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript", "JSON"],
   },
   {
     title: "State Management & Data Fetching",
@@ -45,6 +55,15 @@ export const allSkills = [
     ],
   },
   {
+    title: "Code Quality & Maintainability",
+    description: [
+      "Code Refactoring",
+      "Clean Code Principles",
+      "Modular Architecture",
+      "Reusable Components",
+    ],
+  },
+  {
     title: "Backend & Database",
     description: ["Firebase", "Supabase"],
   },
@@ -62,22 +81,11 @@ export const allSkills = [
     description: ["Git", "GitHub", "Gitlab", "Code Review", "Postman", "NPM"],
   },
   {
-    title: "Soft Skills",
-    description: [
-      "Teamwork",
-      "Communication",
-      "Time Management",
-      "Presentation Skills",
-      "Willingness to Learn",
-      "Effective collaboration",
-      "Proficient in English",
-      "Negotiation",
-      "Active Listening",
-      "Attention to Detail",
-      "Accountability",
-      "Emotional Intelligence",
-      "Excellent Analytical Skills",
-      "Multitasking Skills",
-    ],
+    title: "Deployment & Hosting",
+    description: ["Netlify", "Vercel", "Digital Ocean"],
+  },
+  {
+    title: "Tools & Environment",
+    description: ["VS Code", "Cursor"],
   },
 ];

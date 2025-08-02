@@ -24,9 +24,9 @@ export default function AllBlogs() {
       {blogs?.map(({ title, img, description, post, date }) => (
         <div
           key={title}
-          className="bg-main shadow-secondary relative flex min-h-[500px] flex-col overflow-hidden rounded-md text-white shadow sm:min-h-[480px] xl:min-h-[540px]"
+          className="bg-secondary relative flex min-h-[500px] flex-col overflow-hidden rounded-md sm:min-h-[480px] xl:min-h-[540px]"
         >
-          <span className="bg-secondary absolute top-1.5 right-1.5 ms-auto rounded-md p-2 text-sm text-white shadow">
+          <span className="bg-secondary absolute top-1.5 right-1.5 ms-auto rounded-md p-2 text-sm shadow">
             {date}
           </span>
           <img
@@ -35,7 +35,7 @@ export default function AllBlogs() {
             alt={title}
             className="h-48 w-full object-cover"
           />
-          <div className="flex flex-1 flex-col gap-2 p-4">
+          <div className="border-main flex flex-1 flex-col gap-2 border-t-2 p-4">
             <h2 className="text-primary font-Monoton font-bold xl:text-xl">
               {title}
             </h2>

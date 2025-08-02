@@ -1,5 +1,13 @@
 export const blogs = [
   {
+    img: "https://i.ibb.co/0LLqTdg/23-State-management-in-react.webp",
+    title: "Think Before You Add State in React",
+    description:
+      "Not all data needs to live in state. Use this decision flow to choose the right place for your data — local, derived, contextual, or global — and keep your components clean and scalable.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_when-and-where-state-activity-7355567732311965698-4Cwn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Jul 28, 2025",
+  },
+  {
     img: "https://i.ibb.co/JTRQFJM/22-title-Aria-Label.webp",
     title: "Improve Accessibility with title vs aria-label on Buttons",
     description:

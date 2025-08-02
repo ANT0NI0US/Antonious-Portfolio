@@ -6,8 +6,11 @@ import gmail from "@/assets/gmail.json";
 import location from "@/assets/location.json";
 
 // Reusable Lottie icon component
-const LottieIcon = ({ animationData }) => (
-  <div className="size-8 sm:size-9 md:size-12">
+const LottieIcon = ({
+  animationData,
+  Size = "size-8 sm:size-9 md:size-12",
+}) => (
+  <div className={`${Size}`}>
     <Lottie
       options={{
         loop: true,
@@ -54,9 +57,12 @@ const links = [
   },
 ];
 
-export default function Links() {
+export default function Links({
+  Size,
+  Style = "justify-center lg:justify-start",
+}) {
   return (
-    <div className="flex items-center justify-center gap-2 lg:justify-start">
+    <div className={`flex flex-wrap items-center gap-2 ${Style}`}>
       {links.map(({ href, label, animationData, title }) => (
         <a
           key={href}
@@ -65,9 +71,9 @@ export default function Links() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
-          className="rounded-md bg-white/80"
+          className="bg-light rounded-md"
         >
-          <LottieIcon animationData={animationData} />
+          <LottieIcon animationData={animationData} Size={Size} />
         </a>
       ))}
     </div>

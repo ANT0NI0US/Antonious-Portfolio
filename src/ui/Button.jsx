@@ -7,6 +7,13 @@ const motionProps = {
   transition: { duration: 0.125, ease: "easeInOut" },
 };
 
+const sizeStyles = {
+  small: "px-2 py-1 text-xs sm:text-sm",
+  medium: "px-3 py-2 text-sm sm:text-base",
+  large: "px-6 py-4 text-lg sm:text-xl",
+  actions: "px-[5px] !text-xs sm:!text-sm !w-fit !border !min-h-[30px]",
+};
+
 export default function Button({
   children,
   type = "button",
@@ -17,11 +24,12 @@ export default function Button({
   loading,
   AriaLabel,
   target = "",
+  size = "medium",
   replace = false,
   href,
 }) {
-  const base = `focus:outline-hidden w-full flexCenter gap-1 rounded-md py-3 px-2 relative
-   transition-all duration-300 font-bold cursor-pointer
+  const base = `focus:outline-hidden w-full flexCenter gap-1 rounded-md relative
+   transition-all duration-300 font-bold cursor-pointer text-center
   ${(disabled || loading) && "cursor-not-allowed! border-main! bg-light/35! text-main!"}`;
 
   const styles = {
@@ -31,14 +39,18 @@ export default function Button({
     ${!disabled && !loading && "hover:bg-light hover:text-secondary hover:border-light"}`,
     delete: `bg-error text-light
       ${!disabled && !loading && "hover:bg-error/90"}`,
+    danger: `bg-light text-error
+      ${!disabled && !loading && "hover:bg-error hover:text-light"}`,
   };
+
+  const combinedClassName = `${sizeStyles[size]} ${base} ${styles[variation]} ${Font}`;
 
   if (href)
     return (
       <motion.div className="w-full" {...motionProps}>
         <Link
           to={href}
-          className={`${base} ${styles[variation]} ${Font}`}
+          className={combinedClassName}
           title={AriaLabel}
           aria-label={AriaLabel}
           target={target}
@@ -55,7 +67,7 @@ export default function Button({
       onClick={onClick}
       type={type}
       disabled={disabled || loading}
-      className={`${base} ${styles[variation]} ${Font}`}
+      className={combinedClassName}
       aria-label={AriaLabel}
       title={AriaLabel}
       {...motionProps}

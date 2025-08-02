@@ -1,6 +1,7 @@
 export const smartGateProjects = [
   {
     id: 1,
+    category: "smartGate",
     title: "Learning Management System (LMS)",
     imgUrl: "https://i.ibb.co/QFfkQ4y7/LMS.webp",
     description:
@@ -24,6 +25,9 @@ export const smartGateProjects = [
       "Created reusable components for forms, tables, modals, and data displays to maintain consistency and code reusability.",
       "Boosted frontend speed through lazy loading, code splitting, and component memoization.",
       "Collaborated closely with backend and design teams to align UI/UX with project goals.",
+      "Participated in sprint planning and daily stand-ups to ensure alignment and timely delivery of tasks.",
+      "Implemented responsive design across all major devices and screen sizes.",
+      "Helped digitize traditional paper-based workflows into a modern web-based system, minimizing manual paperwork and ensuring structured data flow.",
     ],
     keyOutcomes: [
       "25% improvement in workflow efficiency reported by school admins.",
@@ -31,6 +35,7 @@ export const smartGateProjects = [
       "Reduced page load and navigation time significantly, enhancing the student experience.",
       "Enabled the system to be reused for other institutions within the organization with minimal modifications.",
       "Project delivered on time and within scope, adopted as the default LMS solution internally.",
+      "Successfully transitioned from paper-based processes to a fully digital system, enhancing organization, traceability, and eco-friendliness.",
     ],
     toolkit: [
       {
@@ -114,6 +119,8 @@ export const smartGateProjects = [
   },
   {
     id: 2,
+    category: "smartGate",
+
     title: "ChatBot",
     imgUrl: "https://i.ibb.co/gthm3Hb/ChatBot.webp",
     // url: "https://chatbotv2.mygatein.com/#/login",
@@ -225,6 +232,8 @@ export const smartGateProjects = [
   },
   {
     id: 3,
+    category: "smartGate",
+
     title: "Restico",
     imgUrl: "https://i.ibb.co/4PpHkc7/Restico.webp",
     // url: "https://restecho.portal.smartgate-egypt.com/",
@@ -343,6 +352,8 @@ export const smartGateProjects = [
   },
   {
     id: 4,
+    category: "smartGate",
+
     title: "Invoice Management System",
     imgUrl: "https://i.ibb.co/99hd7339/invoice.webp",
     description:
@@ -354,6 +365,7 @@ export const smartGateProjects = [
       "Ensure data integrity and validation across customer details, invoice items, and tax calculations.",
     ],
     challengesSolved: [
+      "Bridged the gap between technical implementation and financial domain knowledge by learning accounting fundamentals (e.g., debit/credit logic, tax invoice vs simplified invoice), enabling accurate UI behavior and calculations.",
       "Improved data entry accuracy by 30% through automated validation rules and real-time form error handling.",
       "Solved role conflict issues by architecting a secure multi-role access control system using Redux.",
       "Reduced UI complexity and improved usability by structuring reusable form components for dynamic invoice rows, product selectors, and customer inputs.",
@@ -365,6 +377,9 @@ export const smartGateProjects = [
       "Built dynamic and validated forms for invoice creation, customer selection, and product assignment.",
       "Integrated conditional logic for role-based UI rendering (e.g., hiding admin-only sections from sales users).",
       "Applied component-level optimization strategies to enhance render performance.",
+      "Implemented responsive design across all major devices and screen sizes.",
+      "Integrated internationalization (i18n) with support for both Arabic and English, improving accessibility for a wider audience.",
+      "Participated in sprint planning and daily stand-ups to ensure alignment and timely delivery of tasks.",
     ],
     keyOutcomes: [
       "Increased invoice data accuracy by 30%, minimizing manual errors and correction loops.",
@@ -464,10 +479,12 @@ export const smartGateProjects = [
   },
   {
     id: 5,
+    category: "smartGate",
+
     title: "Playgrounds (B2C)",
     imgUrl: "https://i.ibb.co/r8s5YCj/b2c.webp",
     description:
-      "Designed a dual-version system (B2C) for playground reservations. The platform included admin management for owners and clients, real-time conversations, and reservation oversight.",
+      "Built a dual-version system (B2C) for playground reservations. The platform included admin management for owners and clients, real-time conversations, and reservation oversight.",
     keyObjectives: [
       "Build a B2C platform that connects playground owners and end-users through an intuitive booking interface.",
       "Provide tailored interfaces for clients (booking) and owners/admins (management) with clear role separation.",
@@ -486,6 +503,12 @@ export const smartGateProjects = [
       "Developed a reusable real-time chat component integrated across multiple views.",
       "Created booking forms, availability calendars, and admin dashboards for schedule and payment tracking.",
       "Collaborated with backend developers to ensure secure data flow and real-time syncing (likely via sockets or polling).",
+      "Communicated directly with product owners and design stakeholders to align on business and UI requirements.",
+      "Collaborated with a cross-functional team including frontend developers, backend developers (.NET/SQL), UI/UX designers (Figma), data analysts, and project managers to deliver key features.",
+      "Converted Figma designs into high-performance, pixel-perfect React components.",
+      "Implemented responsive design across all major devices and screen sizes.",
+      "Integrated internationalization (i18n) with support for both Arabic and English, improving accessibility for a wider audience.",
+      "Participated in sprint planning and daily stand-ups to ensure alignment and timely delivery of tasks.",
     ],
     keyOutcomes: [
       "Shipped a production-ready dual-user system that balances both booking flow and owner-side operations.",
@@ -630,7 +653,7 @@ export const smartGateProjects = [
       },
       {
         src: "https://i.ibb.co/M5jh5BwH/14-Playground-Types-delete-exist-playground-type.webp",
-        alt: "Playground Types - ( Delete exist playground type )",
+        alt: "Playground Types - ( Delete playground type )",
       },
       {
         src: "https://i.ibb.co/3ypPtbfB/15-reservations-main.webp",
@@ -660,6 +683,8 @@ export const smartGateProjects = [
   },
   {
     id: 6,
+    category: "smartGate",
+
     title: "Playgrounds (B2B)",
     imgUrl: "https://i.ibb.co/8L0RxcXw/7-Playgrounds-Main-English.webp",
     description:
@@ -682,6 +707,10 @@ export const smartGateProjects = [
       "Managed global state and booking flows using Redux, ensuring predictable behavior across components.",
       "Designed modular UI components to streamline maintenance and future feature extensions.",
       "Integrated with backend APIs to fetch, display, and update real-time reservation data.",
+      "Converted Figma designs into high-performance, pixel-perfect React components.",
+      "Implemented responsive design across all major devices and screen sizes.",
+      "Integrated internationalization (i18n) with support for both Arabic and English, improving accessibility for a wider audience.",
+      "Participated in sprint planning and daily stand-ups to ensure alignment and timely delivery of tasks.",
     ],
     keyOutcomes: [
       "Digitized the entire reservation workflow, reducing admin time spent on manual bookings by over 40%.",
@@ -899,10 +928,36 @@ export const smartGateProjects = [
     // url: "https://portal.clinicmarkter.niyat.sa/#/adminlogin",
     description:
       "This project targets the number of visits to a specific website, along with the percentage you will receive based on the number of entries resulting from your access to this site.",
-    keyObjectives: [""],
-    challengesSolved: [""],
-    responsibilities: [""],
-    keyOutcomes: [""],
+    keyObjectives: [
+      "Design a dashboard that tracks the number of visits to a specific website.",
+      "Enable users to monitor performance based on traffic and calculate commission percentages.",
+      "Build a dynamic form system to support marketing operations for clinics and influencers.",
+    ],
+    challengesSolved: [
+      "Worked with new libraries and unfamiliar tools such as React Flow (for visual flows) and React Quill (for rich text editing), learning them from scratch and integrating them seamlessly.",
+      "Built a dynamic form builder that supports conditional rendering and input validation based on configuration.",
+      "Managed complex state updates and syncing between different form stages using Redux and custom hooks.",
+      "Solved layout issues for printable reports (optimized for A4), ensuring all data fits cleanly in PDF export.",
+      "Developed an admin vs. influencer separation logic, allowing each user role to access and edit different fields dynamically.",
+      "Handled deep form nesting and error management, especially with dynamically added inputs.",
+    ],
+    responsibilities: [
+      "Developed the dashboard UI and marketing form builder from the ground up using React.js and Tailwind CSS.",
+      "Integrated React Flow to visually display marketing flows and user journeys.",
+      "Customized React Quill for rich text entry with tailored formatting options and field validations.",
+      "Designed reusable and flexible form components that support various input types, conditions, and styles.",
+      "Ensured state persistence across form steps using Redux Toolkit and form-driven configuration files.",
+      "Handled route-based logic to differentiate form visibility and access control based on user role (admin/influencer).",
+      "Created a summary table that dynamically calculates percentages based on traffic and performance.",
+      "Built a multi-section layout that’s printable and exportable as PDF using print-specific Tailwind classes.",
+    ],
+    keyOutcomes: [
+      "Delivered a highly flexible form builder system used by marketers and clinics with zero need for dev intervention.",
+      "Reduced manual setup time for campaigns by 60% through reusable form templates.",
+      "Successfully incorporated new tools (like React Flow and React Quill) to enhance functionality and UX.",
+      "Enabled team members to visualize flow logic, improving internal marketing strategy discussions.",
+      "Ensured marketing data was clear, clean, and print-ready, which improved client reporting and delivery.",
+    ],
     toolkit: [
       {
         src: "https://i.ibb.co/SwYYVC8/react.webp",
@@ -925,11 +980,6 @@ export const smartGateProjects = [
         alt: "Javascript",
       },
       {
-        src: "https://i.ibb.co/D1CfTmc/material-ui.webp",
-        url: "https://mui.com/material-ui/",
-        alt: "Material UI",
-      },
-      {
         src: "https://i.ibb.co/QcWrxrY/chakra-ui.webp",
         url: "https://chakra-ui.com/",
         alt: "chakra Ui",
@@ -937,21 +987,80 @@ export const smartGateProjects = [
     ],
     keyFeatures: [
       {
-        title: "",
-        description: "",
+        title: "Dynamic Form System",
+        description:
+          "Allows administrators to create, edit, and preview custom marketing forms.",
+      },
+      {
+        title: "Role-based Views",
+        description: "Differentiated access and UI for influencers and admins.",
+      },
+      {
+        title: "Visual Flow Integration",
+        description:
+          "Uses React Flow to map out marketing user journeys visually.",
+      },
+      {
+        title: "Rich Text Support",
+        description: "Embedded React Quill editor for flexible content input.",
+      },
+      {
+        title: "Real-time Calculations",
+        description:
+          "Summary section that auto-updates performance percentage based on inputs.",
+      },
+      {
+        title: "Responsive & Print-Ready Design",
+        description: "Optimized for both screen and PDF/A4 printing.",
+      },
+      {
+        title: "Component Reusability",
+        description:
+          "Built highly modular form components to support text, dates, dropdowns, and more.",
+      },
+      {
+        title: "Multistep Flow Support",
+        description:
+          "Smooth navigation between form steps with persistent state and validation.",
       },
     ],
   },
   {
     id: 8,
+    category: "smartGate",
+
     title: "Niyat’s Website",
     imgUrl: "https://i.ibb.co/B5Wzsgmc/niyats-website.webp",
     description:
       "Niyat's website landing page is a sleek and modern platform designed to showcase its purpose and services effectively. With a clean layout, intuitive navigation, and engaging visuals, it provides visitors with a seamless experience to explore and interact with the brand.",
-    keyObjectives: [""],
-    challengesSolved: [""],
-    responsibilities: [""],
-    keyOutcomes: [""],
+    keyObjectives: [
+      "Build a sleek, responsive landing page that reflects Niyat’s brand identity and services.",
+      "Improve loading performance and SEO using server-side rendering.",
+      "Provide a smooth, modern user experience across devices.",
+    ],
+    challengesSolved: [
+      "Migrated from a static React setup to Next.js, enabling faster load times and better SEO.",
+      "Ensured full responsiveness across desktop, tablet, and mobile using Tailwind CSS and custom layouts.",
+      "Integrated clean, scroll-based animations to enhance engagement without affecting performance.",
+      "Managed optimized image rendering using Next’s built-in <Image /> component to reduce load time.",
+      "Achieved pixel-perfect design implementation by collaborating with designers and iterating based on feedback.",
+      "Handled route-based rendering with dynamic content sections based on page scroll behavior.",
+    ],
+    responsibilities: [
+      "Developed the entire frontend using Next.js and Tailwind CSS.",
+      "Applied SEO best practices by using semantic HTML, meta tags, and server-side rendering.",
+      "Used Next Image optimization to serve images in modern formats with lazy loading.",
+      "Built reusable layout components to ensure scalability and consistency.",
+      "Coordinated with UI/UX designers to ensure brand identity was reflected precisely in the final output.",
+      "Deployed the project and ensured performance scores using tools like Lighthouse and PageSpeed Insights.",
+    ],
+    keyOutcomes: [
+      "Achieved 90+ performance and SEO scores across all devices using Next.js features.",
+      "Reduced initial page load time by 40% through image and code optimization.",
+      "Delivered a visually stunning, clean, and fast website that represents Niyat’s identity professionally.",
+      "Improved user retention by providing a frictionless and responsive navigation experience.",
+      "Enabled future scalability for blog or service sections due to Next’s file-based routing and SSR.",
+    ],
     toolkit: [
       {
         src: "https://i.ibb.co/2x3gtYH/Next-js.webp",
@@ -978,11 +1087,6 @@ export const smartGateProjects = [
         alt: "Tailwind CSS",
       },
       {
-        src: "https://i.ibb.co/MVCh9Rx/Redux.webp",
-        url: "https://redux.js.org/",
-        alt: "Redux",
-      },
-      {
         src: "https://i.ibb.co/HfnF8CFt/i18n.webp",
         url: "https://react.i18next.com/",
         alt: "react-i18next",
@@ -995,8 +1099,39 @@ export const smartGateProjects = [
     ],
     keyFeatures: [
       {
-        title: "",
-        description: "",
+        title: "Next.js Framework",
+        description:
+          "Leveraged for SSR, static generation, and better performance",
+      },
+      {
+        title: "SEO Optimization",
+        description: "Dynamic meta tags, structured content, and fast loading",
+      },
+      {
+        title: "Responsive Design",
+        description: "Fully optimized for all screen sizes using Tailwind CSS",
+      },
+      {
+        title: "Optimized Images",
+        description: "Lazy-loaded, modern-format images using next/image",
+      },
+      {
+        title: "Smooth Animations",
+        description:
+          "Integrated scroll-triggered animations for better user engagement",
+      },
+      {
+        title: "Reusable Components",
+        description: "Modular structure for buttons, sections, and headers",
+      },
+      {
+        title: "Performance-Focused",
+        description: "Lighthouse and PageSpeed optimized across all metrics",
+      },
+      {
+        title: "Clean Deployment",
+        description:
+          "Ready-to-scale layout with easy backend integration if needed",
       },
     ],
   },
