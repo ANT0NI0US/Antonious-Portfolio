@@ -1,5 +1,13 @@
 export const blogs = [
   {
+    img: "https://i.ibb.co/Hpk7V2Pc/vs-Code-Extension.webp",
+    title: "Must-Have VS Code Extensions I Use Daily",
+    description:
+      "Boost your frontend workflow with these powerful VS Code extensions — these tools are game-changers.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_vscode-extensions-frontend-activity-7358119547192729600-px3Z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Aug 4, 2025",
+  },
+  {
     img: "https://i.ibb.co/0LLqTdg/23-State-management-in-react.webp",
     title: "Think Before You Add State in React",
     description:
@@ -118,14 +126,6 @@ export const blogs = [
       "Learn how to manage .env variables in React (Vite) and Next.js, the difference between VITE_ and NEXT_PUBLIC_, and best practices to keep your data safe in all environments.",
     post: "https://www.linkedin.com/posts/antonious-nasr_%D9%85%D8%AA%D8%BA%D9%8A%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9-%D9%81%D9%8A-react-%D9%88-nextjs-activity-7313576274365505537-nDWj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
     date: "Apr 1, 2025",
-  },
-  {
-    img: "https://i.ibb.co/Hpk7V2Pc/vs-Code-Extension.webp",
-    title: "Must-Have VS Code Extensions I Use Daily",
-    description:
-      "Boost your frontend workflow with these powerful VS Code extensions — these tools are game-changers.",
-    post: "https://www.linkedin.com/posts/antonious-nasr_vscode-extensions-frontend-activity-7310698460175884288-ka96?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-    date: "Mar 25, 2025",
   },
   {
     img: "https://i.ibb.co/3y7zMTry/tailwind-Css-V4.webp",

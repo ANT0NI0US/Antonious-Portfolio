@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+
 const timelineVariants = {
   hidden: { height: 0 },
   visible: { height: "100%" },
 };
+
 export default function MobileTimeLineLine() {
   return (
     <motion.div
