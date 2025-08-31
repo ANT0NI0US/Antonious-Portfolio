@@ -1,5 +1,13 @@
 export const blogs = [
   {
+    img: "https://i.ibb.co/Bb7yHJW/24-Avoid-Capitalized-Props-Errors-in-React.webp",
+    title: "Avoid Capitalized Props Errors in React",
+    description:
+      "In React, custom attributes must start with a lowercase letter — capitalized props are treated as components, causing console errors and even lowering your Lighthouse score.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_error-in-uppercase-activity-7367888914780479488-fGpP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Aug 31, 2025",
+  },
+  {
     img: "https://i.ibb.co/Hpk7V2Pc/vs-Code-Extension.webp",
     title: "Must-Have VS Code Extensions I Use Daily",
     description:
