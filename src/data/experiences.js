@@ -106,7 +106,7 @@ export const experiences = [
   },
   {
     id: 2,
-    title: "Crēation ltd",
+    title: "Crēation LLC",
     companyLogo: "https://i.ibb.co/kVRW5dVx/Creation-Logo.jpg",
     jobTitle: "Mid Level Frontend Developer",
     year: "Mar 2025 - Present",

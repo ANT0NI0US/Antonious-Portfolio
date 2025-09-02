@@ -7,7 +7,7 @@ export const allTestimonials = [
       "It's rare to see someone blend strong technical skills with such consistency and reliability. His work speaks for itself — clean, well-structured, and always delivered with attention to detail. Even from a distance, it's clear that Antonious adds genuine value to the team and to the product.",
       "I believe he would be a strong asset to any team that values quality frontend development.",
     ],
-    at: "Crēation ltd company",
+    at: "Crēation LLC company",
   },
   {
     publisher: "Mustafa Khaled",

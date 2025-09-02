@@ -10,7 +10,6 @@ export default function Dot() {
       variants={dotVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
       transition={{ duration: 0.4, ease: "backOut" }}
       className="border-primary bg-light absolute top-5 left-2 z-10 flex h-6 w-6 items-center justify-center rounded-full border-4 md:right-auto md:left-1/2 md:-translate-x-1/2"
     >

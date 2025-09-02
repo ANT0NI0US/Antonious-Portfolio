@@ -14,7 +14,6 @@ export default function SkillDetails({ skill, index }) {
       }}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.1 }}
       transition={{ duration: 0.5, delay: index * 0.2 }}
     >
       {/* TITLE */}

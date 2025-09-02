@@ -15,7 +15,6 @@ export default function FilteredProjects({
           }}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.5 }}
           key={project.title}
           className="shadow-secondary hover:shadow-primary flex cursor-pointer flex-col rounded-md shadow-md drop-shadow-lg transition-all duration-200 hover:shadow-lg hover:drop-shadow-lg"

@@ -12,7 +12,7 @@ export default function SoftSkills() {
         {/* SOFT SKILLS */}
         <GridContainer>
           {softSkills?.map((skill, index) => (
-            <SkillDetails skill={skill} index={index} key={index} />
+            <SkillDetails skill={skill} key={index} />
           ))}
         </GridContainer>
       </div>

@@ -14,7 +14,7 @@ export default function KeyFeatures({ keyFeatures }) {
               <div className="bg-light text-main flex h-full w-20 items-center justify-center pr-4 text-xl font-bold">
                 0{index + 1}
               </div>
-              <div className="bg-main absolute top-0 left-16 z-10 h-full w-[50px] skew-x-[-30deg]"></div>
+              <div className="bg-main absolute top-0 left-16 z-10 h-full w-[50px] skew-x-[-30deg]" />
             </div>
             <div className="flex flex-col gap-1 p-4">
               <h4 className="text-primary text-lg font-semibold">

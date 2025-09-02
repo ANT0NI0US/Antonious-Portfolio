@@ -17,8 +17,12 @@ export default function AllExperiences() {
           variants={cardVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{
+            duration: 0.6,
+            ease: "easeOut",
+            type: "spring",
+            stiffness: 300,
+          }}
           className={`relative flex w-full flex-col items-center md:flex-row md:items-start ${
             idx % 2 === 0 ? "md:justify-start" : "md:justify-end"
           }`}
