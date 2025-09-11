@@ -1,4 +1,20 @@
 export const blogs = [
+  // {
+  //   img: "https://i.ibb.co/hFZ74YpZ/26-Tidy-Up-Long-Tailwind-Classes-with-VS-Code-Inline-Fold.webp",
+  //   title: "Tidy Up Long Tailwind Classes with VS Code Inline Fold",
+  //   description:
+  //     "The Inline Fold extension in VS Code collapses long Tailwind class lists into a clean (…), making your code easier to read and navigate.",
+  //   post: "https://www.linkedin.com/posts/antonious-nasr_vscode-visualstudiocode-cleancode-activity-7371165538967859200-uUUZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+  //   date: "Sep 14, 2025",
+  // },
+  {
+    img: "https://i.ibb.co/Y7gXGfRZ/25-Clean-Up-Your-Imports-Instantly-in-VS-Code.webp",
+    title: "Clean Up Your Imports Instantly in VS Code",
+    description:
+      "Use the shortcut Shift + Alt + O to auto-organize imports, remove unused ones, and keep your code clean and readable.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_vscode-visualstudiocode-cleancode-activity-7371165538967859200-uUUZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Sep 9, 2025",
+  },
   {
     img: "https://i.ibb.co/Bb7yHJW/24-Avoid-Capitalized-Props-Errors-in-React.webp",
     title: "Avoid Capitalized Props Errors in React",
