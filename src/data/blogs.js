@@ -1,12 +1,45 @@
 export const blogs = [
   // {
-  //   img: "https://i.ibb.co/hFZ74YpZ/26-Tidy-Up-Long-Tailwind-Classes-with-VS-Code-Inline-Fold.webp",
-  //   title: "Tidy Up Long Tailwind Classes with VS Code Inline Fold",
+  //   img: "https://i.ibb.co/Zp2DQSSw/30-Simplifying-remote-Patterns-in-Next-js-v15.webp",
+  //   title: "Simplifying remotePatterns in Next.js v15",
   //   description:
-  //     "The Inline Fold extension in VS Code collapses long Tailwind class lists into a clean (…), making your code easier to read and navigate.",
+  //     "Next.js v15 makes handling external images easier — use new URL() for cleaner, simpler remotePatterns compared to v14’s object format.",
   //   post: "https://www.linkedin.com/posts/antonious-nasr_vscode-visualstudiocode-cleancode-activity-7371165538967859200-uUUZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-  //   date: "Sep 14, 2025",
+  //   date: "Sep 28, 2025",
   // },
+  {
+    img: "https://i.ibb.co/3yvVMXDy/28-Make-Your-Next-js-Website-Shine-on-Linked-In-Whats-App-and-Twitter.webp",
+    title: "Make Your Next.js Website Shine on LinkedIn, WhatsApp, and Twitter",
+    description:
+      "Leverage Next.js metadata to add SEO-friendly titles, descriptions, Open Graph, and Twitter tags — so your shared links always look professional across all platforms.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_nextjs-frontend-webdev-activity-7376586266840162304-ymee?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Sep 24, 2025",
+  },
+  {
+    img: "https://i.ibb.co/8DPBJ94g/28-Mastering-use-Imperative-Handle-in-React-for-Cleaner-Component-APIs.webp",
+    title: "Mastering useImperativeHandle in React for Cleaner Component APIs",
+    description:
+      "Use useImperativeHandle with forwardRef to expose only the methods your parent needs — keeping internal logic hidden and your components clean, reusable, and secure.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_useimperativehandle-activity-7375499081026174976-eRT8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Sep 21, 2025",
+  },
+  {
+    img: "https://i.ibb.co/bjhLDKKB/27-create-new-commit.webp",
+    title:
+      "How to Write Professional Commit Messages with Conventional Commits",
+    description:
+      "Use a clear commit message format like feat, fix, refactor, or chore to keep your project history clean, organized, and easy to understand.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_frontend-react-cleancode-activity-7374049495333879808-4-XK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Sep 17, 2025",
+  },
+  {
+    img: "https://i.ibb.co/hFZ74YpZ/26-Tidy-Up-Long-Tailwind-Classes-with-VS-Code-Inline-Fold.webp",
+    title: "Tidy Up Long Tailwind Classes with VS Code Inline Fold",
+    description:
+      "The Inline Fold extension in VS Code collapses long Tailwind class lists into a clean (…), making your code easier to read and navigate.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_webdevelopment-codinglife-codesmarter-activity-7372962337374433280-RVM4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Sep 14, 2025",
+  },
   {
     img: "https://i.ibb.co/Y7gXGfRZ/25-Clean-Up-Your-Imports-Instantly-in-VS-Code.webp",
     title: "Clean Up Your Imports Instantly in VS Code",
