@@ -1,12 +1,20 @@
 export const blogs = [
-  // {
-  //   img: "https://i.ibb.co/Zp2DQSSw/30-Simplifying-remote-Patterns-in-Next-js-v15.webp",
-  //   title: "Simplifying remotePatterns in Next.js v15",
-  //   description:
-  //     "Next.js v15 makes handling external images easier — use new URL() for cleaner, simpler remotePatterns compared to v14’s object format.",
-  //   post: "https://www.linkedin.com/posts/antonious-nasr_vscode-visualstudiocode-cleancode-activity-7371165538967859200-uUUZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
-  //   date: "Sep 28, 2025",
-  // },
+  {
+    img: "https://i.ibb.co/ksq2QrQR/30-Use-Emoji-as-Favicon-in-React-Projects.webp",
+    title: "Use Emoji as Favicon in React Projects",
+    description:
+      "Forget the old .ico or .png icons — with just one line of code, you can set an emoji as your favicon in React. Lightweight, customizable, and fun!",
+    post: "https://www.linkedin.com/posts/antonious-nasr_react-frontenddevelopment-webdevelopment-activity-7380578440418238464-xNjh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Oct 5, 2025",
+  },
+  {
+    img: "https://i.ibb.co/Zp2DQSSw/30-Simplifying-remote-Patterns-in-Next-js-v15.webp",
+    title: "Simplifying remotePatterns in Next.js v15",
+    description:
+      "Next.js v15 makes handling external images easier — use new URL() for cleaner, simpler remotePatterns compared to v14’s object format.",
+    post: "https://www.linkedin.com/posts/antonious-nasr_nextjs15-nextjs14-reactdevelopers-activity-7378035755459379200-TIor?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Sep 28, 2025",
+  },
   {
     img: "https://i.ibb.co/3yvVMXDy/28-Make-Your-Next-js-Website-Shine-on-Linked-In-Whats-App-and-Twitter.webp",
     title: "Make Your Next.js Website Shine on LinkedIn, WhatsApp, and Twitter",
