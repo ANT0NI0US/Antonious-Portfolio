@@ -1,4 +1,12 @@
 export const blogs = [
+    {
+    img: "https://i.ibb.co/Hpp3HQqf/31-Stop-Shortening-Component-Names-in-React.webp",
+    title: "Stop Shortening Component Names in React",
+    description:
+      "Clear naming beats short naming — always use descriptive, readable component names, even if they’re long. Future you (and your teammates) will thank you!",
+    post: "https://www.linkedin.com/posts/antonious-nasr_cleancode-reacttips-frontenddevelopment-activity-7383109222722506752-jOUi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4MPPgBymZ5GniZRNPqmltug2XNHkjMcQQ",
+    date: "Oct 12, 2025",
+  },
   {
     img: "https://i.ibb.co/ksq2QrQR/30-Use-Emoji-as-Favicon-in-React-Projects.webp",
     title: "Use Emoji as Favicon in React Projects",
