@@ -6,6 +6,7 @@ export default function Service({ title, icon: Icon, description }) {
       className="bg-secondary relative flex min-h-[300px] items-center justify-center gap-2 overflow-hidden rounded-md"
       initial={{ scale: 0, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.5, type: "spring", stiffness: 50 }}
     >
       <div className="animate-rotate bg-primary absolute h-[200%] w-[100px]" />

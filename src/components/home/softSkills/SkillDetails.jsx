@@ -7,6 +7,7 @@ export default function SkillDetails({ skill }) {
       className="bg-secondary flex flex-col items-center justify-center gap-1.5 rounded-md p-4 text-center"
       initial={{ rotate: 180, opacity: 0, scale: 0.5 }}
       whileInView={{ rotate: 0, opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
       transition={{
         duration: 0.6,
       }}

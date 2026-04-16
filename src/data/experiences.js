@@ -142,6 +142,7 @@ export const experiences = [
     ],
     tools: [
       "React",
+      "Next.js",
       "Javascript",
       "ECMAScript",
       "Typescript",
@@ -154,6 +155,7 @@ export const experiences = [
       "Framer Motion",
       "i18n",
       "React Hook Form",
+      "Swiper",
       "Redux",
       "Redux Toolkit Query",
       "Performance Optimization",
@@ -176,6 +178,7 @@ export const experiences = [
     workingWith: ["Company Owner", "Backend Developers (Laravel, PHP)"],
     techHighlights: [
       "React",
+      "Next.js",
       "Redux",
       "Tailwind CSS",
       "Fabric.js",

@@ -58,21 +58,17 @@ function Window({ children, name }) {
     <AnimatePresence>
       {name === openName && (
         <>
-          <motion.div
+          <div
             key="overlay"
-            className="fixed top-0 left-0 z-[110] h-full w-full bg-[#00000050] backdrop-blur-sm"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
+            className="fixed top-0 left-0 z-[110] h-full w-full bg-black/85"
           />
 
           <motion.div
             key="modal"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.3 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
             className="fixed top-0 left-0 z-[10000000] flex h-full w-full items-center justify-center"
           >
             <div className="bg-main relative z-50 max-h-[80vh] w-[90%] rounded-lg shadow-md md:w-[750px]">

@@ -1,13 +1,12 @@
 import Links from "@/ui/Links";
+import MainTitle from "./MainTitle";
 
 export default function Connect() {
   return (
-    <div className="flex w-full flex-col items-center justify-center gap-2 sm:items-start sm:justify-start">
-      <span className="text-primary font-bold">Connect</span>
+    <div className="flex w-full flex-col gap-2">
+      <MainTitle title="Connect" />
 
-      <p className="text-center sm:text-start">
-        Let’s create something extraordinary!
-      </p>
+      <p className="text-sm">Let’s create something extraordinary!</p>
 
       {/* LINKS */}
       <Links Size="size-8" Style="justify-start" />

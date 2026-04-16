@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Information = [
   {
     title: "Years Of Experience",
-    data: "2+",
+    data: "3+",
   },
   {
     title: "Number Of Projects",
@@ -24,6 +24,7 @@ export default function ExperiencesProjects() {
           className="shadow-secondary border-secondary flex w-full flex-col items-center justify-center gap-1.5 rounded-4xl border-b-8 py-7 shadow-md md:min-h-[210px] md:p-4 lg:min-h-[170px]"
           initial={{ skew: "0" }}
           whileInView={{ skew: [0, 20, -20, 0] }}
+          viewport={{ once: true }}
           transition={{ duration: 3 }}
         >
           <span className="text-primary text-2xl font-bold lg:text-3xl">

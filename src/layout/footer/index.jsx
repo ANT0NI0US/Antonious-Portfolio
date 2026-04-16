@@ -11,8 +11,8 @@ export default function Footer() {
     <footer className="bg-secondary relative">
       {/* Waves */}
       <Waves />
-      <div className="container flex flex-col justify-between gap-4 py-4 sm:grid sm:grid-cols-4 sm:gap-6 sm:py-10 lg:grid-cols-6">
-        <div className="col-span-2 flex w-full flex-col items-center gap-2 sm:items-start">
+      <div className="container flex flex-col justify-between gap-4 py-4 sm:grid sm:grid-cols-4 sm:gap-6 sm:py-10 xl:grid-cols-6">
+        <div className="col-span-2 flex w-full flex-col gap-2">
           {/* MY LOGO */}
           <Logo />
 
@@ -20,8 +20,9 @@ export default function Footer() {
           <span className="text-xl font-semibold">Frontend Developer</span>
 
           {/* CAPTION */}
-          <p className="text-center text-sm sm:text-left">
-            Crafted with passion, powered by code.
+          <p className="w-full text-sm sm:w-[70%]">
+            Crafted with passion, powered by code — turning ideas into seamless,
+            responsive experiences one line at a time.
           </p>
         </div>
 

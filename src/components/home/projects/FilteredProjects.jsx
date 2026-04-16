@@ -16,6 +16,7 @@ export default function FilteredProjects({
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
           key={project.title}
           className="shadow-secondary hover:shadow-primary flex cursor-pointer flex-col rounded-md shadow-md drop-shadow-lg transition-all duration-200 hover:shadow-lg hover:drop-shadow-lg"
           onClick={() => handleSelectProjectDetails(project, index)}

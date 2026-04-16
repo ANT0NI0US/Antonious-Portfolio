@@ -19,10 +19,10 @@ export default function Home() {
       <SoftSkills />
       <Projects />
       <Services />
+      <Testimonials />
       <Experiences />
       <Qualifications />
       <Blogs />
-      <Testimonials />
       <ContactUs />
     </>
   );
