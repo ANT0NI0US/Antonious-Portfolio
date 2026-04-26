@@ -28,6 +28,16 @@ export const aboutLinks = [
     text: "About Me",
   },
   {
+    icon: PiSealCheck,
+    path: "#services",
+    text: "Services",
+  },
+  {
+    icon: TbFolderCode,
+    path: "#projects",
+    text: "Projects",
+  },
+  {
     icon: TbCpu,
     path: "#tech-skills",
     text: "Technical Skills",
@@ -38,14 +48,9 @@ export const aboutLinks = [
     text: "Soft Skills",
   },
   {
-    icon: TbFolderCode,
-    path: "#projects",
-    text: "Projects",
-  },
-  {
-    icon: PiSealCheck,
-    path: "#services",
-    text: "Services",
+    icon: RiChatQuoteLine,
+    path: "#testimonials",
+    text: "Testimonials",
   },
   {
     icon: TbUserStar,
@@ -61,10 +66,5 @@ export const aboutLinks = [
     icon: FaRegComments,
     path: "#blogs",
     text: "Blogs",
-  },
-  {
-    icon: RiChatQuoteLine,
-    path: "#testimonials",
-    text: "Testimonials",
   },
 ];
