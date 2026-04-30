@@ -8,6 +8,7 @@ import {
   useState,
 } from "react";
 import { createPortal } from "react-dom";
+import Button from "./Button";
 
 const ModalContext = createContext();
 
@@ -71,15 +72,15 @@ function Window({ children, name }) {
             transition={{ duration: 0.2 }}
             className="fixed top-0 left-0 z-[10000000] flex h-full w-full items-center justify-center"
           >
-            <div className="bg-main relative z-50 max-h-[80vh] w-[90%] rounded-lg shadow-md md:w-[750px]">
-              <button
-                aria-label="Close"
-                title="Close"
+            <div className="bg-main relative z-50 max-h-[90vh] w-[90%] rounded-md shadow-md sm:max-h-[80vh] md:w-[750px]">
+              <Button
+                variation="delete"
+                AriaLabel="Close-modal"
                 onClick={close}
-                className="bg-error absolute top-[10px] right-[10px] rounded p-1"
+                Font="absolute! top-[10px] right-[10px] w-[30px]! h-[30px]! p-2!"
               >
                 <CloseIcon />
-              </button>
+              </Button>
               <div>{cloneElement(children, { onCloseModal: close })}</div>
             </div>
           </motion.div>

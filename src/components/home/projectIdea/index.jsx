@@ -4,7 +4,7 @@ import Button from "@/ui/Button";
 export default function ProjectIdea() {
   const handleNavClick = useHandleNavClick();
   return (
-    <div className="bg-secondary relative flex min-h-[400px] flex-col items-center justify-center gap-4 px-4 py-5 text-center sm:gap-6">
+    <div className="bg-secondary relative flex min-h-[300px] flex-col items-center justify-center gap-4 px-4 py-5 text-center sm:min-h-[400px] sm:gap-6">
       <h2 className="text-primary text-2xl font-semibold uppercase sm:text-4xl md:text-5xl xl:text-6xl">
         Have a project idea?
       </h2>
@@ -15,7 +15,7 @@ export default function ProjectIdea() {
 
       <Button
         AriaLabel="Start Your Project Now"
-        Font="w-[300px]!"
+        Font="w-[250px]! sm:w-[300px]! "
         size="large"
         onClick={() => handleNavClick("#contact")}
       >

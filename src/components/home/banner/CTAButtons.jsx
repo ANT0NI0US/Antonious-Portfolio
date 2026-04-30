@@ -23,7 +23,7 @@ export default function CTAButtons() {
   const handleNavClick = useHandleNavClick();
 
   return (
-    <div className="xs:w-full xs:flex-wrap mx-auto flex gap-3 sm:flex-nowrap md:w-[500px] 2xl:w-[600px] 2xl:gap-4">
+    <div className="xs:grid-cols-2 mx-auto grid w-full grid-cols-1 gap-3 md:w-[500px] 2xl:w-[550px] 2xl:gap-4">
       {mainLinks.map(
         ({ to, icon: Icon, text, target, btnType, isInternal }) => (
           <Button

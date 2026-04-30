@@ -6,7 +6,7 @@ export default function CertainExperienceCard({ experience }) {
     experience || {};
 
   return (
-    <div className="from-main to-secondary shadow-secondary xs:ml-8 xs:w-[85%] ml-10 flex w-[80%] flex-col gap-4 rounded-md bg-gradient-to-tl from-55% to-100% p-6 shadow-md transition-all duration-300 hover:scale-[1.02] md:ml-0 md:w-[45%]">
+    <div className="from-main to-secondary shadow-secondary flex w-full flex-col gap-4 rounded-md bg-gradient-to-tl from-55% to-100% p-6 shadow-md transition-all duration-300 hover:scale-[1.02] md:w-[45%]">
       <div className="text-primary flex items-center gap-1.5 text-2xl sm:text-3xl lg:text-4xl">
         <BuildingIcon className="size-10" />
         <h3 className="font-semibold">{title}</h3>
@@ -29,7 +29,7 @@ export default function CertainExperienceCard({ experience }) {
         href={`experiences/${id}`}
         AriaLabel="Explore Experience"
         title="Explore Experience"
-        Font="w-[200px]! ms-auto!"
+        Font="w-[160px]! ms-auto! sm:w-[200px]!"
       >
         Explore Experience
       </Button>

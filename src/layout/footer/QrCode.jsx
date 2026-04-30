@@ -12,7 +12,7 @@ export default function QrCode() {
           loading="lazy"
           decoding="async"
           alt="QR code linking to Antonious Nasr's portfolio"
-          className="size-16 sm:size-24"
+          className="size-20 sm:size-24"
           width="96"
           height="96"
         />

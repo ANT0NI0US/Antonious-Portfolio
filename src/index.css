@@ -266,3 +266,9 @@
     left: calc(100% - 60px);
   }
 }
+
+@font-face {
+  font-family: "revicons";
+  font-display: swap;
+  src: url("./lib/revicons.woff") format("woff");
+}

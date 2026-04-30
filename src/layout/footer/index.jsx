@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="bg-secondary relative">
       {/* Waves */}
       <Waves />
-      <div className="container flex flex-col justify-between gap-4 py-4 sm:grid sm:grid-cols-4 sm:gap-6 sm:py-10 xl:grid-cols-6">
+      <div className="container flex flex-col justify-between gap-4 pt-4 pb-10 sm:grid sm:grid-cols-4 sm:gap-6 sm:py-10 xl:grid-cols-6">
         <div className="col-span-2 flex w-full flex-col gap-2">
           {/* MY LOGO */}
           <Logo />

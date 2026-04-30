@@ -9,7 +9,7 @@ export default function BannerHero() {
 
       <p className="text-3xl font-semibold sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
         Hello 👋, I&apos;m
-        <span className="text-primary"> Antonious Nasr</span>, a
+        <span className="text-primary"> Antonious Nasr</span>
       </p>
     </>
   );

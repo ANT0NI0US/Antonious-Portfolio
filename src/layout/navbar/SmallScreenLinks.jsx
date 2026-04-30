@@ -40,22 +40,17 @@ export default function SmallScreenLinks({
             exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.5 }}
             ref={ref}
-            className="bg-main text-primary xs:w-[300px] fixed right-0 bottom-0 z-10000 flex h-full w-full flex-col pt-16 pb-4 shadow-md drop-shadow-xl"
+            className="bg-main text-primary xs:w-[300px] fixed right-0 bottom-0 z-10000 flex h-full w-full flex-col pt-20 pb-4 shadow-md drop-shadow-xl"
           >
             {/* CLOSE SIDEBAR BUTTON*/}
-            <div className="absolute top-3 right-2 w-[35px]">
-              <Button
-                variation="delete"
-                AriaLabel="Close-icon"
-                title="Close-icon"
-                onClick={closeSidebar}
-                Font="rounded-full! h-[35px]!"
-              >
-                <div className="flexCenter">
-                  <CloseIcon className="text-light-color size-5" />
-                </div>
-              </Button>
-            </div>
+            <Button
+              variation="delete"
+              AriaLabel="Close-icon"
+              onClick={closeSidebar}
+              Font="absolute! top-[27px] right-[20px] w-[30px]! h-[30px]! p-2!"
+            >
+              <CloseIcon className="text-light" />
+            </Button>
 
             {/* LINKS */}
             <div className="flex w-full flex-col">

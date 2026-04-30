@@ -9,8 +9,8 @@ export default function TestimonialsDetails({
 
   return (
     <div>
-      <div className="rounded-tl-lg rounded-tr-lg py-6 ps-5 font-bold tracking-wider uppercase">
-        <h1 className="text-xl sm:text-2xl">
+      <div className="rounded-tl-md rounded-tr-md py-6 ps-5 font-bold tracking-wider uppercase">
+        <h1 className="w-[80%] text-xl sm:text-2xl">
           {publisher} <span className="text-xs">( {position} )</span>
         </h1>
       </div>
@@ -25,8 +25,8 @@ export default function TestimonialsDetails({
           <span>{at}</span>
         </div>
       </div>
-      <div className="rounded-br-lg rounded-bl-lg px-4 py-6">
-        <div className="ms-auto w-full sm:w-[30%]">
+      <div className="rounded-br-md rounded-bl-md px-4 py-6">
+        <div className="ms-auto w-[40%] sm:w-[30%]">
           <Button AriaLabel="Cancel" variation="danger" onClick={onCloseModal}>
             Cancel
           </Button>

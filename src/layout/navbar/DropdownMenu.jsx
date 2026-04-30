@@ -12,7 +12,7 @@ export default function DropdownMenu({ handleLinkClick }) {
     <div className="relative" ref={ref}>
       <button
         onClick={toggleMenu}
-        className="bg-light text-secondary border-light hover:bg-light/90 active:bg-light/90 flex cursor-pointer items-center justify-between gap-1 rounded-md border px-4 py-3 font-bold whitespace-nowrap transition"
+        className="bg-primary text-secondary border-primary hover:bg-primary/95 active:bg-primary/95 flex cursor-pointer items-center justify-between gap-1 rounded-md border px-4 py-3 font-bold whitespace-nowrap transition"
       >
         <span>Get to Know Me</span>
         {openMenu ? (

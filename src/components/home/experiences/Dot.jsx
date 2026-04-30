@@ -11,9 +11,9 @@ export default function Dot() {
       initial="hidden"
       whileInView="visible"
       transition={{ duration: 0.4, ease: "backOut" }}
-      className="border-primary bg-light absolute top-5 left-2 z-10 flex h-6 w-6 items-center justify-center rounded-full border-4 md:right-auto md:left-1/2 md:-translate-x-1/2"
+      className="border-primary bg-light md:flexCenter absolute z-10 hidden size-6 rounded-full border-4 md:top-5 md:right-auto md:left-1/2 md:-translate-x-1/2"
     >
-      <div className="bg-primary h-3 w-3 rounded-full" />
+      <div className="bg-primary size-3 rounded-full" />
     </motion.div>
   );
 }
