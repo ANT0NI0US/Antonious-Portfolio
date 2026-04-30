@@ -11,8 +11,11 @@ export default function ContactUs() {
           <div className="lg:basis-[60%]">
             <img
               loading="lazy"
+              decoding="async"
               src="https://i.ibb.co/yygczq7/Email-Marketing.webp"
-              alt="Contact Us"
+              alt="Email marketing illustration"
+              width="600"
+              height="600"
             />
           </div>
 

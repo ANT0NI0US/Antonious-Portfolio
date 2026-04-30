@@ -1,5 +1,4 @@
-import { LuCalendarDays } from "react-icons/lu";
-import { SlLocationPin } from "react-icons/sl";
+import { CalendarIcon, LocationIcon } from "@/icons";
 import TextHead from "@/ui/TextHead";
 
 export default function HeaderSection({ experience }) {
@@ -28,11 +27,11 @@ export default function HeaderSection({ experience }) {
 
       <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:justify-evenly">
         <div className="flex items-center gap-1.5 text-sm">
-          <LuCalendarDays />
+          <CalendarIcon />
           <span>{year}</span>
         </div>
         <div className="flex items-center gap-1.5 text-sm">
-          <SlLocationPin />
+          <LocationIcon />
           <span>
             {location} • {employmentType}, {employmentMode}
           </span>

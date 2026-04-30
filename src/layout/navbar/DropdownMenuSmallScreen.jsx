@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { FiChevronDown, FiChevronRight } from "react-icons/fi";
 import { aboutLinks } from "@/data/links";
+import { LeftArrowIcon } from "@/icons";
+import { useState } from "react";
 
 export default function DropdownMenuSmallScreen({ handleLinkClick }) {
   const [openMenu, setOpenMenu] = useState(false);
@@ -14,7 +14,11 @@ export default function DropdownMenuSmallScreen({ handleLinkClick }) {
         className="text-light border-secondary flex w-full cursor-pointer items-center justify-between gap-1 border-b px-4 py-3 font-bold whitespace-nowrap transition hover:font-bold xl:text-lg"
       >
         <span>Get to Know Me</span>
-        {openMenu ? <FiChevronDown /> : <FiChevronRight />}
+        {openMenu ? (
+          <LeftArrowIcon className="size-4 rotate-270" />
+        ) : (
+          <LeftArrowIcon className="size-4 rotate-180" />
+        )}
       </button>
 
       {openMenu && (

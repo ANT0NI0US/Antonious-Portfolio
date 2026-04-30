@@ -36,9 +36,7 @@ export default function ProjectsCarousel({ projects, titleHead = "Projects" }) {
               className="h-48 w-full rounded-md object-cover"
             />
             <div className="flex flex-1 flex-col gap-2">
-              <h2 className="text-primary font-Monoton font-bold xl:text-xl">
-                {title}
-              </h2>
+              <h2 className="text-primary font-bold xl:text-xl">{title}</h2>
               <p className="text-sm xl:text-lg">
                 {description.length > 200
                   ? description.slice(0, 197) + "..."

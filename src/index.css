@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --font-merienda: Merienda, cursive;
-  --font-Monoton: Monoton;
-
   --animate-text-effect: move 4s linear infinite;
   --animate-bounce-arrow: bounce-arrow 1.2s infinite;
   --animate-glowing-text: glow 1.5s infinite ease-in-out;

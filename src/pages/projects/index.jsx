@@ -27,7 +27,6 @@ export default function Projects() {
     (p) => p.category === project.category && p.id !== project.id,
   );
 
-  console.log(otherProjects);
   return (
     <div className="container flex flex-col gap-4 pt-10 pb-30">
       <ProjectHead
@@ -48,10 +47,10 @@ export default function Projects() {
         {/* TECHNOLOGIES USED */}
         <TechnologiesUsed toolkit={project?.toolkit} />
       </div>
-      {/* IMAGE COLLEGE */}
-      <ProjectImages project={project} />
       {/* OTHER PROJECTS IN THE SAME CATEGORY */}
       <ProjectsCarousel projects={otherProjects} titleHead="Other Projects" />
+      {/* IMAGE COLLAGE */}
+      <ProjectImages project={project} />
     </div>
   );
 }

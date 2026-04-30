@@ -6,7 +6,7 @@ export const experiences = [
     id: 1,
     title: "Smart Gate",
     companyLogo: "https://i.ibb.co/zTZt1RZr/Smartgate-Logo.jpg",
-    jobTitle: "Fresh - Junior Frontend Developer",
+    jobTitle: "Junior Frontend Developer",
     year: "Oct 2023 - Feb 2025",
     location: "Cairo, Egypt",
     employmentType: "Full-time",
@@ -19,7 +19,7 @@ export const experiences = [
       "Boosted user satisfaction by 25% via polished UX implementations.",
       "Cut development time by 20% by building reusable components/templates.",
       "Reduced deployment errors by 15% with improved CI/CD pipelines.",
-      "Enhanced accessibility for Arabic/English speakers by 100% with i18n.",
+      "Delivered full bilingual support (Arabic/English) via i18n, covering 100% of UI strings.",
     ],
     coreResponsibilities: [
       "Developed interactive web apps with React.js, JavaScript (ES6), and HTML5/CSS3.",
@@ -27,7 +27,7 @@ export const experiences = [
       "Collaborated with UX/UI designers to translate wireframes into working features.",
       "Used Redux, React Query, and Chakra UI / Tailwind CSS / Material UI for scalable frontend architecture.",
       "Set up GitLab CI/CD pipelines and managed code using Git for smooth deployment.",
-      "Collaborating with clients to understand project requirements.",
+      "Collaborated with clients to understand project requirements.",
     ],
     softSkills: [
       "Teamwork",
@@ -66,7 +66,7 @@ export const experiences = [
       "Reusable Components",
       "Responsive Design",
       "UI/UX Principles",
-      "Understanding of layout aesthetics",
+      "Figma (reading & interpreting designs)",
       "Code Review",
       "Postman",
       "NPM",
@@ -114,11 +114,11 @@ export const experiences = [
     employmentType: "Full-time",
     employmentMode: "On-site",
     summary:
-      "Promoted to a Mid-Level Frontend Developer at crēation ltd, where I’ve significantly expanded my skill set in managing and refactoring legacy codebases, mastering Fabric.js for dynamic canvas features, and collaborating closely with the team to drive effective solutions. This role marked a key milestone in my career by elevating both my technical capabilities and communication within cross-functional teams.",
+      "Joined crēation LLC as a Mid-Level Frontend Developer, where I’ve significantly expanded my skill set in managing and refactoring legacy codebases, mastering Fabric.js for dynamic canvas features, and collaborating closely with the team to drive effective solutions. This role marked a key milestone in my career by elevating both my technical capabilities and communication within cross-functional teams.",
     keyAchievements: [
       "Boosted user satisfaction by 40% via polished UX implementations.",
       "Cut development time by 20% by building reusable components/templates.",
-      "Enhanced accessibility for Arabic/English speakers by 100% with i18n.",
+      "Delivered full bilingual support (Arabic/English) via i18n, covering 100% of UI strings.",
       "Implemented SEO best practices resulting in improved search rankings for client websites",
     ],
     coreResponsibilities: [
@@ -128,9 +128,8 @@ export const experiences = [
       "Managing state efficiently using Redux Toolkit.",
       "Set up Github CI/CD pipelines and managed code using Git for smooth deployment.",
       "Adhering to best coding practices by writing clean, maintainable code.",
-      "Delivering high-quality products and troubleshooting issues.",
+      "Delivering high-quality, well-tested code that meets client expectations and requirements.",
       "Continuously improving the applications I work on.",
-      "Delivering high-quality code that meets client expectations.",
     ],
     softSkills: [
       "Communication",

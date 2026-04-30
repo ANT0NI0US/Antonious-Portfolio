@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { projects } from "../../../data/projects";
+import { projects } from "@/data/projects";
 import Categories from "./Categories";
 import FilteredProjects from "./FilteredProjects";
 import ProjectDetails from "./ProjectDetails";
@@ -7,7 +7,7 @@ import Pagination from "./Pagination";
 import TextHead from "@/ui/TextHead";
 
 export default function Projects() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("React");
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -42,7 +42,7 @@ export default function Projects() {
         {/* PROJECTS HEAD AND DESCRIPTION */}
         <TextHead text="Projects" />
         <p className="text-center text-lg xl:text-xl">
-          Explore my website designs that are easy to use and look great , Enjoy
+          Explore my website designs that are easy to use and look great. Enjoy
           a better online experience with simple and user-friendly interfaces.
         </p>
 

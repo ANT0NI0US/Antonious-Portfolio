@@ -8,6 +8,7 @@ export default function TechnologiesUsed({ toolkit }) {
       <div className="grid grid-cols-3 gap-6">
         {toolkit?.map((el, index) => (
           <Link
+            key={index}
             to={el?.url}
             target="_blank"
             className="flex flex-col items-center justify-center gap-2 text-center"
@@ -15,7 +16,6 @@ export default function TechnologiesUsed({ toolkit }) {
             <img
               loading="lazy"
               title={el.alt}
-              key={index}
               src={el.src}
               alt={el.alt}
               className="h-[50px] w-[50px] object-contain object-center"

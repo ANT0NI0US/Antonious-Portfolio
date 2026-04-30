@@ -1,9 +1,9 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { MoveDirection, OutMode } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
-const ParticlesComponent = () => {
+export default function ParticlesComponent() {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -14,90 +14,53 @@ const ParticlesComponent = () => {
     });
   }, []);
 
-  const particlesLoaded = async (container) => {};
-
   const options = useMemo(
     () => ({
       background: {
-        color: {
-          value: "transparent",
-        },
+        color: { value: "transparent" },
       },
-      fpsLimit: 120,
+      fpsLimit: 60,
       interactivity: {
         events: {
-          onClick: {
-            enable: false,
-            mode: "push",
-          },
-          onHover: {
-            enable: true,
-            mode: "repulse",
-          },
+          onClick: { enable: false, mode: "push" },
+          onHover: { enable: true, mode: "repulse" },
         },
         modes: {
-          push: {
-            quantity: 4,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
+          push: { quantity: 4 },
+          repulse: { distance: 150, duration: 0.4 },
         },
       },
       particles: {
-        color: {
-          value: "#dbf227",
-        },
+        color: { value: "#dbf227" },
         links: {
           color: "#c18500",
-          distance: 200,
+          distance: 180,
           enable: true,
-          opacity: 0.5,
+          opacity: 0.4,
           width: 1,
         },
         move: {
           direction: MoveDirection.none,
           enable: true,
-          outModes: {
-            default: OutMode.out,
-          },
+          outModes: { default: OutMode.out },
           random: false,
-          speed: 4,
+          speed: 2,
           straight: false,
         },
         number: {
-          density: {
-            enable: true,
-          },
-          value: 90,
+          density: { enable: true },
+          value: 50,
         },
-        opacity: {
-          value: 0.5,
-        },
-        shape: {
-          type: "circle",
-        },
-        size: {
-          value: { min: 1, max: 5 },
-        },
+        opacity: { value: 0.5 },
+        shape: { type: "circle" },
+        size: { value: { min: 1, max: 4 } },
       },
       detectRetina: true,
     }),
     [],
   );
 
-  if (init) {
-    return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
-    );
-  }
+  if (!init) return null;
 
-  return <></>;
-};
-
-export default ParticlesComponent;
+  return <Particles id="tsparticles" options={options} />;
+}

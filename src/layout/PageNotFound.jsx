@@ -1,4 +1,4 @@
-import { TiArrowBack } from "react-icons/ti";
+import { LeftArrowIcon } from "@/icons";
 import Button from "../ui/Button";
 
 export default function PageNotFound() {
@@ -14,7 +14,7 @@ export default function PageNotFound() {
       </div>
       <div className="w-[200px]">
         <Button href="/" replace AriaLabel="Back to Overview">
-          <TiArrowBack size={22} />
+          <LeftArrowIcon className="size-4" />
           <p>Back to Overview</p>
         </Button>
       </div>

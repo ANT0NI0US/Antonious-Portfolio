@@ -1,9 +1,9 @@
-import Carousel from "react-multi-carousel";
-import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
-import TestimonialsDetailsModal from "./TestimonialsDetailsModal";
-import { carouselResponsive } from "@/data/carouselResponsive";
 import { allTestimonials } from "@/data/allTestimonials";
+import { carouselResponsive } from "@/data/carouselResponsive";
+import { QuoteIcon } from "@/icons";
+import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import TestimonialsDetailsModal from "./TestimonialsDetailsModal";
 
 const getShortDescription = (text, maxLength = 150) => {
   return text.length > maxLength
@@ -37,11 +37,11 @@ export default function AllTestimonials() {
               key={index}
               className="bg-secondary relative flex flex-col gap-3 rounded-md px-4 py-5"
             >
-              <span className="absolute -top-3 -left-2.5 animate-pulse text-3xl">
-                <RiDoubleQuotesL />
+              <span className="absolute -top-1.5 -left-1.5 animate-pulse">
+                <QuoteIcon className="size-5 rotate-180" fill="currentColor" />
               </span>
-              <span className="absolute -right-2.5 -bottom-3 animate-pulse text-3xl">
-                <RiDoubleQuotesR />
+              <span className="absolute -right-1.5 -bottom-1.5 animate-pulse">
+                <QuoteIcon className="size-5" fill="currentColor" />
               </span>
               <p className="text-sm xl:text-base">{shortDescription}</p>
 
@@ -50,7 +50,7 @@ export default function AllTestimonials() {
                   {publisher.charAt(0)}
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h2 className="text-primary font-Monoton font-bold xl:text-xl">
+                  <h2 className="text-primary font-bold xl:text-xl">
                     {publisher}
                   </h2>
                   {position && <p className="text-xs">{position}</p>}

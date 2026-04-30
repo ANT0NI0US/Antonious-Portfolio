@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { useOutsideClick } from "@/hooks/useOutsideClick";
-import { FiChevronDown, FiChevronRight } from "react-icons/fi";
 import { aboutLinks } from "@/data/links";
+import { useOutsideClick } from "@/hooks/useOutsideClick";
+import { LeftArrowIcon } from "@/icons";
+import { useState } from "react";
 
 export default function DropdownMenu({ handleLinkClick }) {
   const [openMenu, setOpenMenu] = useState(false);
@@ -15,7 +15,11 @@ export default function DropdownMenu({ handleLinkClick }) {
         className="bg-light text-secondary border-light hover:bg-light/90 active:bg-light/90 flex cursor-pointer items-center justify-between gap-1 rounded-md border px-4 py-3 font-bold whitespace-nowrap transition"
       >
         <span>Get to Know Me</span>
-        {openMenu ? <FiChevronDown /> : <FiChevronRight />}
+        {openMenu ? (
+          <LeftArrowIcon className="size-4 rotate-270" />
+        ) : (
+          <LeftArrowIcon className="size-4 rotate-180" />
+        )}
       </button>
 
       {openMenu && (

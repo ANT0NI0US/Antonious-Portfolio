@@ -18,7 +18,6 @@ export default function ProjectIdea() {
         Font="w-[300px]!"
         size="large"
         onClick={() => handleNavClick("#contact")}
-        variation="secondary"
       >
         <span>Start Your Project Now</span>
       </Button>

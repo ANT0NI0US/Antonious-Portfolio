@@ -1,13 +1,11 @@
-import { useRef, useState } from "react";
-import { Controller, useForm } from "react-hook-form";
+import { EmailIcon, PhoneIcon, TypeIcon } from "@/icons";
+import Button from "@/ui/Button";
+import GridContainer from "@/ui/GridContainer";
 import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
-import { AiOutlinePhone } from "react-icons/ai";
-import { MdDriveFileRenameOutline, MdOutlineEmail } from "react-icons/md";
+import { useEffect, useRef, useState } from "react";
+import { Controller, useForm } from "react-hook-form";
 import Input from "./Input";
 import TextArea from "./TextArea";
-import GridContainer from "@/ui/GridContainer";
-import Button from "@/ui/Button";
 
 const initialState = {
   user_name: "",
@@ -21,12 +19,21 @@ const isOnlySpaces = (value) => {
   return !value.trim();
 };
 
+const EMAILJS_SERVICE_ID = "service_yijk9v8";
+const EMAILJS_TEMPLATE_ID = "template_dolvl3a";
+const EMAILJS_PUBLIC_KEY = "5MRR9-mIUN-47nrvy";
+
+const AUTO_DISMISS_MS = 4000;
+
 export default function ContactForm() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [formStatus, setFormStatus] = useState({ type: "", message: "" });
+  const [visible, setVisible] = useState(false);
   const formRef = useRef();
+  const dismissTimer = useRef(null);
+
   const {
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
     control,
     reset,
   } = useForm({
@@ -34,27 +41,43 @@ export default function ContactForm() {
     defaultValues: initialState,
   });
 
+  useEffect(() => {
+    if (!formStatus.message) return;
+
+    setVisible(true);
+    clearTimeout(dismissTimer.current);
+
+    dismissTimer.current = setTimeout(() => {
+      setVisible(false);
+      setTimeout(() => setFormStatus({ type: "", message: "" }), 300);
+    }, AUTO_DISMISS_MS);
+
+    return () => clearTimeout(dismissTimer.current);
+  }, [formStatus]);
+
   const sendEmail = () => {
-    setIsLoading(true);
     emailjs
       .sendForm(
-        "service_yijk9v8",
-        "template_dolvl3a",
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         formRef.current,
-        "5MRR9-mIUN-47nrvy",
+        EMAILJS_PUBLIC_KEY,
       )
       .then(
         () => {
-          toast.success("Form submitted successfully!");
+          setFormStatus({
+            type: "success",
+            message: "Form submitted successfully!",
+          });
           reset();
         },
-        (error) => {
-          toast.error("An error occurred. Please try again.");
+        () => {
+          setFormStatus({
+            type: "error",
+            message: "Something went wrong. Please try again.",
+          });
         },
-      )
-      .finally(() => {
-        setIsLoading(false);
-      });
+      );
   };
   return (
     <form
@@ -85,8 +108,8 @@ export default function ContactForm() {
             <Input
               field={field}
               placeholder="First Name"
-              Icon={<MdDriveFileRenameOutline />}
-              disabled={isLoading}
+              Icon={<TypeIcon />}
+              disabled={isSubmitting}
               error={errors?.user_name?.message}
             />
           )}
@@ -114,8 +137,8 @@ export default function ContactForm() {
             <Input
               field={field}
               placeholder="Last Name"
-              Icon={<MdDriveFileRenameOutline />}
-              disabled={isLoading}
+              Icon={<TypeIcon />}
+              disabled={isSubmitting}
               error={errors?.user_last_name?.message}
             />
           )}
@@ -140,8 +163,8 @@ export default function ContactForm() {
           <Input
             field={field}
             placeholder="Email"
-            Icon={<MdOutlineEmail />}
-            disabled={isLoading}
+            Icon={<EmailIcon />}
+            disabled={isSubmitting}
             error={errors?.user_email?.message}
           />
         )}
@@ -165,8 +188,8 @@ export default function ContactForm() {
           <Input
             field={field}
             placeholder="Phone"
-            disabled={isLoading}
-            Icon={<AiOutlinePhone />}
+            disabled={isSubmitting}
+            Icon={<PhoneIcon />}
             error={errors?.user_phone?.message}
           />
         )}
@@ -186,20 +209,32 @@ export default function ContactForm() {
           <TextArea
             field={field}
             placeholder="Message"
-            disabled={isLoading}
+            disabled={isSubmitting}
             error={errors?.message?.message}
           />
         )}
       />
 
-      <Button
-        type="submit"
-        AriaLabel="Submit Form"
-        title="Send to Email"
-        loading={isLoading}
-      >
-        <span>Submit</span>
-      </Button>
+      <div>
+        <Button
+          type="submit"
+          AriaLabel="Submit Form"
+          title="Send to Email"
+          loading={isSubmitting}
+        >
+          <span>Submit</span>
+        </Button>
+
+        {formStatus.message && (
+          <p
+            className={`mt-1 text-center text-sm transition-opacity duration-300 ${
+              visible ? "opacity-100" : "opacity-0"
+            } ${formStatus.type === "success" ? "text-light" : "text-error"}`}
+          >
+            {formStatus.message}
+          </p>
+        )}
+      </div>
     </form>
   );
 }

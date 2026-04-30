@@ -1,8 +1,8 @@
-import { MdOutlineEmail, MdOutlineVpnKey } from "react-icons/md";
+import { EmailIcon, PasswordIcon } from "@/icons";
 import GridContainer from "@/ui/GridContainer";
 
 const cardStyle = "flex items-center gap-2 rounded-md bg-secondary p-[8px]";
-const iconStyle = "text-3xl text-primary mb-auto";
+const iconStyle = "size-6 text-primary mb-auto";
 
 export default function DescriptionAndToolkit({
   description,
@@ -20,7 +20,7 @@ export default function DescriptionAndToolkit({
       {/* ACCOUNTS */}
       {accounts && (
         <div>
-          <h2 className="font-merienda text-primary mb-2 text-center text-lg font-black underline xl:text-2xl">
+          <h2 className=" text-primary mb-2 text-center text-lg font-black underline xl:text-2xl">
             Accounts
           </h2>
           <GridContainer
@@ -32,14 +32,14 @@ export default function DescriptionAndToolkit({
                 className="bg-secondary/50 space-y-1 rounded-md p-3"
               >
                 <div className={`${cardStyle}`}>
-                  <MdOutlineEmail className={`${iconStyle}`} />
+                  <EmailIcon className={`${iconStyle}`} />
                   <div className="flex items-center gap-1">
                     <p className="font-black xl:text-lg">Email: </p>
                     <span className="break-all xl:text-lg">{email}</span>
                   </div>
                 </div>
                 <div className={`${cardStyle}`}>
-                  <MdOutlineVpnKey className={`${iconStyle}`} />
+                  <PasswordIcon className={`${iconStyle}`} />
                   <div className="flex items-center gap-1">
                     <p className="font-black xl:text-lg">Password: </p>
                     <span className="break-all xl:text-lg">{password}</span>
@@ -54,7 +54,7 @@ export default function DescriptionAndToolkit({
       {/* CERTIFICATE */}
       {certificate && (
         <div className="flex flex-col items-center justify-center gap-2">
-          <h2 className="font-merienda text-primary text-center text-lg font-black underline xl:text-2xl">
+          <h2 className=" text-primary text-center text-lg font-black underline xl:text-2xl">
             Certificate
           </h2>
           <img

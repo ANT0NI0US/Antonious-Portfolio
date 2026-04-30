@@ -1,11 +1,12 @@
-import { Suspense } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { lazy, Suspense } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./layout";
 import Home from "./pages/home";
-import ExperiencesDetails from "./pages/experiencesDetails";
 import Spinner from "./ui/spinner";
-import PageNotFound from "./layout/PageNotFound";
-import Projects from "./pages/projects";
+
+const ExperiencesDetails = lazy(() => import("./pages/experiencesDetails"));
+const Projects = lazy(() => import("./pages/projects"));
+const PageNotFound = lazy(() => import("./layout/PageNotFound"));
 
 export default function App() {
   return (

@@ -1,21 +1,25 @@
-import { FaRegComments } from "react-icons/fa";
-import { TbCpu, TbFolderCode, TbUserStar } from "react-icons/tb";
-import { LuFileBadge } from "react-icons/lu";
-import { GoPerson } from "react-icons/go";
-import { PiSealCheck } from "react-icons/pi";
-import { GrOverview } from "react-icons/gr";
-import { SiMinutemailer } from "react-icons/si";
-import { GiTalk } from "react-icons/gi";
-import { RiChatQuoteLine } from "react-icons/ri";
+import {
+  AwardIcon,
+  ChatIcon,
+  CheckIcon,
+  ContactIcon,
+  CpuIcon,
+  MessageIcon,
+  MessageSquareIcon,
+  OverViewIcon,
+  PersonIcon,
+  ProjectIcon,
+  UserStarIcon,
+} from "@/icons";
 
 export const links = [
   {
-    icon: GrOverview,
+    icon: OverViewIcon,
     path: "#overview",
     text: "Overview",
   },
   {
-    icon: SiMinutemailer,
+    icon: ContactIcon,
     path: "#contact",
     text: "Contact",
   },
@@ -23,47 +27,47 @@ export const links = [
 
 export const aboutLinks = [
   {
-    icon: GoPerson,
+    icon: PersonIcon,
     path: "#about",
     text: "About Me",
   },
   {
-    icon: PiSealCheck,
+    icon: CheckIcon,
     path: "#services",
     text: "Services",
   },
   {
-    icon: TbFolderCode,
+    icon: ProjectIcon,
     path: "#projects",
     text: "Projects",
   },
   {
-    icon: TbCpu,
+    icon: CpuIcon,
     path: "#tech-skills",
     text: "Technical Skills",
   },
   {
-    icon: GiTalk,
+    icon: MessageSquareIcon,
     path: "#soft-skills",
     text: "Soft Skills",
   },
   {
-    icon: RiChatQuoteLine,
+    icon: MessageIcon,
     path: "#testimonials",
     text: "Testimonials",
   },
   {
-    icon: TbUserStar,
+    icon: UserStarIcon,
     path: "#experiences",
     text: "Experiences",
   },
   {
-    icon: LuFileBadge,
+    icon: AwardIcon,
     path: "#qualification",
     text: "Qualifications",
   },
   {
-    icon: FaRegComments,
+    icon: ChatIcon,
     path: "#blogs",
     text: "Blogs",
   },

@@ -1,4 +1,4 @@
-import Links from "@/ui/Links";
+import SocialLinks from "@/ui/SocialLinks";
 import MainTitle from "./MainTitle";
 
 export default function Connect() {
@@ -8,8 +8,12 @@ export default function Connect() {
 
       <p className="text-sm">Let’s create something extraordinary!</p>
 
-      {/* LINKS */}
-      <Links Size="size-8" Style="justify-start" />
+      {/* SOCIAL LINKS */}
+      <SocialLinks
+        Size="size-4"
+        Style="justify-start gap-2!"
+        className="border-light hover:bg-secondary hover:border-primary border-2! p-1.5!"
+      />
     </div>
   );
 }

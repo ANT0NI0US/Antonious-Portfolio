@@ -1,3 +1,5 @@
+import { CloseIcon } from "@/icons";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   cloneElement,
   createContext,
@@ -5,9 +7,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { createPortal } from "react-dom";
-import { FaTimes } from "react-icons/fa";
 
 const ModalContext = createContext();
 
@@ -78,7 +78,7 @@ function Window({ children, name }) {
                 onClick={close}
                 className="bg-error absolute top-[10px] right-[10px] rounded p-1"
               >
-                <FaTimes />
+                <CloseIcon />
               </button>
               <div>{cloneElement(children, { onCloseModal: close })}</div>
             </div>

@@ -49,7 +49,6 @@ export const techSkills = [
     title: "Optimization & Debugging",
     description: [
       "Performance Optimization",
-      "Problem Solving",
       "SEO (Search Engine Optimization)",
       "Debugging (Chrome DevTools, React DevTools)",
     ],
@@ -73,7 +72,7 @@ export const techSkills = [
       "Responsive Design",
       "Cross-Browser Compatibility",
       "UI/UX Principles",
-      "Understanding of layout aesthetics",
+      "Figma (reading & interpreting designs)",
     ],
   },
   {

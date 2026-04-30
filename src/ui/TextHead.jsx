@@ -1,7 +1,7 @@
 export default function TextHead({ text, styling }) {
   return (
     <div
-      className={`group border-primary font-merienda text-primary hover:border-light hover:text-light relative z-10 mx-auto mb-10 w-fit rounded-[72px] border-2 px-6 py-3 text-center font-normal uppercase transition-all delay-200 duration-1000 ease-in-out hover:font-bold sm:text-3xl md:text-4xl ${styling}`}
+      className={`group border-primary text-primary hover:border-light hover:text-light relative z-10 mx-auto mb-10 w-fit rounded-[72px] border-2 px-6 py-3 text-center font-normal uppercase transition-all delay-200 duration-1000 ease-in-out hover:font-bold sm:text-3xl md:text-4xl ${styling}`}
     >
       {text}
       {/* Before element */}

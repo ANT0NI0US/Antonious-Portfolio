@@ -1,8 +1,10 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { IoCloseSharp } from "react-icons/io5";
 import { links } from "@/data/links";
-import Button from "@/ui/Button";
 import { useOutsideClick } from "@/hooks/useOutsideClick";
+import { CloseIcon } from "@/icons";
+import Button from "@/ui/Button";
+import SocialLinks from "@/ui/SocialLinks";
+import { AnimatePresence, motion } from "framer-motion";
+import CreatedBy from "@/ui/CreatedBy";
 import DropdownMenuSmallScreen from "./DropdownMenuSmallScreen";
 
 export default function SmallScreenLinks({
@@ -21,7 +23,7 @@ export default function SmallScreenLinks({
       {showSidebar && (
         <nav className="md:hidden">
           {/* OVERLAY */}
-          <div
+          <motion.div
             key="overlay"
             className="fixed inset-0 z-100 h-full w-full bg-black/60"
             initial={{ opacity: 0 }}
@@ -38,7 +40,7 @@ export default function SmallScreenLinks({
             exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.5 }}
             ref={ref}
-            className="bg-main text-primary xs:w-[300px] fixed right-0 bottom-0 z-10000 h-full w-full py-16 shadow-md drop-shadow-xl"
+            className="bg-main text-primary xs:w-[300px] fixed right-0 bottom-0 z-10000 flex h-full w-full flex-col pt-16 pb-4 shadow-md drop-shadow-xl"
           >
             {/* CLOSE SIDEBAR BUTTON*/}
             <div className="absolute top-3 right-2 w-[35px]">
@@ -50,7 +52,7 @@ export default function SmallScreenLinks({
                 Font="rounded-full! h-[35px]!"
               >
                 <div className="flexCenter">
-                  <IoCloseSharp className="text-light-color" size={20} />
+                  <CloseIcon className="text-light-color size-5" />
                 </div>
               </Button>
             </div>
@@ -75,6 +77,15 @@ export default function SmallScreenLinks({
                 </div>
               ))}
               <DropdownMenuSmallScreen handleLinkClick={handleLinkClick} />
+            </div>
+
+            <div className="border-secondary container mt-auto flex flex-col gap-4 border-t pt-4">
+              <SocialLinks
+                Style="justify-start"
+                Size="size-5"
+                className="border-light hover:bg-secondary hover:border-primary text-light border-2! p-1.5!"
+              />
+              <CreatedBy position="smallScreens" />
             </div>
           </motion.nav>
         </nav>

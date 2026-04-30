@@ -4,7 +4,7 @@ export default function Qualification({ title, icon: Icon, children }) {
       <div className="flex h-12 items-center gap-5 ps-3">
         <span className="bg-light animate-rotate h-full w-1.5 rounded-full" />
         <div className="text-primary flex gap-1.5">
-          <Icon className="text-3xl" />
+          <Icon className="size-8" />
           <h1 className="text-2xl font-bold">{title}</h1>
         </div>
       </div>

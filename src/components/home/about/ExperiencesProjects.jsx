@@ -1,14 +1,15 @@
-import { motion } from "framer-motion";
+import Card from "./Card";
 
 const Information = [
   {
     title: "Years Of Experience",
-    data: "3+",
+    data: "+3",
   },
   {
     title: "Number Of Projects",
-    data: "35+",
+    data: "+35",
   },
+  { title: "Performance Improvement", data: "+40%" },
   {
     title: "Technical Proficiency",
     data: "React - Next",
@@ -17,22 +18,17 @@ const Information = [
 
 export default function ExperiencesProjects() {
   return (
-    <div className="mt-4 flex w-full flex-col items-center justify-between gap-8 text-center md:mt-8 md:flex-row">
-      {Information.map(({ title, data }) => (
-        <motion.div
-          key={title}
-          className="shadow-secondary border-secondary flex w-full flex-col items-center justify-center gap-1.5 rounded-4xl border-b-8 py-7 shadow-md md:min-h-[210px] md:p-4 lg:min-h-[170px]"
-          initial={{ skew: "0" }}
-          whileInView={{ skew: [0, 20, -20, 0] }}
-          viewport={{ once: true }}
-          transition={{ duration: 3 }}
-        >
-          <span className="text-primary text-2xl font-bold lg:text-3xl">
-            {data}
-          </span>
-          <span>{title}</span>
-        </motion.div>
-      ))}
+    <div className="mt-4 grid w-full grid-cols-1 gap-6 md:mt-8 md:grid-cols-3">
+      <div className="flex flex-col gap-6 md:col-span-2">
+        <Card {...Information[0]} />
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <Card {...Information[1]} />
+          <Card {...Information[2]} />
+        </div>
+      </div>
+
+      <Card {...Information[3]} className="bg-primary! text-main! h-full" />
     </div>
   );
 }

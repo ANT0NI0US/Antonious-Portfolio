@@ -1,11 +1,4 @@
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-const motionProps = {
-  whileHover: { scale: 1.05 },
-  whileTap: { scale: 0.95 },
-  transition: { duration: 0.125, ease: "easeInOut" },
-};
 
 const sizeStyles = {
   small: "px-2 py-1 text-xs sm:text-sm",
@@ -28,15 +21,17 @@ export default function Button({
   replace = false,
   href,
 }) {
+  const isDisabled = disabled || loading;
+
   const base = `focus:outline-hidden w-full flexCenter gap-1 rounded-md relative
    transition-all duration-300 font-bold cursor-pointer text-center
   ${(disabled || loading) && "cursor-not-allowed! border-main! bg-light/35! text-main!"}`;
 
   const styles = {
-    primary: `bg-light text-secondary border-light border
-      ${!disabled && !loading && "hover:bg-light/90 active:bg-light/90"}`,
-    secondary: `bg-secondary text-light border-light border
-    ${!disabled && !loading && "hover:bg-light hover:text-secondary hover:border-light"}`,
+    primary: `bg-primary text-secondary border-primary border
+      ${!disabled && !loading && "hover:bg-primary/95 active:bg-primary/95"}`,
+    secondary: `bg-transparent text-light border-primary border
+    ${!disabled && !loading && "hover:bg-primary hover:text-secondary hover:border-primary"}`,
     delete: `bg-error text-light
       ${!disabled && !loading && "hover:bg-error/90"}`,
     danger: `bg-light text-error
@@ -47,30 +42,31 @@ export default function Button({
 
   if (href)
     return (
-      <motion.div className="w-full" {...motionProps}>
+      <div className="w-full">
         <Link
           to={href}
           className={combinedClassName}
           title={AriaLabel}
           aria-label={AriaLabel}
           target={target}
-          disabled={disabled || loading}
+          rel={target === "_blank" ? "noopener noreferrer" : undefined}
           replace={replace}
+          aria-disabled={isDisabled}
+          tabIndex={isDisabled ? -1 : undefined}
         >
           {children}
         </Link>
-      </motion.div>
+      </div>
     );
 
   return (
-    <motion.button
+    <button
       onClick={onClick}
       type={type}
-      disabled={disabled || loading}
+      disabled={isDisabled}
       className={combinedClassName}
       aria-label={AriaLabel}
       title={AriaLabel}
-      {...motionProps}
     >
       {loading ? (
         <div className="flexCenter gap-1">
@@ -81,6 +77,6 @@ export default function Button({
       ) : (
         children
       )}
-    </motion.button>
+    </button>
   );
 }

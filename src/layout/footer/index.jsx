@@ -1,6 +1,6 @@
 import Waves from "./Waves";
 import QrCode from "./QrCode";
-import CreatedBy from "./CreatedBy";
+import CreatedBy from "@/ui/CreatedBy";
 import Connect from "./Connect";
 import FooterLinks from "./FooterLinks";
 import Logo from "@/ui/Logo";

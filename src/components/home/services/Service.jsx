@@ -11,8 +11,8 @@ export default function Service({ title, icon: Icon, description }) {
     >
       <div className="animate-rotate bg-primary absolute h-[200%] w-[100px]" />
       <div className="bg-main absolute inset-1 z-10 flex flex-col gap-2 rounded-md px-3 py-4 text-center shadow-md">
-        <div className="mx-auto text-6xl xl:text-7xl">
-          <Icon />
+        <div className="mx-auto">
+          <Icon className="size-14 xl:size-16" />
         </div>
 
         <h2 className="text-primary text-lg font-semibold xl:text-xl">

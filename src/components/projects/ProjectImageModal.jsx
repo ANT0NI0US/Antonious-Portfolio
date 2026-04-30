@@ -1,5 +1,4 @@
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { MdClose } from "react-icons/md";
+import { CloseIcon, LeftArrowIcon } from "@/icons";
 
 export default function ProjectImageModal({
   project,
@@ -33,7 +32,7 @@ export default function ProjectImageModal({
         aria-label="Close"
         title="Close"
       >
-        <MdClose size={25} />
+        <CloseIcon className="size-8" />
       </button>
 
       {/* Left Arrow */}
@@ -43,7 +42,7 @@ export default function ProjectImageModal({
         aria-label="Previous Image"
         title="Previous Image"
       >
-        <IoIosArrowBack size={25} />
+        <LeftArrowIcon className="size-8" />
       </button>
 
       <div className="flex flex-col gap-1.5">
@@ -65,7 +64,7 @@ export default function ProjectImageModal({
         aria-label="Next Image"
         title="Next Image"
       >
-        <IoIosArrowForward size={25} />
+        <LeftArrowIcon className="size-8 rotate-180" />
       </button>
     </div>
   );

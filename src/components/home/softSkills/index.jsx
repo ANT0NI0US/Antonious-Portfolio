@@ -1,21 +1,33 @@
-import SkillDetails from "./SkillDetails";
+import { softSkills } from "@/data/SoftSkills";
+import Button from "@/ui/Button";
 import GridContainer from "@/ui/GridContainer";
 import TextHead from "@/ui/TextHead";
-import { softSkills } from "@/data/SoftSkills";
+import { useState } from "react";
+import SkillDetails from "./SkillDetails";
 
 export default function SoftSkills() {
-  return (
-    <section className="py-5 sm:py-10" id="soft-skills">
-      <div className="container">
-        <TextHead text="Soft Skills" />
+  const [showAll, setShowAll] = useState(false);
 
-        {/* SOFT SKILLS */}
-        <GridContainer>
-          {softSkills?.map((skill, index) => (
-            <SkillDetails skill={skill} key={index} />
-          ))}
-        </GridContainer>
-      </div>
+  const visibleSkills = showAll ? softSkills : softSkills.slice(0, 6);
+  return (
+    <section className="container py-5 sm:py-10" id="soft-skills">
+      <TextHead text="Soft Skills" />
+
+      <Button
+        onClick={() => setShowAll((prev) => !prev)}
+        AriaLabel="Toggle to show all soft skills or show less"
+        Font="my-6 w-[200px]! ms-auto!"
+        variation="secondary"
+      >
+        {showAll ? "Show Less" : "Show All Skills"}
+      </Button>
+
+      {/* SOFT SKILLS */}
+      <GridContainer>
+        {visibleSkills?.map((skill, index) => (
+          <SkillDetails skill={skill} key={skill.title} />
+        ))}
+      </GridContainer>
     </section>
   );
 }

@@ -13,7 +13,7 @@ export default function SkillDetails({ skill }) {
       }}
       style={{ transformStyle: "preserve-3d" }}
     >
-      <Icon className="text-5xl" />
+      <Icon className="size-14 xl:size-16" />
       <h3 className="text-primary text-lg font-semibold xl:text-xl">{title}</h3>
       <p>{description}</p>
     </motion.div>
